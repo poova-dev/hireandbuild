@@ -7,7 +7,7 @@ require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/schema.php';
 
- = 'packages';
+$currentPage = 'packages';
 ?>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">

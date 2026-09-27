@@ -7,7 +7,7 @@ require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/schema.php';
 
- = 'services';
+$currentPage = 'services';
 ?>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
