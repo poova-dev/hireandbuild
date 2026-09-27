@@ -1,80 +1,82 @@
-# Replica Construction - Turnkey House Construction Web Platform
+# [CLIENT NAME] - Turnkey House Construction Web Platform
 
-A multi-page HTML web platform modeled after [hireandbuild.com](https://hireandbuild.com), built with **Tailwind CSS v3 CDN**, modern semantic HTML5, custom SVG branding, responsive layouts, and interactive calculation tools.
+A production-grade web platform and interactive Construction Cost Calculator modeled after modern residential builders, branded for **[CLIENT NAME]** in Chennai.
 
 ---
 
-## 🌟 Key Features
+## 🌟 Tech Stack Specification
 
-- **Tailwind CSS CDN Architecture**: Pure multi-page static site with zero build dependencies, running on any browser or web server.
-- **2026 Chennai Construction Cost Calculator**:
-  - Dynamic 4-step wizard (Area → Floors → Package → Estimate)
-  - Floor multipliers (G Only, G+1, G+2, G+3) & parking options
-  - 9 customizable construction add-on toggles
-  - Dynamic 10-phase milestone cash-flow schedule
-  - 20-year EMI estimation at 7.1% interest
-  - One-click print/PDF report styling
-- **Construction Packages & Comparison Matrix**:
-  - 4 pricing tiers: Basic (₹1,999/sq.ft), Standard (₹2,299/sq.ft), Premium (₹2,649/sq.ft), Luxury (₹2,999/sq.ft)
-  - Interactive "Highlight Differences" toggle
-  - 8-category 40+ item specification comparison
-- **Turnkey Services Guide**:
-  - Visual 12-stage construction process (Soil testing to Grihapravesam key handover)
-  - Specialized breakdowns for Residential, Commercial, Architectural Design, Structural Engineering, and CMDA/DTCP Approvals
-- **Interactive Projects Portfolio**:
-  - Filter tabs (All, Completed, Ongoing Sites, Duplex & Villas, Commercial)
-  - Specifications for built-up area, plot size, packages, and handover timelines
-  - Founder-led Grihapravesam celebration gallery
-- **Company Story & Pillars**:
-  - Founder's personal handover guarantee
-  - 6 execution pillars (Timelines, fixed BOQ, 350+ audits, daily WhatsApp logs, 15-year warranty, milestone billing)
-- **Contact & Free Site Visit Booking**:
-  - 4 contact channels (Direct call, WhatsApp, Email, Studio visit)
-  - Interactive plot inspection booking form with client-side validation
-  - 4-zone service coverage across Chennai
+| Component | Technology | Description |
+|---|---|---|
+| **Frontend** | HTML5 + Tailwind CSS + JavaScript | Modern responsive design with Tailwind CDN (no build tools) |
+| **Backend** | PHP | Modular architecture ready for Apache / XAMPP / Hostinger |
+| **Database** | MySQL | Complete schema for leads, estimates, site visits, and admin panel |
+| **Server** | Apache / XAMPP → Hostinger | Standard LAMP/Hostinger stack with `.htaccess` and routing |
+| **Forms** | PHP + AJAX | Asynchronous submission with toast notifications and MySQL persistence |
+| **Admin Panel** | PHP + MySQL + Tailwind | Secure dashboard to track inquiries, estimates, and project requests |
+| **SEO** | Server-side rendered HTML + Schema | Complete OpenGraph, Twitter Cards, and JSON-LD structured data |
+| **Images** | Local storage / Cloudinary | Structured asset directories with Cloudinary-ready configuration |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-├── index.html          # Homepage with hero lead capture, stats, video modal, and FAQs
-├── packages.html       # Construction packages and 8-category comparison matrix
-├── calculator.html     # Interactive 4-step house construction cost calculator
-├── services.html       # Turnkey construction services & 12-stage process
-├── projects.html       # Portfolio with filterable project cards & handover gallery
-├── about.html          # Company story, 15-year warranty, and founder's promise
-├── contact.html        # Contact channels, office details, and site visit booking
+├── index.html / index.php          # Homepage with hero, packages, live stats, FAQs
+├── packages.html / packages.php    # Construction packages & 40+ item comparison matrix
+├── calculator.html / calculator.php # 5-Step Chennai cost calculator & 3-page PDF estimate
+├── services.html / services.php    # Turnkey services & 12-stage construction process
+├── projects.html / projects.php    # Portfolio with filterable project cards
+├── about.html / about.php          # Company story, 15-year warranty, milestones
+├── contact.html / contact.php      # Contact channels & free site visit booking
+│
+├── includes/                       # Modular PHP Components
+│   ├── config.php                  # Database & environment configuration
+│   ├── db.php                      # PDO MySQL database connection
+│   ├── header.php                  # Reusable SSR header & navigation
+│   ├── footer.php                  # Reusable SSR footer & CTAs
+│   └── schema.php                  # Dynamic JSON-LD structured schema generator
+│
+├── api/                            # AJAX Form Handlers
+│   ├── contact.php                 # Handle contact form submissions
+│   ├── estimate.php                # Save calculator estimates
+│   └── site-visit.php              # Handle free site inspection bookings
+│
+├── admin/                          # Administrative Dashboard
+│   ├── index.php                   # Secure login & dashboard overview
+│   ├── leads.php                   # Lead management & status updater
+│   ├── estimates.php               # Calculator estimates viewer
+│   ├── logout.php                  # Session logout
+│   └── auth.php                    # Authentication helpers
+│
+├── database/
+│   └── schema.sql                  # Complete MySQL schema & seed data
+│
 ├── assets/
 │   ├── css/
-│   │   └── custom.css  # Continuous ticker, marquee, card lift, print styles
+│   │   └── custom.css              # Custom styling, print styles, animations
 │   ├── js/
-│   │   ├── main.js     # Navigation drawer, sticky header, accordions, modals, forms
-│   │   └── calculator.js # Chennai rates calculator engine & milestone table generator
+│   │   ├── main.js                 # Drawer, accordions, AJAX form handler
+│   │   └── calculator.js           # 5-step Chennai cost calculation engine
 │   └── images/
-│       ├── logo.svg    # Custom Replica Construction SVG brand mark
-│       └── favicon.svg # Custom browser favicon
-├── .gitignore          # Git ignore configuration
-└── README.md           # Project documentation
+│       ├── logo.svg                # [CLIENT NAME] brand mark placeholder
+│       └── favicon.svg             # [CLIENT NAME] favicon
+│
+└── README.md
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-No build steps, Node.js installations, or bundling required!
-
-### Option 1: Direct File Opening
-Double-click `index.html` to open it in any web browser.
-
-### Option 2: Local Web Server
-Run with Python:
+### Local Static Preview
 ```bash
-python3 -m http.server 8080
+python3 -m http.server 8088
 ```
-Then navigate to `http://localhost:8080`.
+Navigate to `http://localhost:8088`.
 
----
-
-## 📄 License
-This project is for demonstration and replica prototyping purposes.
+### Apache / XAMPP / Hostinger Deployment
+1. Import `database/schema.sql` into MySQL / phpMyAdmin.
+2. Update database credentials in `includes/config.php`.
+3. Point your virtual host or Hostinger document root to this directory.
+4. Access Admin Panel at `/admin/` (Default: `admin@clientname.com` / `Admin@2026`).

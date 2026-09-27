@@ -1,3 +1,14 @@
+<?php
+/**
+ * [CLIENT NAME] - Projects Page (Server-Side Rendered)
+ * Environment: Apache / XAMPP / Hostinger
+ */
+require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/includes/db.php';
+require_once __DIR__ . '/includes/schema.php';
+
+ = 'projects';
+?>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -67,23 +78,23 @@
   <header id="main-header" class="sticky top-0 bg-white border-b border-slate-100 z-30 transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3">
+        <a href="index.php" class="flex items-center gap-3">
           <div class="w-44 sm:w-52 h-auto">
             <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="w-full h-auto">
           </div>
         </a>
 
         <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-700">
-          <a href="index.html" class="hover:text-orange-600 transition-colors">Home</a>
-          <a href="about.html" class="hover:text-orange-600 transition-colors">About Us</a>
-          <a href="calculator.html" class="inline-flex items-center gap-1.5 hover:text-orange-600 transition-colors font-semibold">
+          <a href="index.php" class="hover:text-orange-600 transition-colors">Home</a>
+          <a href="about.php" class="hover:text-orange-600 transition-colors">About Us</a>
+          <a href="calculator.php" class="inline-flex items-center gap-1.5 hover:text-orange-600 transition-colors font-semibold">
             Cost Calculator
             <span class="bg-orange-100 text-orange-600 text-[10px] font-black px-1.5 py-0.5 rounded-full">FREE</span>
           </a>
-          <a href="packages.html" class="hover:text-orange-600 transition-colors">Pricing & Packages</a>
-          <a href="services.html" class="hover:text-orange-600 transition-colors">Services</a>
-          <a href="projects.html" class="text-orange-600 font-bold hover:text-orange-600 transition-colors">Projects</a>
-          <a href="contact.html" class="hover:text-orange-600 transition-colors">Contact</a>
+          <a href="packages.php" class="hover:text-orange-600 transition-colors">Pricing & Packages</a>
+          <a href="services.php" class="hover:text-orange-600 transition-colors">Services</a>
+          <a href="projects.php" class="text-orange-600 font-bold hover:text-orange-600 transition-colors">Projects</a>
+          <a href="contact.php" class="hover:text-orange-600 transition-colors">Contact</a>
         </nav>
 
         <div class="hidden sm:flex items-center space-x-3">
@@ -91,7 +102,7 @@
             <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span>Call Now</span>
           </a>
-          <a href="calculator.html" class="inline-flex items-center gap-2 text-sm font-bold text-white bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-600 px-5 py-2.5 rounded-xl shadow-md transition-all">
+          <a href="calculator.php" class="inline-flex items-center gap-2 text-sm font-bold text-white bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-600 px-5 py-2.5 rounded-xl shadow-md transition-all">
             Get a Free Quote
           </a>
         </div>
@@ -114,16 +125,16 @@
         </button>
       </div>
       <nav class="mt-6 flex flex-col space-y-4 text-base font-semibold text-slate-800">
-        <a href="index.html" class="hover:text-orange-600 py-1 transition-colors">Home</a>
-        <a href="about.html" class="hover:text-orange-600 py-1 transition-colors">About Us</a>
-        <a href="calculator.html" class="hover:text-orange-600 py-1 transition-colors text-orange-600 flex items-center justify-between">
+        <a href="index.php" class="hover:text-orange-600 py-1 transition-colors">Home</a>
+        <a href="about.php" class="hover:text-orange-600 py-1 transition-colors">About Us</a>
+        <a href="calculator.php" class="hover:text-orange-600 py-1 transition-colors text-orange-600 flex items-center justify-between">
           <span>Cost Calculator</span>
           <span class="bg-orange-100 text-orange-600 text-xs px-2 py-0.5 rounded-full font-bold">Free</span>
         </a>
-        <a href="packages.html" class="hover:text-orange-600 py-1 transition-colors">Pricing & Packages</a>
-        <a href="services.html" class="hover:text-orange-600 py-1 transition-colors">Services</a>
-        <a href="projects.html" class="text-orange-600 font-bold py-1 transition-colors">Projects</a>
-        <a href="contact.html" class="hover:text-orange-600 py-1 transition-colors">Contact</a>
+        <a href="packages.php" class="hover:text-orange-600 py-1 transition-colors">Pricing & Packages</a>
+        <a href="services.php" class="hover:text-orange-600 py-1 transition-colors">Services</a>
+        <a href="projects.php" class="text-orange-600 font-bold py-1 transition-colors">Projects</a>
+        <a href="contact.php" class="hover:text-orange-600 py-1 transition-colors">Contact</a>
       </nav>
     </div>
     <div class="p-6 bg-slate-50 border-t border-slate-100 space-y-3">
@@ -131,7 +142,7 @@
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
         <span>+91 72004 72008</span>
       </a>
-      <a href="calculator.html" class="flex items-center justify-center w-full py-3 rounded-xl bg-orange-600 text-white text-sm font-bold shadow-md hover:bg-orange-700 transition-colors">
+      <a href="calculator.php" class="flex items-center justify-center w-full py-3 rounded-xl bg-orange-600 text-white text-sm font-bold shadow-md hover:bg-orange-700 transition-colors">
         Instant Cost Calculator
       </a>
     </div>
@@ -695,7 +706,7 @@
         <p class="text-orange-100 text-sm mt-1">Visit ongoing work in Porur, Tambaram, or Poonamallee with our site engineer.</p>
       </div>
       <div class="flex flex-wrap items-center justify-center gap-3">
-        <a href="contact.html" class="bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-all">
+        <a href="contact.php" class="bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-all">
           Schedule Site Visit &rarr;
         </a>
         <a href="tel:+917200472008" class="bg-slate-900 hover:bg-black text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-all">
@@ -735,11 +746,11 @@
         <div class="space-y-3">
           <h4 class="text-white font-bold text-sm tracking-wider uppercase">Services</h4>
           <ul class="space-y-2 text-xs">
-            <li><a href="services.html" class="hover:text-orange-400 transition-colors">Turnkey Construction</a></li>
-            <li><a href="services.html#commercial" class="hover:text-orange-400 transition-colors">Commercial Construction</a></li>
-            <li><a href="services.html#architecture" class="hover:text-orange-400 transition-colors">Architectural Designing</a></li>
-            <li><a href="services.html#structural" class="hover:text-orange-400 transition-colors">Structural Designing</a></li>
-            <li><a href="services.html#approvals" class="hover:text-orange-400 transition-colors">Building Plan Approval</a></li>
+            <li><a href="services.php" class="hover:text-orange-400 transition-colors">Turnkey Construction</a></li>
+            <li><a href="services.php#commercial" class="hover:text-orange-400 transition-colors">Commercial Construction</a></li>
+            <li><a href="services.php#architecture" class="hover:text-orange-400 transition-colors">Architectural Designing</a></li>
+            <li><a href="services.php#structural" class="hover:text-orange-400 transition-colors">Structural Designing</a></li>
+            <li><a href="services.php#approvals" class="hover:text-orange-400 transition-colors">Building Plan Approval</a></li>
           </ul>
         </div>
 
@@ -747,11 +758,11 @@
         <div class="space-y-3">
           <h4 class="text-white font-bold text-sm tracking-wider uppercase">Company</h4>
           <ul class="space-y-2 text-xs">
-            <li><a href="about.html" class="hover:text-orange-400 transition-colors">About Us</a></li>
-            <li><a href="projects.html" class="hover:text-orange-400 transition-colors">Our Projects</a></li>
-            <li><a href="packages.html" class="hover:text-orange-400 transition-colors">Construction Packages</a></li>
-            <li><a href="calculator.html" class="hover:text-orange-400 transition-colors">Cost Calculator</a></li>
-            <li><a href="contact.html" class="hover:text-orange-400 transition-colors">Contact Us</a></li>
+            <li><a href="about.php" class="hover:text-orange-400 transition-colors">About Us</a></li>
+            <li><a href="projects.php" class="hover:text-orange-400 transition-colors">Our Projects</a></li>
+            <li><a href="packages.php" class="hover:text-orange-400 transition-colors">Construction Packages</a></li>
+            <li><a href="calculator.php" class="hover:text-orange-400 transition-colors">Cost Calculator</a></li>
+            <li><a href="contact.php" class="hover:text-orange-400 transition-colors">Contact Us</a></li>
           </ul>
         </div>
 

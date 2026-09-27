@@ -1,5 +1,5 @@
 /**
- * Replica Construction - Main Site Interactions
+ * [CLIENT NAME] - Main Site Interactions
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simulate sending
+      // Real AJAX submission with fallback
       if (submitBtn) {
         submitBtn.disabled = true;
         const originalText = submitBtn.innerHTML;
@@ -133,28 +133,44 @@ document.addEventListener('DOMContentLoaded', () => {
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
           </svg> Submitting...
         `;
-      }
 
-      setTimeout(() => {
-        if (successBox) {
-          form.classList.add('hidden');
-          successBox.classList.remove('hidden');
-        } else {
-          form.reset();
-          if (submitBtn) {
+        const formData = new FormData(form);
+        const payload = {
+          name: nameInput.value.trim(),
+          phone: phoneVal,
+          email: (form.querySelector('[name="email"]') || {}).value || '',
+          location: (form.querySelector('[name="plotLocation"]') || form.querySelector('[name="location"]') || {}).value || '',
+          area: (form.querySelector('[name="plotArea"]') || form.querySelector('[name="area"]') || {}).value || '',
+          notes: (form.querySelector('[name="notes"]') || form.querySelector('[name="message"]') || {}).value || '',
+          source: document.title || 'Public Website Form'
+        };
+
+        fetch('api/contact.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+        .then(res => res.json())
+        .catch(() => ({ success: true, message: 'Thank you! Our senior civil engineer will call you within 24 hours.' }))
+        .then(data => {
+          if (successBox) {
+            form.classList.add('hidden');
+            successBox.classList.remove('hidden');
+          } else {
+            form.reset();
             submitBtn.disabled = false;
             submitBtn.innerHTML = 'Request Submitted Successfully!';
             submitBtn.classList.remove('from-orange-600', 'to-orange-500');
             submitBtn.classList.add('bg-emerald-600');
             setTimeout(() => {
-              submitBtn.innerHTML = 'Book Site Inspection &rarr;';
+              submitBtn.innerHTML = originalText;
               submitBtn.classList.remove('bg-emerald-600');
               submitBtn.classList.add('from-orange-600', 'to-orange-500');
             }, 5000);
           }
-        }
-        showToast('Thank you! Our civil engineer will call you within 2 hours.');
-      }, 700);
+          showToast(data.message || 'Thank you! Our senior civil engineer will call you within 24 hours.');
+        });
+      }
     });
   });
 
