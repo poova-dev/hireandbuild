@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 90" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A3C" />
+      <stop offset="50%" stop-color="#FF5E14" />
+      <stop offset="100%" stop-color="#D94E0F" />
+    </linearGradient>
+    <linearGradient id="hbRoof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF965B" />
+      <stop offset="100%" stop-color="#FF5E14" />
+    </linearGradient>
+  </defs>
+
+  <!-- Geometric Construction Logo Mark -->
+  <g transform="translate(10, 10)">
+    <!-- Base Foundation & Pillars -->
+    <rect x="12" y="38" width="12" height="30" rx="3" fill="url(#hbGrad)" />
+    <rect x="28" y="24" width="12" height="44" rx="3" fill="url(#hbGrad)" />
+    <rect x="44" y="12" width="12" height="56" rx="3" fill="#0F172A" />
+    
+    <!-- Angled Roof Beam -->
+    <path d="M4 38 L48 4 L56 12 L12 46 Z" fill="url(#hbRoof)" />
+    <circle cx="50" cy="10" r="4.5" fill="#FF5E14" />
+    
+    <!-- Accent Line -->
+    <rect x="6" y="66" width="56" height="4" rx="2" fill="#E85D04" />
+  </g>
+
+  <!-- Typography: REPLICA -->
+  <text x="82" y="47" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#0F172A" letter-spacing="-0.5px">
+    REPLICA
+  </text>
+  
+  <!-- Subtitle Tagline: CONSTRUCTION & BUILD -->
+  <rect x="83" y="55" width="220" height="18" rx="4" fill="#FFF4EE" />
+  <text x="91" y="68" font-family="'Poppins', sans-serif" font-size="10.5" font-weight="800" fill="#E85D04" letter-spacing="2.8px">
+    CONSTRUCTION &middot; CHENNAI
+  </text>
+</svg>

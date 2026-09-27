@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Replica Construction - Custom Enhancements & Animations
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+:root {
+  --brand-orange: #FF5E14;
+  --brand-orange-dark: #E85D04;
+  --brand-dark: #0F172A;
+  --brand-darker: #0B1120;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Ticker Marquee Animation */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker 35s linear infinite;
+}
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+/* Partner Logo Infinite Marquee */
+@keyframes marqueeLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 30s linear infinite;
+}
+.animate-marquee-left:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marqueeRight 30s linear infinite;
+}
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* Hero Badge Pulse */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+.pulse-badge {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
+
+/* Accordion Smooth Height Transition */
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+  opacity: 0;
+}
+.accordion-content.active {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.accordion-inner {
+  overflow: hidden;
+}
+
+/* Card Hover 3D Shift */
+.card-hover-lift {
+  transition: transform 0.28s cubic-bezier(0.34, 1.2, 0.64, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+}
+.card-hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px -10px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(255, 94, 20, 0.15);
+}
+
+/* Lead Form Micro Styles */
+.form-input-focus {
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.form-input-focus:focus {
+  outline: none;
+  border-color: #FF5E14;
+  box-shadow: 0 0 0 3px rgba(255, 94, 20, 0.14);
+  background-color: #FFFFFF;
+}
+
+/* Print Styles for Estimation Report */
+@media print {
+  header, footer, .no-print, .hb-strip, #whatsapp-bubble, .scroll-to-top {
+    display: none !important;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .card, .phase-card, .dtbl-card {
+    border: 1px solid #CBD5E1 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+}
