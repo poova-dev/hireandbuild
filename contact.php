@@ -14,8 +14,8 @@ require_once __DIR__ . '/includes/schema.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Book Free Site Visit in Chennai | Replica Architects & Builders</title>
-  <meta name="description" content="Contact Replica Architects & Builders Chennai. Book a free plot inspection, schedule a studio consultation at 116/A Big Street, Pattukkottai, or call +91 99943 99933 for an instant sq.ft estimate.">
+  <title>Contact Us - Book Free Site Visit in Pattukkottai | Replica Architects &amp; Builders</title>
+  <meta name="description" content="Contact Replica Architects &amp; Builders in Pattukkottai. Book a free plot inspection, schedule a studio consultation at 116/A Big Street, Pattukkottai, or call +91 99943 99933 for an instant sq.ft estimate.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Tailwind CSS CDN v3 -->
