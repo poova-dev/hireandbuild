@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - About Page (Server-Side Rendered)
+ * Replica Architects & Builders - About Page (Server-Side Rendered)
  * Environment: Apache / XAMPP / Hostinger
  */
 require_once __DIR__ . '/includes/config.php';
@@ -14,8 +14,8 @@ require_once __DIR__ . '/includes/schema.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Built to Keep Promises | [CLIENT NAME] Chennai</title>
-  <meta name="description" content="Discover [CLIENT NAME]'s journey. 400+ homes delivered across Chennai, 15-year structural warranty, dedicated site engineers, and our founder's personal handover promise.">
+  <title>About Us - Built to Keep Promises | Replica Architects & Builders Chennai</title>
+  <meta name="description" content="Discover Replica Architects & Builders's journey. 400+ homes delivered across Chennai, 15-year structural warranty, dedicated site engineers, and our founder's personal handover promise.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Tailwind CSS CDN v3 -->
@@ -73,7 +73,7 @@ require_once __DIR__ . '/includes/schema.php';
       <div class="flex items-center justify-between h-20">
         <a href="index.php" class="flex items-center gap-3">
           <div class="w-44 sm:w-52 h-auto">
-            <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="w-full h-auto">
+            <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="w-full h-auto">
           </div>
         </a>
 
@@ -91,7 +91,7 @@ require_once __DIR__ . '/includes/schema.php';
         </nav>
 
         <div class="hidden sm:flex items-center space-x-3">
-          <a href="tel:+917200472008" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
+          <a href="tel:+919994399933" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
             <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span>Call Now</span>
           </a>
@@ -112,7 +112,7 @@ require_once __DIR__ . '/includes/schema.php';
   <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto">
     <div class="p-6">
       <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-        <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="h-8 w-auto">
+        <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-8 w-auto">
         <button id="mobile-close-btn" class="p-2 text-slate-400 hover:text-slate-700" aria-label="Close Menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
@@ -131,9 +131,9 @@ require_once __DIR__ . '/includes/schema.php';
       </nav>
     </div>
     <div class="p-6 bg-slate-50 border-t border-slate-100 space-y-3">
-      <a href="tel:+917200472008" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-800 shadow-sm">
+      <a href="tel:+919994399933" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-800 shadow-sm">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-        <span>+91 72004 72008</span>
+        <span>+91 99943 99933</span>
       </a>
       <a href="calculator.php" class="flex items-center justify-center w-full py-3 rounded-xl bg-orange-600 text-white text-sm font-bold shadow-md hover:bg-orange-700 transition-colors">
         Instant Cost Calculator
@@ -154,7 +154,7 @@ require_once __DIR__ . '/includes/schema.php';
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-bold tracking-wide uppercase">
             <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            Chennai's Most Trusted Builder
+            Pattukkottai &amp; Tamil Nadu's Trusted Builders
           </div>
 
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white">
@@ -163,7 +163,7 @@ require_once __DIR__ . '/includes/schema.php';
           </h1>
 
           <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
-            [CLIENT NAME] was founded with a singular conviction: constructing a home in Chennai should be an empowering, transparent, and joyful journey &mdash; not a battle of escalating budgets and broken contractor promises.
+            Replica Architects &amp; Builders was founded with a singular conviction: constructing a home in Pattukkottai and across Tamil Nadu should be an empowering, transparent, and joyful journey &mdash; not a battle of escalating budgets and broken contractor promises.
           </p>
 
           <!-- Core Stat Cards -->
@@ -190,7 +190,7 @@ require_once __DIR__ . '/includes/schema.php';
         <!-- Right Hero Image Card -->
         <div class="lg:col-span-5">
           <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="[CLIENT NAME] site engineer on-site" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Replica Architects & Builders site engineer on-site" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6 text-white space-y-1">
               <div class="inline-block bg-orange-600 text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full mb-1">
@@ -216,7 +216,7 @@ require_once __DIR__ . '/includes/schema.php';
         <div class="lg:col-span-6">
           <div class="relative">
             <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="[CLIENT NAME] Founder at Handover Ceremony" class="w-full h-[450px] object-cover">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Replica Architects & Builders Founder at Handover Ceremony" class="w-full h-[450px] object-cover">
             </div>
             <!-- Floating Badge -->
             <div class="absolute -bottom-6 -right-4 sm:bottom-6 sm:-right-6 bg-slate-900 text-white p-5 rounded-2xl shadow-2xl border border-slate-800 max-w-xs">
@@ -235,22 +235,216 @@ require_once __DIR__ . '/includes/schema.php';
           </h2>
           <div class="space-y-4 text-sm text-slate-600 leading-relaxed font-light">
             <p>
-              Growing up in Chennai, we watched families pour their life savings into plots, only to spend months stressed over contractor delays, poor cement-sand ratios, and unforeseen extra expenses.
+              Practicing across Tamil Nadu, we watched families pour their life savings into plots, only to spend months stressed over contractor delays, poor cement-sand ratios, and unforeseen extra expenses.
             </p>
             <p>
-              [CLIENT NAME] was built specifically to rewrite this narrative. We replaced informal estimates with legally binding BOQ specification sheets. We replaced absent supervisors with full-time degree civil engineers. And we replaced excuses with a legally enforceable 15-year structural warranty.
+              Replica Architects & Builders was built specifically to rewrite this narrative. We replaced informal estimates with legally binding BOQ specification sheets. We replaced absent supervisors with full-time degree civil engineers. And we replaced excuses with a legally enforceable 15-year structural warranty.
             </p>
             <p class="font-medium text-slate-800">
               When your home is complete, our founder personally visits your auspicious Grihapravesam to hand you the keys, pooja gifts, and your complete as-built structural warranty documentation.
             </p>
           </div>
           <div class="pt-2 flex items-center gap-4">
-            <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="h-8 w-auto">
+            <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-8 w-auto">
             <div class="h-6 w-px bg-slate-200"></div>
             <div class="text-xs text-slate-500 font-semibold">
-              [CLIENT NAME] Leadership Team
+              Replica Architects & Builders Leadership Team
             </div>
           </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       KEY PEOPLE & LEADERSHIP
+       ========================================================================= -->
+  <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#E5A93C_1px,transparent_1px)] [background-size:24px_24px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wider">
+          Leadership &amp; Vision
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+          The Minds Behind <span class="text-amber-400">Replica Architects &amp; Builders</span>
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+          Combining structural civil engineering rigor with avant-garde architectural vision to deliver iconic residential and commercial landmarks across Pattukkottai and Tamil Nadu.
+        </p>
+      </div>
+
+      <!-- Leaders Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Er. Vikash Quaid -->
+        <div class="rounded-3xl bg-slate-800/80 border border-slate-700/80 p-8 flex flex-col justify-between hover:border-amber-500/50 transition-all duration-300 shadow-xl group">
+          <div class="space-y-5">
+            <div class="flex items-center gap-5">
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg shrink-0 group-hover:scale-105 transition-transform">
+                VQ
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white"><?= FOUNDER_NAME ?></h3>
+                <div class="text-amber-400 text-xs font-semibold uppercase tracking-wider mt-0.5"><?= FOUNDER_TITLE ?></div>
+                <div class="text-xs text-slate-400 mt-1">Replica Architects &amp; Builders (RAB)</div>
+              </div>
+            </div>
+
+            <p class="text-sm text-slate-300 leading-relaxed font-light">
+              Spearheading structural engineering excellence, turnkey execution, and zero-cost-escalation guarantees. Er. Vikash Quaid oversees site-level civil perfection, ensuring that every foundation, RCC column, and finish meets the highest standards.
+            </p>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-700 flex items-center justify-between">
+            <a href="<?= FOUNDER_IG_URL ?>" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1018.6 12 6.6 6.6 0 0012 5.4zm0 10.9A4.3 4.3 0 1116.3 12 4.3 4.3 0 0112 16.3zm6.9-11.1a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5z"/></svg>
+              <span>@vikash_quaid</span>
+            </a>
+            <span class="text-[11px] text-slate-500 font-medium">Site Engineering Lead</span>
+          </div>
+        </div>
+
+        <!-- Ar. Sanjana -->
+        <div class="rounded-3xl bg-slate-800/80 border border-slate-700/80 p-8 flex flex-col justify-between hover:border-amber-500/50 transition-all duration-300 shadow-xl group">
+          <div class="space-y-5">
+            <div class="flex items-center gap-5">
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-amber-400 to-amber-200 flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg shrink-0 group-hover:scale-105 transition-transform">
+                AS
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white"><?= ARCHITECT_NAME ?></h3>
+                <div class="text-amber-400 text-xs font-semibold uppercase tracking-wider mt-0.5"><?= ARCHITECT_TITLE ?></div>
+                <div class="text-xs text-slate-400 mt-1">Ar. Sanjana Studio</div>
+              </div>
+            </div>
+
+            <p class="text-sm text-slate-300 leading-relaxed font-light">
+              Crafting bespoke spatial experiences, modern tropical elevations, and holistic interior environments. Ar. Sanjana infuses contemporary form with contextual vernacular elegance, elevating everyday residential living into timeless design.
+            </p>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-700 flex items-center justify-between">
+            <a href="<?= ARCHITECT_IG_URL ?>" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1018.6 12 6.6 6.6 0 0012 5.4zm0 10.9A4.3 4.3 0 1116.3 12 4.3 4.3 0 0112 16.3zm6.9-11.1a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5z"/></svg>
+              <span>@ar.sanjanastudio</span>
+            </a>
+            <span class="text-[11px] text-slate-500 font-medium">Architectural Design Lead</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social Presence Strip -->
+      <div class="mt-12 p-6 rounded-2xl bg-slate-800/50 border border-slate-700/60 max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-6">
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-amber-400">Our Established Digital Footprint</div>
+          <p class="text-xs text-slate-400 mt-0.5">Explore our projects, video walkthroughs, and architectural works across platforms.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold">
+          <a href="<?= INSTAGRAM_URL ?>" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-gradient-to-r from-purple-600/30 to-pink-600/30 border border-pink-500/30 text-white hover:border-pink-500 transition-all">
+            <span class="text-pink-400 font-bold">Instagram</span>
+            <span class="bg-pink-500/20 text-pink-300 text-[10px] px-2 py-0.5 rounded-full font-bold">~14.7K Followers</span>
+          </a>
+          <a href="<?= FACEBOOK_URL ?>" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-blue-600/20 border border-blue-500/30 text-white hover:border-blue-500 transition-all">
+            <span class="text-blue-400 font-bold">Facebook</span>
+            <span class="bg-blue-500/20 text-blue-300 text-[10px] px-2 py-0.5 rounded-full font-bold">~4.5K Followers</span>
+          </a>
+          <a href="https://archello.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-700/60 border border-slate-600 text-slate-200 hover:border-amber-400 transition-all">
+            <span class="font-bold text-amber-400">Archello</span>
+            <span class="text-[10px] text-slate-400">Featured Portfolio</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       OUR 6 CORE SERVICES
+       ========================================================================= -->
+  <section class="py-20 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-600 text-xs font-bold uppercase tracking-wider">
+          Complete Turnkey Spectrum
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          End-to-End Architectural &amp; Building Services
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          From initial soil test and schematic blueprint to bespoke interiors and handover pooja &mdash; all handled in-house with zero subcontracted handoffs.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Architecture -->
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-orange-500/50 hover:bg-orange-50/20 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-orange-600 text-white flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-110 transition-transform">
+            01
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Architecture</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-light">
+            Conceptual design, 2D floor layouts, photorealistic 3D elevations, solar orientation analysis, and complete DTCP / municipal sanction drawings.
+          </p>
+        </div>
+
+        <!-- 2. Construction -->
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-orange-500/50 hover:bg-orange-50/20 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-orange-600 text-white flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-110 transition-transform">
+            02
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Construction</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-light">
+            Turnkey RCC civil execution with ISI branded cement (Ultratech/Coromandel), 550D TMT steel, precision blockwork, and 15-year structural warranty.
+          </p>
+        </div>
+
+        <!-- 3. Interior Design -->
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-orange-500/50 hover:bg-orange-50/20 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-orange-600 text-white flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-110 transition-transform">
+            03
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Interior Design</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-light">
+            Custom modular kitchens, wardrobe systems, false ceilings, mood lighting, acoustic panels, and tailored furnishings designed by Ar. Sanjana Studio.
+          </p>
+        </div>
+
+        <!-- 4. Landscape Design -->
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-orange-500/50 hover:bg-orange-50/20 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-orange-600 text-white flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-110 transition-transform">
+            04
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Landscape Design</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-light">
+            Terrace gardens, courtyard green pockets, hardscaping, water features, ambient outdoor lighting, and sustainable drainage planning.
+          </p>
+        </div>
+
+        <!-- 5. Renovation -->
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-orange-500/50 hover:bg-orange-50/20 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-orange-600 text-white flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-110 transition-transform">
+            05
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Renovation</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-light">
+            Structural retrofitting, vertical floor additions, facade rejuvenation, plumbing/electrical overhaul, and layout modernization for older homes.
+          </p>
+        </div>
+
+        <!-- 6. Project Consultation -->
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-orange-500/50 hover:bg-orange-50/20 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-orange-600 text-white flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-110 transition-transform">
+            06
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Project Consultation</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-light">
+            Plot feasibility reports, structural health audits, detailed BOQ estimation, Vaastu compliance consultation, and government sanction guidance.
+          </p>
         </div>
 
       </div>
@@ -271,7 +465,7 @@ require_once __DIR__ . '/includes/schema.php';
           </div>
           <h3 class="text-xl font-bold text-slate-900">Our Mission</h3>
           <p class="text-sm text-slate-600 leading-relaxed font-light">
-            To eliminate construction anxiety for every plot owner in Chennai through total transparency, fixed-cost contracts, uncompromising material standards, and on-time milestone delivery.
+            To eliminate construction anxiety for every plot owner across Pattukkottai and Tamil Nadu through total transparency, fixed-cost contracts, uncompromising material standards, and on-time milestone delivery.
           </p>
         </div>
 
@@ -298,7 +492,7 @@ require_once __DIR__ . '/includes/schema.php';
       <div class="text-center max-w-3xl mx-auto space-y-3">
         <span class="text-orange-600 font-bold text-xs uppercase tracking-wider">Engineering Integrity</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-          The 6 Pillars That Power Every [CLIENT NAME]
+          The 6 Pillars That Power Every Replica Architects & Builders
         </h2>
         <p class="text-sm text-slate-600 leading-relaxed">
           How we have maintained a 100% on-time completion record and zero legal disputes across 400+ homes in Chennai.
@@ -371,15 +565,15 @@ require_once __DIR__ . '/includes/schema.php';
   <div class="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-600 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
       <div>
-        <h3 class="text-2xl sm:text-3xl font-black tracking-tight">Meet our engineers at our Nolambur office</h3>
+        <h3 class="text-2xl sm:text-3xl font-black tracking-tight">Meet our team at our Pattukkottai office</h3>
         <p class="text-orange-100 text-sm mt-1">Bring your plot sketch or title deed copy for a free structural consultation.</p>
       </div>
       <div class="flex flex-wrap items-center justify-center gap-3">
         <a href="contact.php" class="bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-all">
           Book Office Consultation &rarr;
         </a>
-        <a href="tel:+917200472008" class="bg-slate-900 hover:bg-black text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-all">
-          Call 72004 72008
+        <a href="tel:+919994399933" class="bg-slate-900 hover:bg-black text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-all">
+          Call 99943 99933
         </a>
       </div>
     </div>
@@ -394,7 +588,7 @@ require_once __DIR__ . '/includes/schema.php';
         
         <!-- Brand Info -->
         <div class="lg:col-span-2 space-y-4">
-          <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="h-10 w-auto brightness-0 invert">
+          <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
             Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
           </p>
@@ -441,15 +635,15 @@ require_once __DIR__ . '/includes/schema.php';
           <ul class="space-y-2 text-xs">
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>Nolambur Phase II, Mogappair West, Chennai, Tamil Nadu 600037</span>
+              <span>116/A, Big Street, Pattukkottai, Tamil Nadu – 614601</span>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <a href="tel:+917200472008" class="hover:text-white font-semibold">+91 72004 72008</a>
+              <a href="tel:+919994399933" class="hover:text-white font-semibold">+91 99943 99933</a>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="mailto:info@clientname.com" class="hover:text-white">info@clientname.com</a>
+              <a href="mailto:planbyreplica@gmail.com" class="hover:text-white">planbyreplica@gmail.com</a>
             </li>
             <li class="flex items-center gap-2 text-slate-400">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -463,7 +657,7 @@ require_once __DIR__ . '/includes/schema.php';
       <!-- Legal Bottom Bar -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <div>
-          &copy; <span class="dynamic-year">2026</span> [CLIENT NAME]. All rights reserved.
+          &copy; <span class="dynamic-year">2026</span> Replica Architects & Builders. All rights reserved.
         </div>
         <div class="flex items-center space-x-6">
           <a href="#" class="hover:text-slate-400">Privacy Policy</a>
@@ -475,7 +669,7 @@ require_once __DIR__ . '/includes/schema.php';
   </footer>
 
   <!-- Floating WhatsApp Action Button -->
-  <a href="https://wa.me/917200472008" target="_blank" rel="noopener" id="whatsapp-bubble" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110" aria-label="Chat with [CLIENT NAME] on WhatsApp">
+  <a href="https://wa.me/919994399933" target="_blank" rel="noopener" id="whatsapp-bubble" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110" aria-label="Chat with Replica Architects & Builders on WhatsApp">
     <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.523 5.855L.057 23.617a.75.75 0 00.921.921l5.79-1.479A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.67-.513-5.193-1.408l-.371-.22-3.841.981.999-3.808-.242-.387A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
   </a>
 

@@ -1,5 +1,5 @@
 /**
- * [CLIENT NAME] - Main Site Interactions
+ * Replica Architects & Builders - Main Site Interactions
  */
 
 document.addEventListener('DOMContentLoaded', () => {

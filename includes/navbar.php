@@ -12,19 +12,7 @@ $currentPage = $currentPage ?? 'home';
 
       <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="flex items-center gap-3 shrink-0 group focus:outline-none">
-        <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-brand-700 to-brand flex items-center justify-center text-white shadow-md shadow-brand/20 group-hover:scale-105 transition-transform">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
-          </svg>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-heading font-extrabold text-xl text-slate-900 tracking-tight leading-none">
-            HIRE<span class="text-brand">&amp;</span>BUILD
-          </span>
-          <span class="text-[9px] uppercase tracking-widest font-semibold text-slate-500 mt-1">
-            Construction Company
-          </span>
-        </div>
+        <img src="<?= site_url('assets/images/logo.svg') ?>" alt="Replica Architects &amp; Builders" class="h-10 sm:h-12 w-auto group-hover:opacity-90 transition-opacity">
       </a>
 
       <!-- Desktop Navigation Links -->
@@ -181,7 +169,7 @@ $currentPage = $currentPage ?? 'home';
       </a>
       <a href="tel:<?= SITE_PHONE_RAW ?>" class="w-full text-center py-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-sm flex items-center justify-center gap-2">
         <svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-        <span>Call +91 72004 72008</span>
+        <span>Call +91 99943 99933</span>
       </a>
     </div>
   </div>

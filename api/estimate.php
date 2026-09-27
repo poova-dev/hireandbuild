@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - API Endpoint: Store Construction Calculator Estimates
+ * Replica Architects & Builders - API Endpoint: Store Construction Calculator Estimates
  * Accepts detailed calculation states from calculator.js
  */
 

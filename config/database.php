@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Database Connection Configuration
+ * Replica Architects & Builders - Database Connection Configuration
  * PDO database connection manager with graceful failure handling.
  */
 

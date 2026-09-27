@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Contact Page (Server-Side Rendered)
+ * Replica Architects & Builders - Contact Page (Server-Side Rendered)
  * Environment: Apache / XAMPP / Hostinger
  */
 require_once __DIR__ . '/includes/config.php';
@@ -14,8 +14,8 @@ require_once __DIR__ . '/includes/schema.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Book Free Site Visit in Chennai | [CLIENT NAME]</title>
-  <meta name="description" content="Contact [CLIENT NAME] Chennai. Book a free plot inspection, schedule an office consultation in Nolambur / Mogappair West, or call +91 72004 72008 for an instant sq.ft estimate.">
+  <title>Contact Us - Book Free Site Visit in Chennai | Replica Architects & Builders</title>
+  <meta name="description" content="Contact Replica Architects & Builders Chennai. Book a free plot inspection, schedule a studio consultation at 116/A Big Street, Pattukkottai, or call +91 99943 99933 for an instant sq.ft estimate.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Tailwind CSS CDN v3 -->
@@ -73,7 +73,7 @@ require_once __DIR__ . '/includes/schema.php';
       <div class="flex items-center justify-between h-20">
         <a href="index.php" class="flex items-center gap-3">
           <div class="w-44 sm:w-52 h-auto">
-            <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="w-full h-auto">
+            <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="w-full h-auto">
           </div>
         </a>
 
@@ -91,7 +91,7 @@ require_once __DIR__ . '/includes/schema.php';
         </nav>
 
         <div class="hidden sm:flex items-center space-x-3">
-          <a href="tel:+917200472008" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
+          <a href="tel:+919994399933" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
             <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span>Call Now</span>
           </a>
@@ -112,7 +112,7 @@ require_once __DIR__ . '/includes/schema.php';
   <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto">
     <div class="p-6">
       <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-        <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="h-8 w-auto">
+        <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-8 w-auto">
         <button id="mobile-close-btn" class="p-2 text-slate-400 hover:text-slate-700" aria-label="Close Menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
@@ -131,9 +131,9 @@ require_once __DIR__ . '/includes/schema.php';
       </nav>
     </div>
     <div class="p-6 bg-slate-50 border-t border-slate-100 space-y-3">
-      <a href="tel:+917200472008" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-800 shadow-sm">
+      <a href="tel:+919994399933" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-800 shadow-sm">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-        <span>+91 72004 72008</span>
+        <span>+91 99943 99933</span>
       </a>
       <a href="calculator.php" class="flex items-center justify-center w-full py-3 rounded-xl bg-orange-600 text-white text-sm font-bold shadow-md hover:bg-orange-700 transition-colors">
         Instant Cost Calculator
@@ -151,10 +151,10 @@ require_once __DIR__ . '/includes/schema.php';
         Let's Connect
       </div>
       <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
-        Connect With Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-400">Civil Engineers</span> in Chennai
+        Connect With Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-400">Architects &amp; Builders</span> in Pattukkottai
       </h1>
       <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
-        Have a plot in Chennai? Schedule a complimentary on-site boundary inspection, visit our Nolambur design studio, or request a customized BOQ.
+        Have a plot in Pattukkottai, Thanjavur, or anywhere across Tamil Nadu? Schedule a complimentary on-site inspection, visit our design studio, or request a customized BOQ.
       </p>
     </div>
   </section>
@@ -167,42 +167,42 @@ require_once __DIR__ . '/includes/schema.php';
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- Phone -->
-        <a href="tel:+917200472008" class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-orange-500/40 hover:bg-orange-50/20 transition-all flex flex-col justify-between group">
+        <a href="tel:+919994399933" class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-orange-500/40 hover:bg-orange-50/20 transition-all flex flex-col justify-between group">
           <div class="space-y-3">
             <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             </div>
             <div>
               <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Direct Hotline</div>
-              <div class="text-base font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors">+91 72004 72008</div>
+              <div class="text-base font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors">+91 99943 99933</div>
             </div>
           </div>
           <span class="text-xs font-bold text-orange-600 mt-4 inline-flex items-center gap-1">Tap to call &rarr;</span>
         </a>
 
         <!-- WhatsApp -->
-        <a href="https://wa.me/917200472008" target="_blank" rel="noopener" class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-500/40 hover:bg-emerald-50/20 transition-all flex flex-col justify-between group">
+        <a href="https://wa.me/919994399933" target="_blank" rel="noopener" class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-500/40 hover:bg-emerald-50/20 transition-all flex flex-col justify-between group">
           <div class="space-y-3">
             <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.523 5.855L.057 23.617a.75.75 0 00.921.921l5.79-1.479A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.67-.513-5.193-1.408l-.371-.22-3.841.981.999-3.808-.242-.387A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
             </div>
             <div>
               <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">WhatsApp Engineer</div>
-              <div class="text-base font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors">+91 72004 72008</div>
+              <div class="text-base font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors">+91 99943 99933</div>
             </div>
           </div>
           <span class="text-xs font-bold text-emerald-600 mt-4 inline-flex items-center gap-1">Chat on WhatsApp &rarr;</span>
         </a>
 
         <!-- Email -->
-        <a href="mailto:info@clientname.com" class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-500/40 hover:bg-blue-50/20 transition-all flex flex-col justify-between group">
+        <a href="mailto:planbyreplica@gmail.com" class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-500/40 hover:bg-blue-50/20 transition-all flex flex-col justify-between group">
           <div class="space-y-3">
             <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
             <div>
               <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Email Plans</div>
-              <div class="text-xs font-bold text-slate-900 truncate group-hover:text-blue-600 transition-colors">info@clientname.com</div>
+              <div class="text-xs font-bold text-slate-900 truncate group-hover:text-blue-600 transition-colors">planbyreplica@gmail.com</div>
             </div>
           </div>
           <span class="text-xs font-bold text-blue-600 mt-4 inline-flex items-center gap-1">Send your drawings &rarr;</span>
@@ -216,7 +216,7 @@ require_once __DIR__ . '/includes/schema.php';
             </div>
             <div>
               <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Design Studio</div>
-              <div class="text-xs font-semibold text-slate-800 leading-tight">Nolambur Phase II, Mogappair West, Chennai 600037</div>
+              <div class="text-xs font-semibold text-slate-800 leading-tight">116/A, Big Street, Pattukkottai, Tamil Nadu – 614601</div>
             </div>
           </div>
           <span class="text-xs font-semibold text-slate-500 mt-4">Mon &ndash; Sat, 10 AM &ndash; 7 PM</span>
@@ -306,14 +306,14 @@ require_once __DIR__ . '/includes/schema.php';
           
           <!-- Office Box -->
           <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-md space-y-6">
-            <h3 class="text-xl font-bold text-slate-900">Chennai Head Office</h3>
+            <h3 class="text-xl font-bold text-slate-900">Pattukkottai Head Office &amp; Design Studio</h3>
             
             <div class="space-y-4 text-sm text-slate-600">
               <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                 <div>
-                  <strong class="text-slate-900 block font-bold">[CLIENT NAME]</strong>
-                  <span>Plot No. 14, Nolambur Phase II, Mogappair West, Chennai, Tamil Nadu 600037</span>
+                  <strong class="text-slate-900 block font-bold">Replica Architects &amp; Builders (RAB)</strong>
+                  <span>116/A, Big Street, Pattukkottai, Tamil Nadu – 614601</span>
                 </div>
               </div>
 
@@ -328,8 +328,8 @@ require_once __DIR__ . '/includes/schema.php';
               <div class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                 <div>
-                  <strong class="text-slate-900 block font-bold">Direct Phone</strong>
-                  <a href="tel:+917200472008" class="text-orange-600 font-bold hover:underline">+91 72004 72008</a>
+                  <strong class="text-slate-900 block font-bold">Direct Phone / WhatsApp</strong>
+                  <a href="tel:+919994399933" class="text-orange-600 font-bold hover:underline">+91 99943 99933</a>
                 </div>
               </div>
             </div>
@@ -340,9 +340,9 @@ require_once __DIR__ . '/includes/schema.php';
                 <div class="w-10 h-10 rounded-full bg-orange-600 text-white flex items-center justify-center mx-auto shadow-md">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
                 </div>
-                <div class="text-xs font-bold text-slate-800">Nolambur Phase II Studio</div>
-                <div class="text-[11px] text-slate-500">Easily accessible from Chennai Bypass & Poonamallee High Rd</div>
-                <a href="https://maps.google.com/?q=Nolambur+Chennai" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[11px] font-bold text-orange-600 hover:text-orange-700 pt-1">
+                <div class="text-xs font-bold text-slate-800">116/A, Big Street, Pattukkottai</div>
+                <div class="text-[11px] text-slate-500">Centrally located &middot; Tamil Nadu &ndash; 614601</div>
+                <a href="https://maps.google.com/?q=116/A+Big+Street+Pattukkottai+Tamil+Nadu+614601" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[11px] font-bold text-orange-600 hover:text-orange-700 pt-1">
                   Open In Google Maps &rarr;
                 </a>
               </div>
@@ -374,7 +374,7 @@ require_once __DIR__ . '/includes/schema.php';
         <span class="text-orange-600 font-bold text-xs uppercase tracking-wider">Service Coverage</span>
         <h3 class="text-2xl font-extrabold text-slate-900">Serving Chennai & All Peripheral Hubs</h3>
         <p class="text-xs text-slate-500">
-          [CLIENT NAME] has active sites and delivered homes across 4 primary geographic zones:
+          Replica Architects & Builders has active sites and delivered homes across 4 primary geographic zones:
         </p>
       </div>
 
@@ -382,7 +382,7 @@ require_once __DIR__ . '/includes/schema.php';
         <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
           <strong class="text-slate-900 font-bold text-sm block mb-2 text-orange-600">Chennai West</strong>
           <p class="text-slate-600 leading-relaxed">
-            Mogappair, Nolambur, Porur, Poonamallee, Ambattur, Avadi, Vanagaram, Iyyappanthangal, Kundrathur, Mangadu.
+            Pattukkottai, Thanjavur, Kumbakonam, Mannargudi, Peravurani, Pudukkottai, Trichy, and across Tamil Nadu.
           </p>
         </div>
 
@@ -439,7 +439,7 @@ require_once __DIR__ . '/includes/schema.php';
         
         <!-- Brand Info -->
         <div class="lg:col-span-2 space-y-4">
-          <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="h-10 w-auto brightness-0 invert">
+          <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
             Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
           </p>
@@ -486,15 +486,15 @@ require_once __DIR__ . '/includes/schema.php';
           <ul class="space-y-2 text-xs">
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>Nolambur Phase II, Mogappair West, Chennai, Tamil Nadu 600037</span>
+              <span>116/A, Big Street, Pattukkottai, Tamil Nadu – 614601</span>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <a href="tel:+917200472008" class="hover:text-white font-semibold">+91 72004 72008</a>
+              <a href="tel:+919994399933" class="hover:text-white font-semibold">+91 99943 99933</a>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="mailto:info@clientname.com" class="hover:text-white">info@clientname.com</a>
+              <a href="mailto:planbyreplica@gmail.com" class="hover:text-white">planbyreplica@gmail.com</a>
             </li>
             <li class="flex items-center gap-2 text-slate-400">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -508,7 +508,7 @@ require_once __DIR__ . '/includes/schema.php';
       <!-- Legal Bottom Bar -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <div>
-          &copy; <span class="dynamic-year">2026</span> [CLIENT NAME]. All rights reserved.
+          &copy; <span class="dynamic-year">2026</span> Replica Architects & Builders. All rights reserved.
         </div>
         <div class="flex items-center space-x-6">
           <a href="#" class="hover:text-slate-400">Privacy Policy</a>
@@ -520,7 +520,7 @@ require_once __DIR__ . '/includes/schema.php';
   </footer>
 
   <!-- Floating WhatsApp Action Button -->
-  <a href="https://wa.me/917200472008" target="_blank" rel="noopener" id="whatsapp-bubble" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110" aria-label="Chat with [CLIENT NAME] on WhatsApp">
+  <a href="https://wa.me/919994399933" target="_blank" rel="noopener" id="whatsapp-bubble" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110" aria-label="Chat with Replica Architects & Builders on WhatsApp">
     <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.523 5.855L.057 23.617a.75.75 0 00.921.921l5.79-1.479A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.67-.513-5.193-1.408l-.371-.22-3.841.981.999-3.808-.242-.387A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
   </a>
 

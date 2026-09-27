@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Admin Dashboard Console
+ * Replica Architects & Builders - Admin Dashboard Console
  * Management of Leads, Cost Calculator Runs, and Site Visits
  */
 
@@ -69,7 +69,7 @@ if (empty($recentEstimates)) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard | [CLIENT NAME] Construction</title>
+  <title>Admin Dashboard | Replica Architects & Builders Construction</title>
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -111,7 +111,7 @@ if (empty($recentEstimates)) {
             C
           </div>
           <div>
-            <span class="font-display font-bold text-base text-white tracking-tight">[CLIENT NAME]</span>
+            <span class="font-display font-bold text-base text-white tracking-tight">Replica Architects & Builders</span>
             <span class="text-[10px] bg-brand-orange/20 text-brand-orange px-2 py-0.5 rounded font-semibold ml-2 uppercase">Console</span>
           </div>
         </div>
@@ -132,7 +132,7 @@ if (empty($recentEstimates)) {
           <div class="flex items-center gap-3 pl-2 border-l border-slate-700">
             <div class="text-right hidden sm:block">
               <div class="text-xs font-semibold text-white"><?= htmlspecialchars($adminUser['full_name'] ?? 'Admin') ?></div>
-              <div class="text-[10px] text-slate-400"><?= htmlspecialchars($adminUser['email'] ?? 'admin@clientname.com') ?></div>
+              <div class="text-[10px] text-slate-400"><?= htmlspecialchars($adminUser['email'] ?? 'admin@replica.com') ?></div>
             </div>
             <a href="logout.php" title="Sign Out" class="p-2 text-slate-400 hover:text-red-400 transition-colors">
               <i class="fa-solid fa-right-from-bracket text-base"></i>
@@ -339,7 +339,7 @@ if (empty($recentEstimates)) {
 
   <!-- Admin Footer -->
   <footer class="bg-slate-800 border-t border-slate-700/80 py-4 text-center text-xs text-slate-500">
-    [CLIENT NAME] Admin Console · Server: <?= php_uname('s') ?> · PHP <?= phpversion() ?>
+    Replica Architects & Builders Admin Console · Server: <?= php_uname('s') ?> · PHP <?= phpversion() ?>
   </footer>
 
 </body>

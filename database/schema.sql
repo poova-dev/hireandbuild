@@ -1,5 +1,5 @@
 -- ========================================================================
--- [CLIENT NAME] - Turnkey House Construction Web Platform
+-- Replica Architects & Builders - Turnkey House Construction Web Platform
 -- Database Schema for MySQL 5.7+ / 8.0+ / MariaDB
 -- Optimized for Apache / XAMPP / Hostinger phpMyAdmin
 -- ========================================================================
@@ -143,31 +143,34 @@ CREATE TABLE IF NOT EXISTS `settings` (
 -- Seed Initial Data
 -- ------------------------------------------------------------------------
 
--- Default Admin User: admin@clientname.com / Admin@2026
+-- Default Admin User: admin@replica.com / Admin@2026
 -- Password hash generated via password_hash('Admin@2026', PASSWORD_BCRYPT)
 INSERT INTO `admin_users` (`username`, `email`, `password_hash`, `full_name`, `role`) 
 VALUES (
   'admin',
-  'admin@clientname.com',
+  'admin@replica.com',
   '$2y$10$vY3ZtqFv7Kx5XfXqSOmhCe9VvY6gU7c.QvY3ZtqFv7Kx5XfXqSOmh',
-  'Principal Administrator',
+  'Er. Vikash Quaid',
   'super_admin'
 ) ON DUPLICATE KEY UPDATE `username` = `username`;
 
 -- Initial Website Settings
 INSERT INTO `settings` (`setting_key`, `setting_value`, `description`) VALUES
-('company_name', '[CLIENT NAME]', 'Official business brand name'),
-('brand_tagline', 'Turnkey House Construction Company in Chennai', 'Primary brand positioning statement'),
-('phone_primary', '+91 72004 72008', 'Primary contact phone number'),
-('phone_display', '+91 72004 72008', 'Phone display format'),
-('whatsapp_number', '917200472008', 'WhatsApp phone number with country code'),
-('email_support', 'info@clientname.com', 'Support email address'),
-('office_address', 'No. 42, Velachery Main Road, Guindy, Chennai, Tamil Nadu 600032', 'Physical office address'),
+('company_name', 'Replica Architects & Builders', 'Official business brand name'),
+('brand_tagline', 'Architecture, Turnkey Construction & Interior Design', 'Primary brand positioning statement'),
+('phone_primary', '+91 99943 99933', 'Primary contact phone number'),
+('phone_display', '+91 99943 99933', 'Phone display format'),
+('whatsapp_number', '919994399933', 'WhatsApp phone number with country code'),
+('email_support', 'planbyreplica@gmail.com', 'Support email address'),
+('office_address', '116/A, Big Street, Pattukkottai, Tamil Nadu – 614601', 'Physical office address'),
+('founder_name', 'Er. Vikash Quaid', 'Founder name'),
+('architect_name', 'Ar. Sanjana', 'Principal Architect'),
+('instagram_handle', '@replica_architects_n_builders', 'Official Instagram profile'),
 ('warranty_years', '15', 'Written structural warranty guarantee years'),
-('homes_delivered', '400+', 'Count of completed homes delivered'),
+('homes_delivered', '150+', 'Count of completed homes delivered'),
 ('quality_checks', '350+', 'Quality inspection points per project'),
 ('sqft_completed', '2,50,000+', 'Total square feet constructed'),
-('active_projects', '75+', 'Count of active projects under construction'),
+('active_projects', '25+', 'Count of active projects under construction'),
 ('cloudinary_cloud_name', '', 'Optional Cloudinary cloud name for remote media'),
 ('cloudinary_api_key', '', 'Optional Cloudinary API key'),
 ('cloudinary_upload_preset', '', 'Optional Cloudinary unsigned upload preset')

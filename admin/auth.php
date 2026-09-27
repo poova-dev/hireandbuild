@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Admin Authentication Guard
+ * Replica Architects & Builders - Admin Authentication Guard
  */
 
 require_once __DIR__ . '/../includes/config.php';

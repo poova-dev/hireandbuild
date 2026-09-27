@@ -1,6 +1,6 @@
-# [CLIENT NAME] - Turnkey House Construction Web Platform
+# Replica Architects & Builders - Turnkey House Construction Web Platform
 
-A production-grade web platform and interactive Construction Cost Calculator modeled after modern residential builders, branded for **[CLIENT NAME]** in Chennai.
+A production-grade web platform and interactive Construction Cost Calculator modeled after modern residential builders, branded for **Replica Architects & Builders** in Chennai.
 
 ---
 
@@ -59,8 +59,8 @@ A production-grade web platform and interactive Construction Cost Calculator mod
 │   │   ├── main.js                 # Drawer, accordions, AJAX form handler
 │   │   └── calculator.js           # 5-step Chennai cost calculation engine
 │   └── images/
-│       ├── logo.svg                # [CLIENT NAME] brand mark placeholder
-│       └── favicon.svg             # [CLIENT NAME] favicon
+│       ├── logo.svg                # Replica Architects & Builders brand mark placeholder
+│       └── favicon.svg             # Replica Architects & Builders favicon
 │
 └── README.md
 ```
@@ -79,4 +79,4 @@ Navigate to `http://localhost:8088`.
 1. Import `database/schema.sql` into MySQL / phpMyAdmin.
 2. Update database credentials in `includes/config.php`.
 3. Point your virtual host or Hostinger document root to this directory.
-4. Access Admin Panel at `/admin/` (Default: `admin@clientname.com` / `Admin@2026`).
+4. Access Admin Panel at `/admin/` (Default: `admin@replica.com` / `Admin@2026`).

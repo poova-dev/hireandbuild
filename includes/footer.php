@@ -38,16 +38,11 @@
       <!-- Column 1: Brand & Key Stats -->
       <div class="lg:col-span-2 space-y-4">
         <a href="<?= site_url() ?>" class="flex items-center gap-3">
-          <div class="w-9 h-9 rounded-lg bg-brand flex items-center justify-center text-white shadow-md">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-          </div>
-          <span class="font-heading font-extrabold text-xl text-white tracking-tight">
-            HIRE<span class="text-brand">&amp;</span>BUILD
-          </span>
+          <img src="<?= site_url('assets/images/logo.svg') ?>" alt="Replica Architects &amp; Builders" class="h-10 w-auto brightness-0 invert">
         </a>
 
         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
-          Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu and Thiruvallur.
+          Architecture, turnkey house construction, interior and landscape design across Pattukkottai, Thanjavur, and throughout Tamil Nadu.
         </p>
 
         <!-- Confirmed Stats Highlight -->
@@ -113,14 +108,14 @@
 
         <!-- Social Media Links -->
         <div class="flex items-center gap-3 pt-3">
-          <a href="https://www.facebook.com/hireandbuild" target="_blank" rel="noopener" class="w-8 h-8 rounded bg-slate-800 hover:bg-brand text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Facebook">
+          <a href="https://www.facebook.com/replicaarchitectsandbuilders" target="_blank" rel="noopener" class="w-8 h-8 rounded bg-slate-800 hover:bg-brand text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Facebook (4.5K followers)">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
           </a>
-          <a href="https://www.instagram.com/hire_and_build" target="_blank" rel="noopener" class="w-8 h-8 rounded bg-slate-800 hover:bg-brand text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Instagram">
+          <a href="https://www.instagram.com/replica_architects_n_builders/" target="_blank" rel="noopener" class="w-8 h-8 rounded bg-slate-800 hover:bg-brand text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Instagram (14.7K followers)">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1018.6 12 6.6 6.6 0 0012 5.4zm0 10.9A4.3 4.3 0 1116.3 12 4.3 4.3 0 0112 16.3zm6.9-11.1a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5z"/></svg>
           </a>
-          <a href="https://www.youtube.com/@Hireandbuild" target="_blank" rel="noopener" class="w-8 h-8 rounded bg-slate-800 hover:bg-brand text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="YouTube">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.2 31.2 0 000 12a31.2 31.2 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1 31.2 31.2 0 00.5-5.8 31.2 31.2 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6z"/></svg>
+          <a href="https://archello.com" target="_blank" rel="noopener" class="w-8 h-8 rounded bg-slate-800 hover:bg-brand text-slate-300 hover:text-white flex items-center justify-center transition-colors font-bold text-[10px]" aria-label="Archello Portfolio">
+            AR
           </a>
           <a href="https://wa.me/<?= SITE_WHATSAPP ?>" target="_blank" rel="noopener" class="w-8 h-8 rounded bg-slate-800 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="WhatsApp">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.2-1.4c1.4.8 3.1 1.4 4.8 1.4 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.2.8.8-3.1-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.6-8.5 8.6z"/></svg>
@@ -143,7 +138,7 @@
 </footer>
 
 <!-- Floating WhatsApp Action -->
-<a href="https://wa.me/<?= SITE_WHATSAPP ?>?text=Hello%20HireAndBuild,%20I%20am%20interested%20in%20building%20my%20house%20in%20Chennai." target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 transition-all focus:outline-none" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/<?= SITE_WHATSAPP ?>?text=Hello%20Replica%20Architects%20%26%20Builders,%20I%20am%20interested%20in%20building%20my%20house." target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 transition-all focus:outline-none" aria-label="Chat on WhatsApp">
   <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.78 14.13c-.24.67-1.39 1.29-1.92 1.37-.5.08-1.12.11-1.8-.11-.42-.14-.96-.32-1.63-.61-2.87-1.24-4.73-4.14-4.88-4.33-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.42-.07.65.49.24.57.82 2.01.89 2.16.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.58.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.45.12.62-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.93.29.14.48.22.55.33.07.12.07.71-.17 1.38z"/></svg>
 </a>
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Dynamic JSON-LD & SEO Schema Generator
+ * Replica Architects & Builders - Dynamic JSON-LD & SEO Schema Generator
  */
 
 require_once __DIR__ . '/config.php';
@@ -15,46 +15,52 @@ class SeoSchema {
             "@context" => "https://schema.org",
             "@type" => "GeneralContractor",
             "name" => SITE_NAME,
+            "alternateName" => "Replica Architects & Builders (RAB)",
             "image" => SITE_URL . "/assets/images/logo.svg",
             "@id" => SITE_URL . "/#organization",
             "url" => SITE_URL,
             "telephone" => SITE_PHONE,
+            "email" => SITE_EMAIL,
             "priceRange" => "₹1,999 - ₹2,999 / sq.ft",
             "address" => [
                 "@type" => "PostalAddress",
-                "streetAddress" => "No. 42, Velachery Main Road, Guindy",
-                "addressLocality" => "Chennai",
+                "streetAddress" => "116/A, Big Street",
+                "addressLocality" => "Pattukkottai",
                 "addressRegion" => "Tamil Nadu",
-                "postalCode" => "600032",
+                "postalCode" => "614601",
                 "addressCountry" => "IN"
             ],
             "geo" => [
                 "@type" => "GeoCoordinates",
-                "latitude" => 13.0067,
-                "longitude" => 80.2021
+                "latitude" => 10.4287,
+                "longitude" => 79.3195
+            ],
+            "founder" => [
+                "@type" => "Person",
+                "name" => "Er. Vikash Quaid",
+                "jobTitle" => "Founder"
             ],
             "openingHoursSpecification" => [
                 [
                     "@type" => "OpeningHoursSpecification",
                     "dayOfWeek" => ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                     "opens" => "09:00",
-                    "closes" => "19:00"
+                    "closes" => "19:30"
                 ]
             ],
             "sameAs" => [
-                "https://www.facebook.com/clientname",
-                "https://www.instagram.com/clientname",
-                "https://www.youtube.com/@clientname"
+                "https://www.instagram.com/replica_architects_n_builders/",
+                "https://www.facebook.com/replicaarchitectsandbuilders",
+                "https://www.instagram.com/vikash_quaid/",
+                "https://www.instagram.com/ar.sanjanastudio/"
             ],
             "areaServed" => [
+                ["@type" => "City", "name" => "Pattukkottai"],
+                ["@type" => "City", "name" => "Thanjavur"],
+                ["@type" => "City", "name" => "Kumbakonam"],
+                ["@type" => "City", "name" => "Tiruchirappalli"],
                 ["@type" => "City", "name" => "Chennai"],
-                ["@type" => "Place", "name" => "Anna Nagar"],
-                ["@type" => "Place", "name" => "Velachery"],
-                ["@type" => "Place", "name" => "OMR"],
-                ["@type" => "Place", "name" => "Tambaram"],
-                ["@type" => "Place", "name" => "Porur"],
-                ["@type" => "Place", "name" => "Ambattur"],
-                ["@type" => "Place", "name" => "Thiruverkadu"]
+                ["@type" => "AdministrativeArea", "name" => "Tamil Nadu"]
             ]
         ];
     }

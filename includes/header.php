@@ -6,8 +6,8 @@
 
 require_once __DIR__ . '/functions.php';
 
-$pageTitle = $pageTitle ?? "Construction Company in Chennai – Build Your Dream Home with HireAndBuild";
-$pageDescription = $pageDescription ?? "HireAndBuild is rated among the best house construction companies in Chennai with 400+ homes built. Packages from ₹1,999/sq.ft, daily site engineer supervision and written 15-year structural warranty.";
+$pageTitle = $pageTitle ?? "Architecture & House Construction in Pattukkottai | Replica Architects & Builders";
+$pageDescription = $pageDescription ?? "Replica Architects & Builders (RAB) — premier architecture, turnkey construction, and interior design firm in Pattukkottai, Tamil Nadu. Er. Vikash Quaid & Ar. Sanjana. 15-year warranty, zero cost escalation.";
 $canonicalUrl = $canonicalUrl ?? site_url();
 $currentPage = $currentPage ?? 'home';
 ?>
@@ -106,15 +106,17 @@ $currentPage = $currentPage ?? 'home';
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "name": "HireAndBuild",
-    "image": "<?= site_url('assets/images/logo.png') ?>",
+    "name": "Replica Architects & Builders",
+    "image": "<?= site_url('assets/images/client-logo.jpg') ?>",
     "telephone": "<?= SITE_PHONE ?>",
     "email": "<?= SITE_EMAIL ?>",
     "priceRange": "₹1,999/sq.ft",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Chennai",
+      "streetAddress": "116/A, Big Street",
+      "addressLocality": "Pattukkottai",
       "addressRegion": "Tamil Nadu",
+      "postalCode": "614601",
       "addressCountry": "IN"
     },
     "openingHoursSpecification": {

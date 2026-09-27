@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - API Endpoint: Contact / Free Estimate Lead Submission
+ * Replica Architects & Builders - API Endpoint: Contact / Free Estimate Lead Submission
  * Accepts POST requests (AJAX / JSON / FormData)
  */
 

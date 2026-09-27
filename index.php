@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Index Page (Server-Side Rendered)
+ * Replica Architects & Builders - Index Page (Server-Side Rendered)
  * Environment: Apache / XAMPP / Hostinger
  */
 require_once __DIR__ . '/includes/config.php';
@@ -14,8 +14,8 @@ require_once __DIR__ . '/includes/schema.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construction Company in Chennai | 15-Yr Warranty | [CLIENT NAME]</title>
-  <meta name="description" content="[CLIENT NAME]: premier house construction company in Chennai with 400+ homes built. Packages from ₹1,999/sq.ft, dedicated site engineer, zero hidden costs, 15-year warranty.">
+  <title>Construction Company in Chennai | 15-Yr Warranty | Replica Architects & Builders</title>
+  <meta name="description" content="Replica Architects & Builders: premier house construction company in Chennai with 400+ homes built. Packages from ₹1,999/sq.ft, dedicated site engineer, zero hidden costs, 15-year warranty.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Tailwind CSS CDN v3 -->
@@ -130,7 +130,7 @@ require_once __DIR__ . '/includes/schema.php';
         <!-- Brand Logo -->
         <a href="index.php" class="flex items-center gap-3 group">
           <div class="w-44 sm:w-52 h-auto">
-            <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="w-full h-auto">
+            <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="w-full h-auto">
           </div>
         </a>
 
@@ -199,7 +199,7 @@ require_once __DIR__ . '/includes/schema.php';
 
         <!-- Right Header CTAs -->
         <div class="hidden sm:flex items-center space-x-3">
-          <a href="tel:+917200472008" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
+          <a href="tel:+919994399933" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
             <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span>Call Now</span>
           </a>
@@ -224,7 +224,7 @@ require_once __DIR__ . '/includes/schema.php';
   <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto">
     <div class="p-6">
       <div class="flex items-center justify-between pb-5 border-b border-slate-100">
-        <img src="assets/images/logo.svg" alt="[CLIENT NAME]" class="h-8 w-auto">
+        <img src="assets/images/logo.svg" alt="Replica Architects & Builders" class="h-8 w-auto">
         <button id="mobile-close-btn" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg" aria-label="Close menu">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
@@ -275,9 +275,9 @@ require_once __DIR__ . '/includes/schema.php';
       <a href="calculator.php" class="w-full inline-flex items-center justify-center font-bold text-sm text-white bg-orange-600 py-3 rounded-xl shadow-md shadow-orange-600/20">
         Get a Free Quote
       </a>
-      <a href="tel:+917200472008" class="w-full inline-flex items-center justify-center gap-2 font-semibold text-sm text-slate-700 bg-white border border-slate-200 py-3 rounded-xl">
+      <a href="tel:+919994399933" class="w-full inline-flex items-center justify-center gap-2 font-semibold text-sm text-slate-700 bg-white border border-slate-200 py-3 rounded-xl">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-        Call +91 72004 72008
+        Call +91 99943 99933
       </a>
     </div>
   </aside>
@@ -298,11 +298,11 @@ require_once __DIR__ . '/includes/schema.php';
           
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-bold tracking-wide uppercase">
             <span class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
-            Chennai's Trusted Home Builders
+            Pattukkottai &amp; Tamil Nadu's Trusted Builders
           </div>
 
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-            Construction Company in Chennai &ndash; Build Your Dream Home with <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">[CLIENT NAME]</span>
+            Architecture &amp; House Construction &ndash; Build Your Dream Home with <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Replica Architects &amp; Builders</span>
           </h1>
 
           <div class="text-xl sm:text-2xl font-bold text-slate-200">
@@ -310,18 +310,18 @@ require_once __DIR__ . '/includes/schema.php';
           </div>
 
           <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
-            [CLIENT NAME] is rated among the best house construction companies in Chennai for transparent pricing, on-time delivery and written structural warranty. 
-            <strong class="text-white font-semibold">400+ families</strong> across Chennai trusted us to build their dream home. We would love to build yours too.
+            Replica Architects &amp; Builders (RAB) is rated among the premier architecture and construction firms in Pattukkottai and throughout Tamil Nadu for transparent pricing, on-time delivery and written 15-year structural warranty. 
+            <strong class="text-white font-semibold">150+ families</strong> moved into custom homes. We would love to build yours too.
           </p>
 
           <!-- Direct Phone Contact Strip -->
-          <a href="tel:+917200472008" class="inline-flex items-center gap-3.5 bg-slate-800/80 hover:bg-slate-800 px-5 py-3 rounded-2xl border border-slate-700/80 transition-all group">
+          <a href="tel:+919994399933" class="inline-flex items-center gap-3.5 bg-slate-800/80 hover:bg-slate-800 px-5 py-3 rounded-2xl border border-slate-700/80 transition-all group">
             <div class="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             </div>
             <div>
               <div class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Call us anytime</div>
-              <div class="text-sm font-bold text-white tracking-wide">+91 72004 72008</div>
+              <div class="text-sm font-bold text-white tracking-wide">+91 99943 99933</div>
             </div>
           </a>
 
@@ -334,7 +334,7 @@ require_once __DIR__ . '/includes/schema.php';
                 </div>
                 <div>
                   <span class="block text-[11px] text-slate-400 font-medium">View House Construction</span>
-                  <span class="block text-sm font-bold text-white group-hover:text-orange-400 transition-colors">Packages in Chennai</span>
+                  <span class="block text-sm font-bold text-white group-hover:text-orange-400 transition-colors">Packages &amp; Rates</span>
                 </div>
               </div>
               <svg class="w-4 h-4 text-slate-400 group-hover:translate-x-1 group-hover:text-orange-400 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
@@ -346,8 +346,8 @@ require_once __DIR__ . '/includes/schema.php';
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke-width="2"/></svg>
                 </div>
                 <div>
-                  <span class="block text-[11px] text-slate-400 font-medium">Completed House</span>
-                  <span class="block text-sm font-bold text-white group-hover:text-orange-400 transition-colors">Projects in Chennai</span>
+                  <span class="block text-[11px] text-slate-400 font-medium">Completed Architecture &amp;</span>
+                  <span class="block text-sm font-bold text-white group-hover:text-orange-400 transition-colors">Residential Projects</span>
                 </div>
               </div>
               <svg class="w-4 h-4 text-slate-400 group-hover:translate-x-1 group-hover:text-orange-400 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
@@ -387,7 +387,7 @@ require_once __DIR__ . '/includes/schema.php';
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 <div>
                   <label class="block text-[11px] font-bold text-slate-600 uppercase tracking-wider mb-1">Plot Location</label>
-                  <input type="text" name="location" placeholder="e.g. Anna Nagar, Chennai" class="form-input-focus w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-sm font-medium">
+                  <input type="text" name="location" placeholder="e.g. Big Street, Pattukkottai" class="form-input-focus w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-sm font-medium">
                 </div>
                 <div>
                   <label class="block text-[11px] font-bold text-slate-600 uppercase tracking-wider mb-1">Plot Area (sq.ft)</label>
@@ -535,7 +535,7 @@ require_once __DIR__ . '/includes/schema.php';
               <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">Thiruverkadu, Chennai</span>
             </div>
             <p class="text-slate-700 text-sm leading-relaxed italic">
-              "We had terrible experiences with local contractors in the past. [CLIENT NAME] delivered exactly on their promised 11-month timeline. The written 15-year warranty gives complete peace of mind."
+              "We had terrible experiences with local contractors in the past. Replica Architects & Builders delivered exactly on their promised 11-month timeline. The written 15-year warranty gives complete peace of mind."
             </p>
           </div>
           <div class="pt-6 border-t border-slate-100 flex items-center justify-between mt-6">
@@ -595,10 +595,10 @@ require_once __DIR__ . '/includes/schema.php';
           </h2>
           <div class="space-y-4 text-slate-600 text-base leading-relaxed">
             <p>
-              When we started [CLIENT NAME], we kept hearing the same painful story from families across Chennai: they hired a contractor, work started well, then delays crept in, surprise bills started arriving, and calls stopped getting answered.
+              When we started Replica Architects & Builders, we kept hearing the same painful story from families across Chennai: they hired a contractor, work started well, then delays crept in, surprise bills started arriving, and calls stopped getting answered.
             </p>
             <p>
-              We built [CLIENT NAME] to fix that broken model. Every project gets a <strong class="text-slate-900 font-semibold">dedicated site engineer on your plot every day</strong>. Every payment is strictly tied to a <strong class="text-slate-900 font-semibold">completed milestone</strong> &mdash; not a verbal promise. And every home carries an authentic written <strong class="text-slate-900 font-semibold">15-year structural warranty</strong>.
+              We built Replica Architects & Builders to fix that broken model. Every project gets a <strong class="text-slate-900 font-semibold">dedicated site engineer on your plot every day</strong>. Every payment is strictly tied to a <strong class="text-slate-900 font-semibold">completed milestone</strong> &mdash; not a verbal promise. And every home carries an authentic written <strong class="text-slate-900 font-semibold">15-year structural warranty</strong>.
             </p>
             <p>
               <strong class="text-slate-900 font-semibold">400+ homes</strong> delivered across Chennai &mdash; from Tambaram, Porur and Ambattur to Anna Nagar, Velachery and OMR. Built right, the first time.
@@ -966,7 +966,7 @@ require_once __DIR__ . '/includes/schema.php';
         <span class="inline-block px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider">Free Online Tool</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">House Construction Cost in Chennai &ndash; Per Sq Ft Price & Instant Calculator</h2>
         <p class="text-orange-100 text-sm max-w-2xl font-light">
-          Instantly estimate your home construction cost in Chennai using [CLIENT NAME]'s accurate 2026 cost engine with phase-by-phase breakdown.
+          Instantly estimate your home construction cost in Chennai using Replica Architects & Builders's accurate 2026 cost engine with phase-by-phase breakdown.
         </p>
       </div>
       <a href="calculator.php" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-black text-white font-bold px-7 py-3.5 rounded-xl shadow-xl transition-all whitespace-nowrap">
@@ -985,7 +985,7 @@ require_once __DIR__ . '/includes/schema.php';
         <!-- Left Image -->
         <div class="lg:col-span-6">
           <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18615f3?auto=format&fit=crop&w=1000&q=80" alt="[CLIENT NAME] site engineer discussing plans with homeowners" class="w-full h-[400px] object-cover">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18615f3?auto=format&fit=crop&w=1000&q=80" alt="Replica Architects & Builders site engineer discussing plans with homeowners" class="w-full h-[400px] object-cover">
           </div>
         </div>
 
@@ -1010,12 +1010,12 @@ require_once __DIR__ . '/includes/schema.php';
 
           <!-- CTAs -->
           <div class="flex flex-wrap gap-4 pt-2">
-            <a href="https://wa.me/917200472008" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-all">
+            <a href="https://wa.me/919994399933" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-all">
               <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.523 5.855L.057 23.617a.75.75 0 00.921.921l5.79-1.479A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.67-.513-5.193-1.408l-.371-.22-3.841.981.999-3.808-.242-.387A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
               Start Free Consultation
             </a>
-            <a href="tel:+917200472008" class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm px-6 py-3.5 rounded-xl transition-all">
-              Call 72004 72008
+            <a href="tel:+919994399933" class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm px-6 py-3.5 rounded-xl transition-all">
+              Call 99943 99933
             </a>
           </div>
         </div>
@@ -1035,7 +1035,7 @@ require_once __DIR__ . '/includes/schema.php';
           <span class="w-4 h-0.5 bg-orange-400"></span> Guaranteed Execution
         </div>
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white">
-          Why Choose <span class="text-orange-500">[CLIENT NAME]</span> in Chennai?
+          Why Choose <span class="text-orange-500">Replica Architects & Builders</span> in Chennai?
         </h2>
         <p class="text-slate-400 text-sm sm:text-base mt-2">
           Six foundational pillars that make every home construction project a guaranteed success.
@@ -1211,7 +1211,7 @@ require_once __DIR__ . '/includes/schema.php';
             <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            [CLIENT NAME] offers house construction packages in Chennai starting at <strong class="text-slate-900 font-semibold">₹1,999/sq.ft</strong> (Basic) up to <strong class="text-slate-900 font-semibold">₹2,999/sq.ft</strong> (Luxury). The final cost depends on plot size, number of floors, and finish level. You can use our free online cost calculator for an immediate breakdown.
+            Replica Architects & Builders offers house construction packages in Chennai starting at <strong class="text-slate-900 font-semibold">₹1,999/sq.ft</strong> (Basic) up to <strong class="text-slate-900 font-semibold">₹2,999/sq.ft</strong> (Luxury). The final cost depends on plot size, number of floors, and finish level. You can use our free online cost calculator for an immediate breakdown.
           </div>
         </div>
 
@@ -1255,7 +1255,7 @@ require_once __DIR__ . '/includes/schema.php';
             <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            Yes. Every single [CLIENT NAME] project is assigned a qualified, full-time site engineer who is physically present on your plot every day. They monitor material arrival, cube testing, bar-bending compliance, and send daily WhatsApp photo updates.
+            Yes. Every single Replica Architects & Builders project is assigned a qualified, full-time site engineer who is physically present on your plot every day. They monitor material arrival, cube testing, bar-bending compliance, and send daily WhatsApp photo updates.
           </div>
         </div>
 
@@ -1266,7 +1266,7 @@ require_once __DIR__ . '/includes/schema.php';
             <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            [CLIENT NAME] provides a legally documented 15-year structural warranty on all residential builds, along with warranty certificates for waterproofing, termite treatment, plumbing fixtures, and electrical switchgear.
+            Replica Architects & Builders provides a legally documented 15-year structural warranty on all residential builds, along with warranty certificates for waterproofing, termite treatment, plumbing fixtures, and electrical switchgear.
           </div>
         </div>
 
@@ -1282,7 +1282,7 @@ require_once __DIR__ . '/includes/schema.php';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
       <h3 class="text-xl sm:text-2xl font-bold">House Construction Across Chennai & Outskirts</h3>
       <p class="text-sm text-slate-400 max-w-2xl mx-auto">
-        [CLIENT NAME] delivers homes across Chennai city and major peripheral corridors including Porur, Poonamallee, Guduvancheri, Tambaram, OMR, and 15+ surrounding localities.
+        Replica Architects & Builders delivers homes across Chennai city and major peripheral corridors including Porur, Poonamallee, Guduvancheri, Tambaram, OMR, and 15+ surrounding localities.
       </p>
       <a href="contact.php" class="inline-flex items-center gap-1.5 text-orange-400 hover:text-orange-300 font-bold text-sm">
         View All Localities We Serve &rarr;
@@ -1303,7 +1303,7 @@ require_once __DIR__ . '/includes/schema.php';
         <a href="calculator.php" class="bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm px-6 py-3 rounded-xl shadow-md transition-all">
           Calculate your cost
         </a>
-        <a href="tel:+917200472008" class="bg-slate-900 hover:bg-black text-white font-bold text-sm px-6 py-3 rounded-xl shadow-md transition-all">
+        <a href="tel:+919994399933" class="bg-slate-900 hover:bg-black text-white font-bold text-sm px-6 py-3 rounded-xl shadow-md transition-all">
           Talk to us
         </a>
       </div>
@@ -1319,7 +1319,7 @@ require_once __DIR__ . '/includes/schema.php';
         
         <!-- Brand Info -->
         <div class="lg:col-span-2 space-y-4">
-          <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="h-10 w-auto brightness-0 invert">
+          <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
             Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
           </p>
@@ -1366,15 +1366,15 @@ require_once __DIR__ . '/includes/schema.php';
           <ul class="space-y-2 text-xs">
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>Nolambur Phase II, Mogappair West, Chennai, Tamil Nadu 600037</span>
+              <span>116/A, Big Street, Pattukkottai, Tamil Nadu – 614601</span>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <a href="tel:+917200472008" class="hover:text-white font-semibold">+91 72004 72008</a>
+              <a href="tel:+919994399933" class="hover:text-white font-semibold">+91 99943 99933</a>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="mailto:info@clientname.com" class="hover:text-white">info@clientname.com</a>
+              <a href="mailto:planbyreplica@gmail.com" class="hover:text-white">planbyreplica@gmail.com</a>
             </li>
             <li class="flex items-center gap-2 text-slate-400">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1388,7 +1388,7 @@ require_once __DIR__ . '/includes/schema.php';
       <!-- Legal Bottom Bar -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <div>
-          &copy; <span class="dynamic-year">2026</span> [CLIENT NAME]. All rights reserved.
+          &copy; <span class="dynamic-year">2026</span> Replica Architects & Builders. All rights reserved.
         </div>
         <div class="flex items-center space-x-6">
           <a href="#" class="hover:text-slate-400">Privacy Policy</a>
@@ -1414,7 +1414,7 @@ require_once __DIR__ . '/includes/schema.php';
   <!-- =========================================================================
        18. FLOATING WHATSAPP ACTION BUTTON
        ========================================================================= -->
-  <a href="https://wa.me/917200472008" target="_blank" rel="noopener" id="whatsapp-bubble" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110" aria-label="Chat with [CLIENT NAME] on WhatsApp">
+  <a href="https://wa.me/919994399933" target="_blank" rel="noopener" id="whatsapp-bubble" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110" aria-label="Chat with Replica Architects & Builders on WhatsApp">
     <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.523 5.855L.057 23.617a.75.75 0 00.921.921l5.79-1.479A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.67-.513-5.193-1.408l-.371-.22-3.841.981.999-3.808-.242-.387A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
   </a>
 

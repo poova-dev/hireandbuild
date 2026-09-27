@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Admin Business Profile & Image Settings
+ * Replica Architects & Builders - Admin Business Profile & Image Settings
  */
 
 require_once __DIR__ . '/auth.php';
@@ -55,7 +55,7 @@ if ($db) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>System Settings | [CLIENT NAME] Admin</title>
+  <title>System Settings | Replica Architects & Builders Admin</title>
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,7 +92,7 @@ if ($db) {
         <div class="flex items-center gap-3">
           <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-brand-orange to-amber-500 flex items-center justify-center text-white font-display font-black text-lg">C</div>
           <div>
-            <span class="font-display font-bold text-base text-white tracking-tight">[CLIENT NAME]</span>
+            <span class="font-display font-bold text-base text-white tracking-tight">Replica Architects & Builders</span>
             <span class="text-[10px] bg-brand-orange/20 text-brand-orange px-2 py-0.5 rounded font-semibold ml-2 uppercase">Console</span>
           </div>
         </div>
@@ -147,7 +147,7 @@ if ($db) {
         </div>
 
         <div>
-          <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">WhatsApp Number (e.g. 917200472008)</label>
+          <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">WhatsApp Number (e.g. 919994399933)</label>
           <input type="text" name="whatsapp_number" value="<?= htmlspecialchars($settings['whatsapp_number']) ?>" class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-xs sm:text-sm text-white focus:outline-none focus:border-brand-orange">
         </div>
 

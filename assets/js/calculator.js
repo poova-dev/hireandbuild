@@ -1,5 +1,5 @@
 /**
- * [CLIENT NAME] - House Construction Cost Calculator Engine
+ * Replica Architects & Builders - House Construction Cost Calculator Engine
  * Grounded in 2026 Chennai procurement rates & exact formulas
  */
 

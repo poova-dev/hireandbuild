@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - API Endpoint: Book Free On-Site Plot Inspection
+ * Replica Architects & Builders - API Endpoint: Book Free On-Site Plot Inspection
  */
 
 header('Content-Type: application/json; charset=utf-8');

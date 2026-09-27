@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Admin Logout Handler
+ * Replica Architects & Builders - Admin Logout Handler
  */
 
 if (session_status() === PHP_SESSION_NONE) {

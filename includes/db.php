@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - PDO Database Connection Manager
+ * Replica Architects & Builders - PDO Database Connection Manager
  */
 
 require_once __DIR__ . '/config.php';

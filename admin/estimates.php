@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Admin Calculator Estimates Viewer
+ * Replica Architects & Builders - Admin Calculator Estimates Viewer
  */
 
 require_once __DIR__ . '/auth.php';
@@ -31,7 +31,7 @@ if (empty($estimates)) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator Estimates | [CLIENT NAME] Admin</title>
+  <title>Calculator Estimates | Replica Architects & Builders Admin</title>
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +68,7 @@ if (empty($estimates)) {
         <div class="flex items-center gap-3">
           <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-brand-orange to-amber-500 flex items-center justify-center text-white font-display font-black text-lg">C</div>
           <div>
-            <span class="font-display font-bold text-base text-white tracking-tight">[CLIENT NAME]</span>
+            <span class="font-display font-bold text-base text-white tracking-tight">Replica Architects & Builders</span>
             <span class="text-[10px] bg-brand-orange/20 text-brand-orange px-2 py-0.5 rounded font-semibold ml-2 uppercase">Console</span>
           </div>
         </div>

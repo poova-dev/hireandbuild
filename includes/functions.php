@@ -11,18 +11,18 @@ if (session_status() === PHP_SESSION_NONE) {
 // ------------------------------------------------------------------------
 // Site & Business Constants
 // ------------------------------------------------------------------------
-if (!defined('SITE_NAME')) define('SITE_NAME', 'HireAndBuild');
-if (!defined('SITE_TAGLINE')) define('SITE_TAGLINE', 'Construction Company in Chennai | 15-Yr Warranty');
-if (!defined('SITE_PHONE')) define('SITE_PHONE', '+91 72004 72008');
-if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '+917200472008');
-if (!defined('SITE_WHATSAPP')) define('SITE_WHATSAPP', '917200472008');
-if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'info@hireandbuild.com');
-if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Chennai, Tamil Nadu, India');
+if (!defined('SITE_NAME')) define('SITE_NAME', 'Replica Architects & Builders');
+if (!defined('SITE_TAGLINE')) define('SITE_TAGLINE', 'Architecture, Turnkey Construction & Interior Design');
+if (!defined('SITE_PHONE')) define('SITE_PHONE', '+91 99943 99933');
+if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '+919994399933');
+if (!defined('SITE_WHATSAPP')) define('SITE_WHATSAPP', '919994399933');
+if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'planbyreplica@gmail.com');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '116/A, Big Street, Pattukkottai, Tamil Nadu – 614601');
 if (!defined('STARTING_PRICE')) define('STARTING_PRICE', '₹1,999/sq.ft');
 
-// Confirmed Metrics from Source
-if (!defined('METRIC_HOMES_DELIVERED')) define('METRIC_HOMES_DELIVERED', '400+');
-if (!defined('METRIC_ACTIVE_PROJECTS')) define('METRIC_ACTIVE_PROJECTS', '75+');
+// Confirmed Metrics
+if (!defined('METRIC_HOMES_DELIVERED')) define('METRIC_HOMES_DELIVERED', '150+');
+if (!defined('METRIC_ACTIVE_PROJECTS')) define('METRIC_ACTIVE_PROJECTS', '25+');
 if (!defined('METRIC_QUALITY_CHECKS')) define('METRIC_QUALITY_CHECKS', '350+');
 if (!defined('METRIC_SQFT_COMPLETED')) define('METRIC_SQFT_COMPLETED', '2,50,000+');
 if (!defined('METRIC_WARRANTY_YEARS')) define('METRIC_WARRANTY_YEARS', '15');

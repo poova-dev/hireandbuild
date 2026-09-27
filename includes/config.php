@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Core Configuration File
+ * Replica Architects & Builders - Core Configuration File
  * Compatible with Local XAMPP, Apache, and Hostinger Production Environments
  */
 
@@ -35,18 +35,31 @@ define('DB_USER', getenv('DB_USER') ?: 'root');
 define('DB_PASS', getenv('DB_PASS') ?: '');
 
 // ------------------------------------------------------------------------
-// Business & Site Constants
+// Business & Site Constants - Replica Architects & Builders
 // ------------------------------------------------------------------------
-define('SITE_NAME', '[CLIENT NAME]');
-define('SITE_TAGLINE', 'Best Turnkey House Construction Company in Chennai');
-define('SITE_PHONE', '+91 72004 72008');
-define('SITE_PHONE_RAW', '+917200472008');
-define('SITE_WHATSAPP', '917200472008');
-define('SITE_EMAIL', 'info@clientname.com');
-define('SITE_ADDRESS', 'No. 42, Velachery Main Road, Guindy, Chennai, Tamil Nadu 600032');
+define('SITE_NAME', 'Replica Architects & Builders');
+define('SITE_SHORT_NAME', 'Replica');
+define('SITE_TAGLINE', 'Architecture, Turnkey Construction & Interior Design');
+define('SITE_PHONE', '+91 99943 99933');
+define('SITE_PHONE_RAW', '+919994399933');
+define('SITE_WHATSAPP', '919994399933');
+define('SITE_EMAIL', 'planbyreplica@gmail.com');
+define('SITE_ADDRESS', '116/A, Big Street, Pattukkottai, Tamil Nadu – 614601');
+define('SITE_CITY', 'Pattukkottai');
+define('SITE_STATE', 'Tamil Nadu');
+define('SITE_PINCODE', '614601');
+define('FOUNDER_NAME', 'Er. Vikash Quaid');
+define('FOUNDER_TITLE', 'Founder & Civil Engineer');
+define('ARCHITECT_NAME', 'Ar. Sanjana');
+define('ARCHITECT_TITLE', 'Principal Architect');
+define('INSTAGRAM_HANDLE', '@replica_architects_n_builders');
+define('INSTAGRAM_URL', 'https://www.instagram.com/replica_architects_n_builders/');
+define('FACEBOOK_URL', 'https://www.facebook.com/replicaarchitectsandbuilders');
+define('FOUNDER_IG_URL', 'https://www.instagram.com/vikash_quaid/');
+define('ARCHITECT_IG_URL', 'https://www.instagram.com/ar.sanjanastudio/');
 define('WARRANTY_YEARS', '15');
-define('HOMES_DELIVERED', '400+');
-define('ACTIVE_PROJECTS', '75+');
+define('HOMES_DELIVERED', '150+');
+define('ACTIVE_PROJECTS', '25+');
 define('QUALITY_CHECKS', '350+');
 define('SQFT_COMPLETED', '2,50,000+');
 

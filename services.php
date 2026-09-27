@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Services Page (Server-Side Rendered)
+ * Replica Architects & Builders - Services Page (Server-Side Rendered)
  * Environment: Apache / XAMPP / Hostinger
  */
 require_once __DIR__ . '/includes/config.php';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/schema.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turnkey House Construction Services in Chennai | [CLIENT NAME]</title>
+  <title>Turnkey House Construction Services in Chennai | Replica Architects & Builders</title>
   <meta name="description" content="End-to-end turnkey residential and commercial construction services in Chennai. 12-stage construction process, architectural design, structural drawings, CMDA/DTCP approvals, and 15-year warranty.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
@@ -73,7 +73,7 @@ require_once __DIR__ . '/includes/schema.php';
       <div class="flex items-center justify-between h-20">
         <a href="index.php" class="flex items-center gap-3">
           <div class="w-44 sm:w-52 h-auto">
-            <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="w-full h-auto">
+            <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="w-full h-auto">
           </div>
         </a>
 
@@ -91,7 +91,7 @@ require_once __DIR__ . '/includes/schema.php';
         </nav>
 
         <div class="hidden sm:flex items-center space-x-3">
-          <a href="tel:+917200472008" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
+          <a href="tel:+919994399933" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
             <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span>Call Now</span>
           </a>
@@ -112,7 +112,7 @@ require_once __DIR__ . '/includes/schema.php';
   <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto">
     <div class="p-6">
       <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-        <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="h-8 w-auto">
+        <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-8 w-auto">
         <button id="mobile-close-btn" class="p-2 text-slate-400 hover:text-slate-700" aria-label="Close Menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
@@ -131,9 +131,9 @@ require_once __DIR__ . '/includes/schema.php';
       </nav>
     </div>
     <div class="p-6 bg-slate-50 border-t border-slate-100 space-y-3">
-      <a href="tel:+917200472008" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-800 shadow-sm">
+      <a href="tel:+919994399933" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-800 shadow-sm">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-        <span>+91 72004 72008</span>
+        <span>+91 99943 99933</span>
       </a>
       <a href="calculator.php" class="flex items-center justify-center w-full py-3 rounded-xl bg-orange-600 text-white text-sm font-bold shadow-md hover:bg-orange-700 transition-colors">
         Instant Cost Calculator
@@ -256,14 +256,14 @@ require_once __DIR__ . '/includes/schema.php';
   </section>
 
   <!-- =========================================================================
-       WHAT IS TURNKEY & WHY CHOOSE [CLIENT NAME]
+       WHAT IS TURNKEY & WHY CHOOSE Replica Architects & Builders
        ========================================================================= -->
   <section class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
         <span class="text-orange-600 font-bold text-xs uppercase tracking-wider">Complete Peace Of Mind</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-          Traditional Contracting vs. [CLIENT NAME] Turnkey Model
+          Traditional Contracting vs. Replica Architects & Builders Turnkey Model
         </h2>
         <p class="text-sm text-slate-600 leading-relaxed">
           Building a house shouldn't mean running between architects, structural consultants, government sanctioning offices, material vendors, and unverified masons.
@@ -298,11 +298,11 @@ require_once __DIR__ . '/includes/schema.php';
           </ul>
         </div>
 
-        <!-- The [CLIENT NAME] Turnkey Way -->
+        <!-- The Replica Architects & Builders Turnkey Way -->
         <div class="bg-gradient-to-br from-white to-orange-50/40 rounded-3xl p-8 border-2 border-orange-500/40 shadow-lg relative overflow-hidden">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 border border-orange-200 text-orange-700 text-xs font-bold mb-6">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-            The [CLIENT NAME] Turnkey Advantage
+            The Replica Architects & Builders Turnkey Advantage
           </div>
           <ul class="space-y-4 text-sm text-slate-700">
             <li class="flex items-start gap-3">
@@ -509,7 +509,7 @@ require_once __DIR__ . '/includes/schema.php';
             Turnkey Residential House Construction
           </h2>
           <p class="text-sm text-slate-600 leading-relaxed">
-            Whether you are planning an independent bungalow, an ultra-modern duplex villa, or a multi-generational G+2 home for rental yields, [CLIENT NAME] handles 100% of material procurement, craftsmanship, and site supervision.
+            Whether you are planning an independent bungalow, an ultra-modern duplex villa, or a multi-generational G+2 home for rental yields, Replica Architects & Builders handles 100% of material procurement, craftsmanship, and site supervision.
           </p>
           <div class="grid grid-cols-2 gap-4 text-xs font-semibold text-slate-700">
             <div class="flex items-center gap-2">
@@ -666,7 +666,7 @@ require_once __DIR__ . '/includes/schema.php';
             CMDA / DTCP Building Plan Approvals
           </h2>
           <p class="text-sm text-slate-600 leading-relaxed">
-            Navigating Chennai's local body approvals can take months without expert liaison. [CLIENT NAME] handles the entire permitting lifecycle across Greater Chennai Corporation (GCC), CMDA, and DTCP jurisdictions.
+            Navigating Chennai's local body approvals can take months without expert liaison. Replica Architects & Builders handles the entire permitting lifecycle across Greater Chennai Corporation (GCC), CMDA, and DTCP jurisdictions.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
             <div class="p-3 rounded-xl bg-white border border-slate-200">
@@ -748,7 +748,7 @@ require_once __DIR__ . '/includes/schema.php';
         <!-- FAQ 1 -->
         <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
           <button type="button" class="faq-trigger w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 text-sm sm:text-base hover:text-orange-600 transition-colors" aria-expanded="false">
-            <span>What exactly is included in [CLIENT NAME]'s Turnkey package?</span>
+            <span>What exactly is included in Replica Architects & Builders's Turnkey package?</span>
             <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
@@ -822,7 +822,7 @@ require_once __DIR__ . '/includes/schema.php';
         
         <!-- Brand Info -->
         <div class="lg:col-span-2 space-y-4">
-          <img src="assets/images/logo.svg" alt="[CLIENT NAME] Logo" class="h-10 w-auto brightness-0 invert">
+          <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
             Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
           </p>
@@ -869,15 +869,15 @@ require_once __DIR__ . '/includes/schema.php';
           <ul class="space-y-2 text-xs">
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>Nolambur Phase II, Mogappair West, Chennai, Tamil Nadu 600037</span>
+              <span>116/A, Big Street, Pattukkottai, Tamil Nadu – 614601</span>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <a href="tel:+917200472008" class="hover:text-white font-semibold">+91 72004 72008</a>
+              <a href="tel:+919994399933" class="hover:text-white font-semibold">+91 99943 99933</a>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="mailto:info@clientname.com" class="hover:text-white">info@clientname.com</a>
+              <a href="mailto:planbyreplica@gmail.com" class="hover:text-white">planbyreplica@gmail.com</a>
             </li>
             <li class="flex items-center gap-2 text-slate-400">
               <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -891,7 +891,7 @@ require_once __DIR__ . '/includes/schema.php';
       <!-- Legal Bottom Bar -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <div>
-          &copy; <span class="dynamic-year">2026</span> [CLIENT NAME]. All rights reserved.
+          &copy; <span class="dynamic-year">2026</span> Replica Architects & Builders. All rights reserved.
         </div>
         <div class="flex items-center space-x-6">
           <a href="#" class="hover:text-slate-400">Privacy Policy</a>
@@ -903,7 +903,7 @@ require_once __DIR__ . '/includes/schema.php';
   </footer>
 
   <!-- Floating WhatsApp Action Button -->
-  <a href="https://wa.me/917200472008" target="_blank" rel="noopener" id="whatsapp-bubble" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110" aria-label="Chat with [CLIENT NAME] on WhatsApp">
+  <a href="https://wa.me/919994399933" target="_blank" rel="noopener" id="whatsapp-bubble" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110" aria-label="Chat with Replica Architects & Builders on WhatsApp">
     <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.523 5.855L.057 23.617a.75.75 0 00.921.921l5.79-1.479A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.67-.513-5.193-1.408l-.371-.22-3.841.981.999-3.808-.242-.387A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
   </a>
 

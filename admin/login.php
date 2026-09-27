@@ -1,6 +1,6 @@
 <?php
 /**
- * [CLIENT NAME] - Admin Login Screen
+ * Replica Architects & Builders - Admin Login Screen
  */
 
 require_once __DIR__ . '/../includes/config.php';
@@ -47,12 +47,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Fallback default admin credentials if database is unseeded or offline
         if (!$authenticated) {
-            if (($usernameOrEmail === 'admin' || $usernameOrEmail === 'admin@clientname.com') && ($password === 'Admin@2026' || $password === 'admin')) {
+            if (($usernameOrEmail === 'admin' || $usernameOrEmail === 'admin@replica.com') && ($password === 'Admin@2026' || $password === 'admin')) {
                 $authenticated = true;
                 $userRecord = [
                     'id' => 1,
                     'username' => 'admin',
-                    'email' => 'admin@clientname.com',
+                    'email' => 'admin@replica.com',
                     'full_name' => 'Principal Administrator',
                     'role' => 'super_admin'
                 ];
@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Login | [CLIENT NAME] Construction</title>
+  <title>Admin Login | Replica Architects & Builders Construction</title>
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-brand-orange to-amber-500 flex items-center justify-center text-white shadow-xl shadow-brand-orange/30 font-display font-black text-2xl mx-auto mb-4">
         C
       </div>
-      <h1 class="text-2xl font-display font-bold text-white tracking-tight">[CLIENT NAME]</h1>
+      <h1 class="text-2xl font-display font-bold text-white tracking-tight">Replica Architects & Builders</h1>
       <p class="text-slate-400 text-sm mt-1">Management Portal &amp; Lead Console</p>
     </div>
 
@@ -143,9 +143,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               name="username" 
               id="username" 
               required 
-              value="admin@clientname.com"
+              value="admin@replica.com"
               class="w-full pl-10 pr-4 py-3 bg-slate-900/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all"
-              placeholder="admin@clientname.com">
+              placeholder="admin@replica.com">
           </div>
         </div>
 
@@ -186,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!-- Credentials Hint Badge -->
     <div class="mt-6 text-center text-xs text-slate-400 bg-slate-800/40 border border-slate-800 rounded-xl py-3 px-4">
-      <span class="font-medium text-slate-300">Quick Demo Access:</span> User: <code class="text-amber-400">admin@clientname.com</code> / Pass: <code class="text-amber-400">Admin@2026</code>
+      <span class="font-medium text-slate-300">Quick Demo Access:</span> User: <code class="text-amber-400">admin@replica.com</code> / Pass: <code class="text-amber-400">Admin@2026</code>
     </div>
 
   </div>
