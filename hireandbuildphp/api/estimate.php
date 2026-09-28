@@ -50,7 +50,7 @@ if ($db) {
         if (!empty($clientName) && !empty($clientPhone)) {
             $stmtLead = $db->prepare("
                 INSERT INTO leads (full_name, phone, email, plot_location, plot_area_sqft, package_interest, requirement_type, source_page)
-                VALUES (:name, :phone, :email, 'Chennai', :area, :pkg, 'Calculator Estimate', 'Cost Calculator Wizard')
+                VALUES (:name, :phone, :email, 'Pattukkottai', :area, :pkg, 'Calculator Estimate', 'Cost Calculator Wizard')
             ");
             $stmtLead->execute([
                 ':name'  => $clientName,

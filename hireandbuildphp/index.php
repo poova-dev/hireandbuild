@@ -14,9 +14,14 @@ $currentPage = 'index';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construction Company in Chennai | 15-Yr Warranty | Replica Architects & Builders</title>
-  <meta name="description" content="Replica Architects & Builders: premier house construction company in Chennai with 400+ homes built. Packages from ₹1,999/sq.ft, dedicated site engineer, zero hidden costs, 15-year warranty.">
+  <title>Construction Company in Pattukkottai | 15-Yr Warranty | Replica Architects & Builders</title>
+  <meta name="description" content="Replica Architects & Builders: premier house construction company in Pattukkottai with 400+ homes built. Packages from ₹1,999/sq.ft, dedicated site engineer, zero hidden costs, 15-year warranty.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit for Architectural Elegance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN v3 -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -45,7 +50,8 @@ $currentPage = 'index';
             }
           },
           fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
@@ -64,7 +70,7 @@ $currentPage = 'index';
       <!-- Set 1 -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -95,7 +101,7 @@ $currentPage = 'index';
       <!-- Duplicate Set for Seamless Loop -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -283,12 +289,21 @@ $currentPage = 'index';
   </aside>
 
   <!-- =========================================================================
-       3. HERO SECTION WITH LEAD CAPTURE FORM
+       3. HERO SECTION WITH LEAD CAPTURE FORM (With Cinematic Video Background)
        ========================================================================= -->
-  <section class="relative bg-[#121824] text-white py-14 lg:py-20 overflow-hidden" id="hero">
-    <!-- Background Architectural Texture -->
-    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ff5e14_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
-    <div class="absolute -top-40 -left-40 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl pointer-events-none"></div>
+  <section class="relative bg-slate-950 text-white py-14 lg:py-22 overflow-hidden" id="hero">
+    <!-- Cloudinary Hero Background Video -->
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+      <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-40 scale-105">
+        <source src="https://res.cloudinary.com/dv1capz6x/video/upload/v1790442703/Untitled_design_hugpbi.mp4" type="video/mp4">
+      </video>
+      <!-- Dark Cinematic Vignette & Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-900/70"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50"></div>
+      <!-- Background Architectural Texture -->
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ff5e14_1px,transparent_1px)] [background-size:24px_24px]"></div>
+      <div class="absolute -top-40 -left-40 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl"></div>
+    </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -508,7 +523,7 @@ $currentPage = 'index';
               <div class="flex items-center space-x-1 text-amber-400">
                 ★★★★★
               </div>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">Villivakkam, Chennai</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">Big Street, Pattukkottai</span>
             </div>
             <p class="text-slate-700 text-sm leading-relaxed italic">
               "Every stage was supervised by their site engineer. The milestone billing meant we only paid when columns and slabs were completed. No surprise bills!"
@@ -532,7 +547,7 @@ $currentPage = 'index';
               <div class="flex items-center space-x-1 text-amber-400">
                 ★★★★★
               </div>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">Thiruverkadu, Chennai</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">Aranthangi Road, Pattukkottai</span>
             </div>
             <p class="text-slate-700 text-sm leading-relaxed italic">
               "We had terrible experiences with local contractors in the past. Replica Architects & Builders delivered exactly on their promised 11-month timeline. The written 15-year warranty gives complete peace of mind."
@@ -556,7 +571,7 @@ $currentPage = 'index';
               <div class="flex items-center space-x-1 text-amber-400">
                 ★★★★★
               </div>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">Anna Nagar, Chennai</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">Anna Nagar, Pattukkottai</span>
             </div>
             <p class="text-slate-700 text-sm leading-relaxed italic">
               "From CMDA plan approval to final interior paint coats, we did not have to visit government offices even once. Daily WhatsApp photos from the engineer kept us informed."
@@ -595,13 +610,13 @@ $currentPage = 'index';
           </h2>
           <div class="space-y-4 text-slate-600 text-base leading-relaxed">
             <p>
-              When we started Replica Architects & Builders, we kept hearing the same painful story from families across Chennai: they hired a contractor, work started well, then delays crept in, surprise bills started arriving, and calls stopped getting answered.
+              When we started Replica Architects & Builders, we kept hearing the same painful story from families across Pattukkottai & Tamil Nadu: they hired a contractor, work started well, then delays crept in, surprise bills started arriving, and calls stopped getting answered.
             </p>
             <p>
               We built Replica Architects & Builders to fix that broken model. Every project gets a <strong class="text-slate-900 font-semibold">dedicated site engineer on your plot every day</strong>. Every payment is strictly tied to a <strong class="text-slate-900 font-semibold">completed milestone</strong> &mdash; not a verbal promise. And every home carries an authentic written <strong class="text-slate-900 font-semibold">15-year structural warranty</strong>.
             </p>
             <p>
-              <strong class="text-slate-900 font-semibold">400+ homes</strong> delivered across Chennai &mdash; from Tambaram, Porur and Ambattur to Anna Nagar, Velachery and OMR. Built right, the first time.
+              <strong class="text-slate-900 font-semibold">400+ homes</strong> delivered across Pattukkottai & Tamil Nadu &mdash; from Tambaram, Porur and Ambattur to Anna Nagar, Velachery and OMR. Built right, the first time.
             </p>
           </div>
 
@@ -609,7 +624,7 @@ $currentPage = 'index';
           <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-100">
             <div>
               <div class="text-2xl sm:text-3xl font-black text-slate-900">400+</div>
-              <div class="text-xs text-slate-500 font-medium">Homes Built in Chennai</div>
+              <div class="text-xs text-slate-500 font-medium">Homes Built in Pattukkottai</div>
             </div>
             <div>
               <div class="text-2xl sm:text-3xl font-black text-orange-600">Daily</div>
@@ -693,7 +708,7 @@ $currentPage = 'index';
           Our Construction <span class="text-orange-600">Projects</span>
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Built with precision, quality, and trust &mdash; 400+ homes delivered across Chennai.
+          Built with precision, quality, and trust &mdash; 400+ homes delivered across Pattukkottai & Tamil Nadu.
         </p>
       </div>
 
@@ -711,7 +726,7 @@ $currentPage = 'index';
             </div>
             <div class="absolute bottom-4 left-4 z-20 text-white">
               <div class="text-lg font-bold">Yuvaraj Residence</div>
-              <div class="text-xs text-slate-300">Villivakkam, Chennai</div>
+              <div class="text-xs text-slate-300">Big Street, Pattukkottai</div>
             </div>
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
@@ -742,7 +757,7 @@ $currentPage = 'index';
             </div>
             <div class="absolute bottom-4 left-4 z-20 text-white">
               <div class="text-lg font-bold">Boopesh Villa</div>
-              <div class="text-xs text-slate-300">Thiruverkadu, Chennai</div>
+              <div class="text-xs text-slate-300">Aranthangi Road, Pattukkottai</div>
             </div>
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
@@ -773,7 +788,7 @@ $currentPage = 'index';
             </div>
             <div class="absolute bottom-4 left-4 z-20 text-white">
               <div class="text-lg font-bold">Rahul Custom Home</div>
-              <div class="text-xs text-slate-300">Ambattur, Chennai</div>
+              <div class="text-xs text-slate-300">Anna Nagar, Pattukkottai</div>
             </div>
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
@@ -804,7 +819,7 @@ $currentPage = 'index';
             </div>
             <div class="absolute bottom-4 left-4 z-20 text-white">
               <div class="text-lg font-bold">Rajadurai Home</div>
-              <div class="text-xs text-slate-300">Urapakkam, Chennai</div>
+              <div class="text-xs text-slate-300">Peravurani Road, Pattukkottai</div>
             </div>
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
@@ -866,7 +881,7 @@ $currentPage = 'index';
             </div>
             <div class="absolute bottom-4 left-4 z-20 text-white">
               <div class="text-lg font-bold">KVT Luxury Build</div>
-              <div class="text-xs text-slate-300">Vadaperumbakkam, Chennai</div>
+              <div class="text-xs text-slate-300">Railway Station Road, Pattukkottai</div>
             </div>
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
@@ -889,7 +904,7 @@ $currentPage = 'index';
       </div>
 
       <div class="text-center mt-12">
-        <p class="text-xs text-slate-500 mb-4 font-semibold uppercase tracking-wider">Showing 6 of 400+ projects completed across Chennai</p>
+        <p class="text-xs text-slate-500 mb-4 font-semibold uppercase tracking-wider">Showing 6 of 400+ projects completed across Pattukkottai & Tamil Nadu</p>
         <a href="projects.php" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all">
           Explore All Projects &rarr;
         </a>
@@ -964,9 +979,9 @@ $currentPage = 'index';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
       <div class="space-y-2 text-center md:text-left">
         <span class="inline-block px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider">Free Online Tool</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">House Construction Cost in Chennai &ndash; Per Sq Ft Price & Instant Calculator</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">House Construction Cost in Pattukkottai &ndash; Per Sq Ft Price & Instant Calculator</h2>
         <p class="text-orange-100 text-sm max-w-2xl font-light">
-          Instantly estimate your home construction cost in Chennai using Replica Architects & Builders's accurate 2026 cost engine with phase-by-phase breakdown.
+          Instantly estimate your home construction cost in Pattukkottai using Replica Architects & Builders's accurate 2026 cost engine with phase-by-phase breakdown.
         </p>
       </div>
       <a href="calculator.php" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-black text-white font-bold px-7 py-3.5 rounded-xl shadow-xl transition-all whitespace-nowrap">
@@ -995,7 +1010,7 @@ $currentPage = 'index';
             <span class="w-4 h-0.5 bg-orange-600"></span> Talk to our expert
           </div>
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
-            Trusted construction company in <span class="text-orange-600">Chennai</span> &mdash; start with confidence
+            Trusted construction company in <span class="text-orange-600">Pattukkottai</span> &mdash; start with confidence
           </h2>
           <p class="text-slate-600 text-base leading-relaxed">
             Structured residential construction with transparent pricing, daily site supervision, and engineered quality checks. From planning to handover, every stage is accountable. Share your plot details and get a clear project estimate.
@@ -1035,7 +1050,7 @@ $currentPage = 'index';
           <span class="w-4 h-0.5 bg-orange-400"></span> Guaranteed Execution
         </div>
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white">
-          Why Choose <span class="text-orange-500">Replica Architects & Builders</span> in Chennai?
+          Why Choose <span class="text-orange-500">Replica Architects & Builders</span> in Pattukkottai?
         </h2>
         <p class="text-slate-400 text-sm sm:text-base mt-2">
           Six foundational pillars that make every home construction project a guaranteed success.
@@ -1207,18 +1222,18 @@ $currentPage = 'index';
         <!-- FAQ 1 -->
         <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
           <button type="button" class="faq-trigger w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 text-sm sm:text-base hover:text-orange-600 transition-colors" aria-expanded="false">
-            <span>1. What is the construction cost per sq ft in Chennai?</span>
+            <span>1. What is the construction cost per sq ft in Pattukkottai?</span>
             <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            Replica Architects & Builders offers house construction packages in Chennai starting at <strong class="text-slate-900 font-semibold">₹1,999/sq.ft</strong> (Basic) up to <strong class="text-slate-900 font-semibold">₹2,999/sq.ft</strong> (Luxury). The final cost depends on plot size, number of floors, and finish level. You can use our free online cost calculator for an immediate breakdown.
+            Replica Architects & Builders offers house construction packages in Pattukkottai starting at <strong class="text-slate-900 font-semibold">₹1,999/sq.ft</strong> (Basic) up to <strong class="text-slate-900 font-semibold">₹2,999/sq.ft</strong> (Luxury). The final cost depends on plot size, number of floors, and finish level. You can use our free online cost calculator for an immediate breakdown.
           </div>
         </div>
 
         <!-- FAQ 2 -->
         <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
           <button type="button" class="faq-trigger w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 text-sm sm:text-base hover:text-orange-600 transition-colors" aria-expanded="false">
-            <span>2. How long does it take to build an independent house in Chennai?</span>
+            <span>2. How long does it take to build an independent house in Pattukkottai?</span>
             <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
@@ -1240,11 +1255,11 @@ $currentPage = 'index';
         <!-- FAQ 4 -->
         <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
           <button type="button" class="faq-trigger w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 text-sm sm:text-base hover:text-orange-600 transition-colors" aria-expanded="false">
-            <span>4. What areas in Chennai and outskirts do you cover?</span>
+            <span>4. What areas in Pattukkottai and Tamil Nadu do you cover?</span>
             <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            We serve all major localities across Chennai including Anna Nagar, Mogappair, Porur, Poonamallee, Tambaram, Velachery, OMR, Perungalathur, Guduvancheri, Ambattur, Avadi, Kanchipuram, and Thiruvallur districts.
+            We serve all major localities across Pattukkottai & Tamil Nadu including Anna Nagar, Mogappair, Porur, Poonamallee, Tambaram, Velachery, OMR, Perungalathur, Guduvancheri, Ambattur, Avadi, Kanchipuram, and Thiruvallur districts.
           </div>
         </div>
 
@@ -1280,9 +1295,9 @@ $currentPage = 'index';
        ========================================================================= -->
   <section class="py-12 bg-slate-900 text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-      <h3 class="text-xl sm:text-2xl font-bold">House Construction Across Chennai & Outskirts</h3>
+      <h3 class="text-xl sm:text-2xl font-bold">House Construction Across Pattukkottai & Outskirts</h3>
       <p class="text-sm text-slate-400 max-w-2xl mx-auto">
-        Replica Architects & Builders delivers homes across Chennai city and major peripheral corridors including Porur, Poonamallee, Guduvancheri, Tambaram, OMR, and 15+ surrounding localities.
+        Replica Architects & Builders delivers homes across Pattukkottai & Tamil Nadu city and major peripheral corridors including Porur, Poonamallee, Guduvancheri, Tambaram, OMR, and 15+ surrounding localities.
       </p>
       <a href="contact.php" class="inline-flex items-center gap-1.5 text-orange-400 hover:text-orange-300 font-bold text-sm">
         View All Localities We Serve &rarr;
@@ -1296,7 +1311,7 @@ $currentPage = 'index';
   <div class="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-600 text-white py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
       <div>
-        <h3 class="text-2xl font-extrabold tracking-tight">Planning to build your home in Chennai?</h3>
+        <h3 class="text-2xl font-extrabold tracking-tight">Planning to build your home in Pattukkottai?</h3>
         <p class="text-orange-100 text-sm mt-1">Get a transparent sq.ft estimate before you commit to anything.</p>
       </div>
       <div class="flex flex-wrap items-center justify-center gap-3">
@@ -1321,7 +1336,7 @@ $currentPage = 'index';
         <div class="lg:col-span-2 space-y-4">
           <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
-            Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
+            Turnkey house construction, architectural and structural design, and plan approvals across Pattukkottai, Thanjavur, Kumbakonam, and Delta Districts.
           </p>
           <div class="flex items-center gap-6 pt-2">
             <div>

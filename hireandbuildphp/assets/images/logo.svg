@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 64" width="380" height="64">
+  <g transform="translate(-24.564999999999998, -10.965) scale(0.145)">
+    
+    <!-- Top Face -->
+    <polygon points="328,117 607,272 473,355 197,193" fill="none" stroke="#E5A93C" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
+    <!-- Vertical Edges -->
+    <line x1="197" y1="193" x2="197" y2="286" stroke="#E5A93C" stroke-width="22" stroke-linecap="round" />
+    <line x1="607" y1="272" x2="607" y2="373" stroke="#E5A93C" stroke-width="22" stroke-linecap="round" />
+    <line x1="473" y1="355" x2="473" y2="450" stroke="#E5A93C" stroke-width="22" stroke-linecap="round" />
+    <!-- Bottom Edges -->
+    <line x1="197" y1="286" x2="473" y2="450" stroke="#E5A93C" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
+    <line x1="473" y1="450" x2="607" y2="373" stroke="#E5A93C" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
+    <!-- Inner Y-Branch Line -->
+    <line x1="473" y1="355" x2="473" y2="410" stroke="#E5A93C" stroke-width="22" stroke-linecap="round" />
+    <line x1="473" y1="355" x2="542" y2="315" stroke="#E5A93C" stroke-width="22" stroke-linecap="round" />
+    
+  </g>
+  <g transform="translate(74, 0)">
+    <text x="0" y="34" font-family="'Century Gothic', 'Montserrat', 'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="600" fill="#1C1917" letter-spacing="6px">replica</text>
+    <text x="2" y="51" font-family="'Century Gothic', 'Montserrat', 'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#E5A93C" letter-spacing="2.4px">architects &amp; builders</text>
+  </g>
+</svg>

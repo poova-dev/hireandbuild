@@ -18,6 +18,10 @@ $currentPage = 'contact';
   <meta name="description" content="Contact Replica Architects &amp; Builders in Pattukkottai. Book a free plot inspection, schedule a studio consultation at 116/A Big Street, Pattukkottai, or call +91 99943 99933 for an instant sq.ft estimate.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit for Architectural Elegance -->
+  <link rel=preconnect href="https://fonts.googleapis.com">
+  <link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Tailwind CSS CDN v3 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -39,7 +43,8 @@ $currentPage = 'contact';
             }
           },
           fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
@@ -58,7 +63,7 @@ $currentPage = 'contact';
       <!-- Set 1 -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -89,7 +94,7 @@ $currentPage = 'contact';
       <!-- Duplicate Set for Seamless Loop -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -376,7 +381,7 @@ $currentPage = 'contact';
               Request Your Free Plot Inspection
             </h2>
             <p class="text-xs sm:text-sm text-slate-500 leading-relaxed font-light">
-              Our Senior Structural Engineer will visit your plot anywhere in Chennai, measure boundaries, check approach road width, evaluate soil conditions, and prepare a personalized BOQ.
+              Our Senior Structural Engineer will visit your plot anywhere in Pattukkottai, measure boundaries, check approach road width, evaluate soil conditions, and prepare a personalized BOQ.
             </p>
           </div>
 
@@ -398,7 +403,7 @@ $currentPage = 'contact';
                 <input type="email" name="email" placeholder="e.g. ramesh@gmail.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
               </div>
               <div>
-                <label class="block text-xs font-bold text-slate-700 mb-1.5">Plot Location in Chennai *</label>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Plot Location in Pattukkottai / Region *</label>
                 <input type="text" name="location" required placeholder="e.g. Mogappair, Porur, Tambaram" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
               </div>
             </div>
@@ -501,13 +506,13 @@ $currentPage = 'contact';
   </section>
 
   <!-- =========================================================================
-       AREAS WE SERVE IN CHENNAI
+       AREAS WE SERVE IN PATTUKKOTTAI & TAMIL NADU
        ========================================================================= -->
   <section class="py-16 bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
       <div class="text-center max-w-2xl mx-auto space-y-2">
         <span class="text-orange-600 font-bold text-xs uppercase tracking-wider">Service Coverage</span>
-        <h3 class="text-2xl font-extrabold text-slate-900">Serving Chennai & All Peripheral Hubs</h3>
+        <h3 class="text-2xl font-extrabold text-slate-900">Serving Pattukkottai & All Peripheral Hubs</h3>
         <p class="text-xs text-slate-500">
           Replica Architects & Builders has active sites and delivered homes across 4 primary geographic zones:
         </p>
@@ -515,14 +520,14 @@ $currentPage = 'contact';
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
         <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
-          <strong class="text-slate-900 font-bold text-sm block mb-2 text-orange-600">Chennai West</strong>
+          <strong class="text-slate-900 font-bold text-sm block mb-2 text-orange-600">Pattukkottai West</strong>
           <p class="text-slate-600 leading-relaxed">
             Pattukkottai, Thanjavur, Kumbakonam, Mannargudi, Peravurani, Pudukkottai, Trichy, and across Tamil Nadu.
           </p>
         </div>
 
         <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
-          <strong class="text-slate-900 font-bold text-sm block mb-2 text-orange-600">Chennai South & GST</strong>
+          <strong class="text-slate-900 font-bold text-sm block mb-2 text-orange-600">Pattukkottai South & GST</strong>
           <p class="text-slate-600 leading-relaxed">
             Tambaram, Guduvancheri, Chromepet, Pallavaram, Vandalur, Urapakkam, Singaperumal Koil, Maraimalai Nagar.
           </p>
@@ -576,7 +581,7 @@ $currentPage = 'contact';
         <div class="lg:col-span-2 space-y-4">
           <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
-            Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
+            Turnkey house construction, architectural and structural design, and plan approvals across Pattukkottai, Thanjavur, Kumbakonam, and Delta Districts.
           </p>
           <div class="flex items-center gap-6 pt-2">
             <div>

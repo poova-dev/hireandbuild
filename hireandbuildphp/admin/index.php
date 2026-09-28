@@ -48,7 +48,7 @@ if ($db) {
 // Fallback dummy records for visual verification if fresh database
 if (empty($recentLeads)) {
     $recentLeads = [
-        ['id' => 101, 'full_name' => 'Karthik Subramanian', 'phone' => '98401 23456', 'email' => 'karthik.s@gmail.com', 'plot_location' => 'Anna Nagar, Chennai', 'plot_area_sqft' => 1500, 'requirement_type' => 'G+2 Duplex Villa', 'status' => 'new', 'created_at' => date('Y-m-d H:i:s', strtotime('-1 hour'))],
+        ['id' => 101, 'full_name' => 'Karthik Subramanian', 'phone' => '98401 23456', 'email' => 'karthik.s@gmail.com', 'plot_location' => 'Anna Nagar, Pattukkottai', 'plot_area_sqft' => 1500, 'requirement_type' => 'G+2 Duplex Villa', 'status' => 'new', 'created_at' => date('Y-m-d H:i:s', strtotime('-1 hour'))],
         ['id' => 100, 'full_name' => 'Ananya Balaji', 'phone' => '98842 98765', 'email' => 'ananya.b@yahoo.com', 'plot_location' => 'Velachery Main Rd', 'plot_area_sqft' => 1200, 'requirement_type' => 'G+1 Turnkey House', 'status' => 'contacted', 'created_at' => date('Y-m-d H:i:s', strtotime('-4 hours'))],
         ['id' => 99, 'full_name' => 'M. Venkatesh', 'phone' => '94440 55123', 'email' => 'venkatesh.m@outlook.com', 'plot_location' => 'Tambaram East', 'plot_area_sqft' => 2400, 'requirement_type' => 'G+3 Premium Residence', 'status' => 'site_visit_scheduled', 'created_at' => date('Y-m-d H:i:s', strtotime('-1 day'))],
         ['id' => 98, 'full_name' => 'Ramesh Chandran', 'phone' => '97909 88321', 'email' => 'ramesh.c@hotmail.com', 'plot_location' => 'Porur', 'plot_area_sqft' => 800, 'requirement_type' => 'Independent G+1 House', 'status' => 'converted', 'created_at' => date('Y-m-d H:i:s', strtotime('-2 days'))],
@@ -151,7 +151,7 @@ if (empty($recentEstimates)) {
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       <div>
         <h1 class="text-2xl sm:text-3xl font-display font-extrabold text-white tracking-tight">Construction Management Overview</h1>
-        <p class="text-slate-400 text-sm mt-1">Real-time leads, online cost estimates, and on-site plot visit requests across Chennai.</p>
+        <p class="text-slate-400 text-sm mt-1">Real-time leads, online cost estimates, and on-site plot visit requests across Pattukkottai & Tamil Nadu.</p>
       </div>
       <div class="flex items-center gap-3">
         <a href="leads.php?export=csv" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-4 py-2.5 rounded-xl text-xs font-bold transition-all">
@@ -205,7 +205,7 @@ if (empty($recentEstimates)) {
             <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Calculator Estimates</span>
             <div class="text-3xl font-display font-black text-white mt-1"><?= number_format($stats['total_estimates']) ?></div>
             <span class="text-xs text-blue-400 font-semibold inline-flex items-center gap-1 mt-2">
-              <i class="fa-solid fa-file-pdf"></i> Chennai 2026 Engine
+              <i class="fa-solid fa-file-pdf"></i> Pattukkottai 2026 Engine
             </span>
           </div>
           <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl">
@@ -270,7 +270,7 @@ if (empty($recentEstimates)) {
                     <div class="text-[10px] text-slate-400"><?= htmlspecialchars($lead['email'] ?? '—') ?></div>
                   </td>
                   <td class="py-3 px-4">
-                    <div><?= htmlspecialchars($lead['plot_location'] ?? 'Chennai') ?></div>
+                    <div><?= htmlspecialchars($lead['plot_location'] ?? 'Pattukkottai') ?></div>
                     <div class="text-[10px] text-slate-400"><?= !empty($lead['plot_area_sqft']) ? number_format($lead['plot_area_sqft']) . ' sq.ft' : '—' ?></div>
                   </td>
                   <td class="py-3 px-4">
@@ -329,7 +329,7 @@ if (empty($recentEstimates)) {
         </div>
 
         <div class="p-4 bg-slate-900/60 border-t border-slate-700/80 text-center">
-          <p class="text-xs text-slate-400">All estimates computed using Chennai 2026 rates.</p>
+          <p class="text-xs text-slate-400">All estimates computed using Pattukkottai 2026 rates.</p>
         </div>
       </div>
 

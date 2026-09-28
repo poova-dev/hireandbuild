@@ -136,7 +136,7 @@ $currentPage = $currentPage ?? 'home';
       <!-- Announcement Ticker -->
       <div class="overflow-hidden relative flex-1 mr-4 hidden sm:block">
         <div class="animate-marquee flex items-center gap-6 text-slate-300 font-medium">
-          <span class="inline-flex items-center gap-1.5"><strong class="text-white font-semibold">400+</strong> homes delivered in Chennai</span>
+          <span class="inline-flex items-center gap-1.5"><strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai</span>
           <span class="text-brand">•</span>
           <span class="inline-flex items-center gap-1.5"><strong class="text-white font-semibold">75+</strong> projects currently under construction</span>
           <span class="text-brand">•</span>
@@ -151,7 +151,7 @@ $currentPage = $currentPage ?? 'home';
           <span>Turnkey — design to handover</span>
           <span class="text-brand">•</span>
           <!-- Duplicate for seamless loop -->
-          <span class="inline-flex items-center gap-1.5"><strong class="text-white font-semibold">400+</strong> homes delivered in Chennai</span>
+          <span class="inline-flex items-center gap-1.5"><strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai</span>
           <span class="text-brand">•</span>
           <span class="inline-flex items-center gap-1.5"><strong class="text-white font-semibold">75+</strong> projects currently under construction</span>
           <span class="text-brand">•</span>

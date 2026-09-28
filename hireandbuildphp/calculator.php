@@ -14,10 +14,14 @@ $currentPage = 'calculator';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>House Construction Cost Calculator Chennai 2026 - Instant Online Estimate | Replica Architects & Builders</title>
-  <meta name="description" content="Calculate your house construction cost per sq ft in Chennai in 30 seconds. Accurate 2026 rates, floor-wise breakdown, material quantities, 10-phase milestone schedule, and EMI calculation.">
+  <title>House Construction Cost Calculator Pattukkottai 2026 - Instant Online Estimate | Replica Architects & Builders</title>
+  <meta name="description" content="Calculate your house construction cost per sq ft in Pattukkottai in 30 seconds. Accurate 2026 rates, floor-wise breakdown, material quantities, 10-phase milestone schedule, and EMI calculation.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit for Architectural Elegance -->
+  <link rel=preconnect href="https://fonts.googleapis.com">
+  <link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Tailwind CSS CDN v3 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -39,7 +43,8 @@ $currentPage = 'calculator';
             }
           },
           fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
@@ -58,7 +63,7 @@ $currentPage = 'calculator';
       <!-- Set 1 -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -89,7 +94,7 @@ $currentPage = 'calculator';
       <!-- Duplicate Set for Seamless Loop -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -379,26 +384,27 @@ $currentPage = 'calculator';
 
         <!-- Presets -->
         <div class="flex flex-wrap gap-2">
-          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="600">600 sqft</button>
-          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-orange-500 bg-orange-50 text-xs font-bold text-orange-600" data-val="800">800 sqft</button>
-          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="1200">1200 sqft</button>
-          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="1500">1500 sqft</button>
-          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="2400">2400 sqft (1 Ground)</button>
+          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="600">600 sqft</button>
+          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-orange-500 bg-orange-50 text-xs font-bold text-orange-600 transition-all" data-val="800">800 sqft</button>
+          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="1000">1000 sqft</button>
+          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="1200">1200 sqft</button>
+          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="1500">1500 sqft</button>
+          <button type="button" class="plot-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="2400">2400 sqft</button>
         </div>
 
         <!-- Unit Conversions -->
         <div class="grid grid-cols-3 gap-3 pt-2 text-xs">
-          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-center">
-            <span class="text-slate-400 block text-[10px] uppercase font-bold">Square Feet</span>
-            <strong class="disp-plot-sqft text-slate-900 font-bold">800 sqft</strong>
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-plot-sqft text-slate-900 font-extrabold text-sm block">800 sqft</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Plot Area</span>
           </div>
-          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-center">
-            <span class="text-slate-400 block text-[10px] uppercase font-bold">Square Yards</span>
-            <strong class="disp-plot-gaj text-slate-900 font-bold">88.9 gaj</strong>
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-plot-gaj text-slate-900 font-extrabold text-sm block">88.9 gaj</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Sq. Yards</span>
           </div>
-          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-center">
-            <span class="text-slate-400 block text-[10px] uppercase font-bold">Tamil Nadu Cents</span>
-            <strong class="disp-plot-cents text-slate-900 font-bold">1.837 cents</strong>
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-plot-cents text-slate-900 font-extrabold text-sm block">1.837 cents</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Cents</span>
           </div>
         </div>
       </div>
@@ -415,43 +421,45 @@ $currentPage = 'calculator';
 
         <!-- Presets -->
         <div class="flex flex-wrap gap-2">
-          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="600">600 sqft</button>
-          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-orange-500 bg-orange-50 text-xs font-bold text-orange-600" data-val="800">800 sqft</button>
-          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="1000">1000 sqft</button>
-          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="1500">1500 sqft</button>
-          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="2000">2000 sqft</button>
-          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="2400">2400 sqft</button>
+          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="600">600 sqft</button>
+          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-orange-500 bg-orange-50 text-xs font-bold text-orange-600 transition-all" data-val="800">800 sqft</button>
+          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="1000">1000 sqft</button>
+          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="1200">1200 sqft</button>
+          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="1500">1500 sqft</button>
+          <button type="button" class="builtup-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="2000">2000 sqft</button>
         </div>
 
         <!-- Conversions & FAR -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs">
-          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-center">
-            <span class="text-slate-400 block text-[10px] uppercase font-bold">Floor Area</span>
-            <strong class="disp-builtup-sqft text-slate-900 font-bold">800 sqft</strong>
+        <div class="grid grid-cols-3 gap-3 pt-2 text-xs">
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-builtup-sqft text-slate-900 font-extrabold text-sm block">800 sqft</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Built-up Area</span>
           </div>
-          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-center">
-            <span class="text-slate-400 block text-[10px] uppercase font-bold">Gaj Equivalent</span>
-            <strong class="disp-builtup-gaj text-slate-900 font-bold">88.9 gaj</strong>
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-builtup-gaj text-slate-900 font-extrabold text-sm block">88.9 gaj</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Sq. Yards</span>
           </div>
-          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-center">
-            <span class="text-slate-400 block text-[10px] uppercase font-bold">FAR Ratio</span>
-            <strong class="disp-far text-orange-600 font-bold">1.00</strong>
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-builtup-cents text-slate-900 font-extrabold text-sm block">1.837 cents</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Cents</span>
           </div>
-          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-center">
-            <span class="text-slate-400 block text-[10px] uppercase font-bold">Plot Coverage</span>
-            <strong class="disp-coverage text-slate-900 font-bold">100%</strong>
-          </div>
+        </div>
+
+        <div class="pt-1">
+          <span class="disp-far inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+            Floor Area Ratio (FAR) 1.00 Coverage 100%
+          </span>
         </div>
       </div>
 
-      <!-- Car Parking Area Input Group -->
+      <!-- Car Parking Area Input Group (Matching PDF Page 1) -->
       <div class="pt-6 border-t border-slate-100 space-y-3">
         <div class="flex items-center justify-between">
           <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">
-            Car Parking Area (sq ft)
+            Car Parking Area (sq ft) <span class="text-slate-400 font-normal">(Optional)</span>
           </label>
           <span class="disp-parking-rate text-xs font-bold text-orange-600 bg-orange-50 px-2.5 py-1 rounded-full border border-orange-200">
-            CAR PARKING RATE: ₹2,350/sqft (Premium)
+            + ₹1,500/sqft (Premium)
           </span>
         </div>
 
@@ -462,15 +470,32 @@ $currentPage = 'calculator';
 
         <!-- Presets -->
         <div class="flex flex-wrap gap-2">
-          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-orange-500 bg-orange-50 text-xs font-bold text-orange-600" data-val="200">1 car (200 sqft)</button>
-          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="400">2 cars (400 sqft)</button>
-          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="600">3 cars (600 sqft)</button>
-          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600" data-val="800">4 cars (800 sqft)</button>
+          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="0">0 (No car)</button>
+          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="150">150 sqft (1 car)</button>
+          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-orange-500 bg-orange-50 text-xs font-bold text-orange-600 transition-all" data-val="200">200 sqft</button>
+          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="250">250 sqft (1 car)</button>
+          <button type="button" class="parking-preset-btn px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 hover:border-orange-500 hover:text-orange-600 transition-all" data-val="300">300 sqft (2 cars)</button>
         </div>
 
-        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-600 font-medium">
-          <span class="disp-parking-calc font-bold text-slate-900">200 sqft = ~1 car = ₹4.70 L</span> &middot; Stilt or ground covered parking bay
+        <!-- 3 Metric Boxes like Plot & Builtup (Page 1 in PDF) -->
+        <div class="grid grid-cols-3 gap-3 pt-2 text-xs">
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-parking-sqft text-slate-900 font-extrabold text-sm block">200 sqft</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Parking Area</span>
+          </div>
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-parking-spaces text-slate-900 font-extrabold text-sm block">~1 car</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Parking Spaces</span>
+          </div>
+          <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-center">
+            <strong class="disp-parking-cost text-slate-900 font-extrabold text-sm block">₹4.70 L</strong>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold mt-0.5">Est. Parking Cost</span>
+          </div>
         </div>
+
+        <p class="text-[11px] text-slate-400 pt-1 leading-normal">
+          Standard car parking area is 150-200 sqft. Dedicated parking structure adds approximately 15-20% to built-up area.
+        </p>
       </div>
 
       <!-- Action Button -->
@@ -482,7 +507,7 @@ $currentPage = 'calculator';
       </div>
     </div>
 
-    <!-- ==================== STEP 2: NUMBER OF FLOORS ==================== -->
+    <!-- ==================== STEP 2: NUMBER OF FLOORS (Matching PDF Pages 2-5) ==================== -->
     <div class="calc-wizard-step bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 space-y-8 hidden" data-step="2">
       <div class="border-b border-slate-100 pb-4">
         <span class="text-orange-600 font-bold text-xs uppercase tracking-wider">Step 2 of 4</span>
@@ -490,62 +515,62 @@ $currentPage = 'calculator';
         <p class="text-xs text-slate-500 mt-0.5">Each additional floor adds 4 months to the construction timeline.</p>
       </div>
 
-      <!-- 4 Floors Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Central Interactive Building Display Box (Pages 2, 3, 4, 5 of PDF) -->
+      <div class="rounded-2xl border-2 border-slate-100 bg-slate-50/60 p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-center sm:text-left transition-all">
+        <div id="floor-visual-preview" class="w-36 h-32 flex items-center justify-center shrink-0">
+          <!-- Rendered dynamically via calculator.js -->
+        </div>
+        <div class="space-y-1.5">
+          <div id="floor-visual-badge" class="text-3xl sm:text-4xl font-black text-orange-600">G+3</div>
+          <div id="floor-visual-title" class="text-base font-bold text-slate-900">G+3 (4 Floors)</div>
+          <div id="floor-visual-timeline" class="inline-block bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">~15-18 months total</div>
+        </div>
+      </div>
+
+      <!-- 4 Floor Selector Cards Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
         
         <!-- Ground Only -->
-        <div class="floor-card-opt cursor-pointer p-6 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-4 transition-all" data-floor="1">
-          <div class="w-16 h-16 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center font-black text-2xl shadow-sm">
-            G
+        <div class="floor-card-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-3 transition-all hover:border-orange-300" data-floor="1">
+          <div class="w-14 h-14 rounded-2xl bg-orange-50 border border-orange-200 flex items-center justify-center text-orange-600">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
           </div>
           <div>
-            <div class="text-lg font-black text-slate-900">Ground Only</div>
-            <div class="text-xs text-slate-500 mt-0.5">1 Floor Total</div>
-            <div class="mt-3 inline-block bg-slate-100 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full">
-              ~8 months est.
-            </div>
+            <div class="text-sm font-black text-slate-900">Ground Only</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">1 Floor Total</div>
           </div>
         </div>
 
         <!-- G+1 -->
-        <div class="floor-card-opt cursor-pointer p-6 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-4 transition-all" data-floor="2">
-          <div class="w-16 h-16 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center font-black text-2xl shadow-sm">
-            G+1
+        <div class="floor-card-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-3 transition-all hover:border-orange-300" data-floor="2">
+          <div class="w-14 h-14 rounded-2xl bg-orange-50 border border-orange-200 flex items-center justify-center text-orange-600">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
           </div>
           <div>
-            <div class="text-lg font-black text-slate-900">G + 1 Floor</div>
-            <div class="text-xs text-slate-500 mt-0.5">2 Floors Total</div>
-            <div class="mt-3 inline-block bg-slate-100 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full">
-              ~12 months est.
-            </div>
+            <div class="text-sm font-black text-slate-900">G + 1</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">2 Floors Total</div>
           </div>
         </div>
 
         <!-- G+2 -->
-        <div class="floor-card-opt cursor-pointer p-6 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-4 transition-all" data-floor="3">
-          <div class="w-16 h-16 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center font-black text-2xl shadow-sm">
-            G+2
+        <div class="floor-card-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-3 transition-all hover:border-orange-300" data-floor="3">
+          <div class="w-14 h-14 rounded-2xl bg-orange-50 border border-orange-200 flex items-center justify-center text-orange-600">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 14v.01M12 14v.01M16 14v.01M8 10v.01M12 10v.01M16 10v.01M8 6v.01M12 6v.01M16 6v.01M12 18h.01M4 21h16a1 1 0 001-1V4a1 1 0 00-1-1H4a1 1 0 00-1 1v16a1 1 0 001 1z"/></svg>
           </div>
           <div>
-            <div class="text-lg font-black text-slate-900">G + 2 Floors</div>
-            <div class="text-xs text-slate-500 mt-0.5">3 Floors Total</div>
-            <div class="mt-3 inline-block bg-slate-100 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full">
-              ~15 months est.
-            </div>
+            <div class="text-sm font-black text-slate-900">G + 2</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">3 Floors Total</div>
           </div>
         </div>
 
         <!-- G+3 (Default Selected) -->
-        <div class="floor-card-opt cursor-pointer p-6 rounded-2xl border-2 border-orange-500 bg-orange-50/60 ring-2 ring-orange-500/20 text-center flex flex-col items-center justify-between gap-4 transition-all" data-floor="4">
-          <div class="w-16 h-16 rounded-2xl bg-orange-600 text-white flex items-center justify-center font-black text-2xl shadow-md">
-            G+3
+        <div class="floor-card-opt cursor-pointer p-5 rounded-2xl border-2 border-orange-500 bg-orange-50/60 ring-2 ring-orange-500/20 text-center flex flex-col items-center justify-between gap-3 transition-all" data-floor="4">
+          <div class="w-14 h-14 rounded-2xl bg-orange-600 text-white flex items-center justify-center shadow-md">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 4h1m4 0h1m-5 4h1m4 0h1"/></svg>
           </div>
           <div>
-            <div class="text-lg font-black text-slate-900">G + 3 Floors</div>
-            <div class="text-xs text-slate-500 mt-0.5">4 Floors Total</div>
-            <div class="mt-3 inline-block bg-orange-100 text-orange-700 text-[11px] font-bold px-2.5 py-1 rounded-full">
-              ~18 months est.
-            </div>
+            <div class="text-sm font-black text-slate-900">G + 3</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">4 Floors Total</div>
           </div>
         </div>
 
@@ -563,57 +588,65 @@ $currentPage = 'calculator';
       </div>
     </div>
 
-    <!-- ==================== STEP 3: SELECT PACKAGE ==================== -->
+    <!-- ==================== STEP 3: SELECT PACKAGE (Matching PDF Pages 6-8) ==================== -->
     <div class="calc-wizard-step bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 space-y-8 hidden" data-step="3">
       <div class="border-b border-slate-100 pb-4">
         <span class="text-orange-600 font-bold text-xs uppercase tracking-wider">Step 3 of 4</span>
         <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">Select your construction package</h2>
-        <p class="text-xs text-slate-500 mt-0.5">Chennai 2026 rates. Includes all materials, labour &amp; site supervision.</p>
+        <p class="text-xs text-slate-500 mt-0.5">Pattukkottai 2026 rates. Includes all materials, labour &amp; site supervision.</p>
       </div>
 
       <!-- 4 Package Cards -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
         
         <!-- Basic -->
-        <div class="pkg-tier-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col justify-between transition-all" data-pkg="basic">
-          <div class="space-y-1">
-            <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Budget-Friendly</span>
-            <div class="text-lg font-black text-slate-900">Basic</div>
-            <div class="text-sm font-extrabold text-sky-600">₹1,999 <span class="text-[10px] font-normal text-slate-500">/ sqft</span></div>
+        <div class="pkg-tier-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-3 transition-all hover:border-orange-300" data-pkg="basic">
+          <div class="w-10 h-10 rounded-xl bg-slate-50 text-slate-600 flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <div>
+            <div class="text-base font-black text-slate-900">Basic</div>
+            <div class="text-xs font-extrabold text-slate-600 mt-0.5">₹1,999 <span class="text-[10px] font-normal text-slate-400">/ sqft</span></div>
           </div>
         </div>
 
         <!-- Standard -->
-        <div class="pkg-tier-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col justify-between transition-all" data-pkg="standard">
-          <div class="space-y-1">
-            <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Standard</span>
-            <div class="text-lg font-black text-slate-900">Standard</div>
-            <div class="text-sm font-extrabold text-emerald-600">₹2,299 <span class="text-[10px] font-normal text-slate-500">/ sqft</span></div>
+        <div class="pkg-tier-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-3 transition-all hover:border-orange-300" data-pkg="standard">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1"/></svg>
+          </div>
+          <div>
+            <div class="text-base font-black text-slate-900">Standard</div>
+            <div class="text-xs font-extrabold text-emerald-600 mt-0.5">₹2,299 <span class="text-[10px] font-normal text-slate-400">/ sqft</span></div>
           </div>
         </div>
 
         <!-- Premium (Default) -->
-        <div class="pkg-tier-opt cursor-pointer p-5 rounded-2xl border-2 border-orange-500 bg-orange-50/50 ring-2 ring-orange-500/20 text-center flex flex-col justify-between transition-all relative" data-pkg="premium">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow">BEST VALUE</div>
-          <div class="space-y-1">
-            <span class="text-[10px] uppercase font-bold text-orange-600 tracking-wider">Recommended</span>
-            <div class="text-lg font-black text-slate-900">Premium</div>
-            <div class="text-sm font-extrabold text-orange-600">₹2,649 <span class="text-[10px] font-normal text-slate-500">/ sqft</span></div>
+        <div class="pkg-tier-opt cursor-pointer p-5 rounded-2xl border-2 border-orange-500 bg-orange-50/50 ring-2 ring-orange-500/20 text-center flex flex-col items-center justify-between gap-3 transition-all relative" data-pkg="premium">
+          <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded-full shadow">POPULAR</div>
+          <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <div>
+            <div class="text-base font-black text-slate-900">Premium</div>
+            <div class="text-xs font-extrabold text-orange-600 mt-0.5">₹2,649 <span class="text-[10px] font-normal text-slate-400">/ sqft</span></div>
           </div>
         </div>
 
         <!-- Luxury -->
-        <div class="pkg-tier-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col justify-between transition-all" data-pkg="luxury">
-          <div class="space-y-1">
-            <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Top Tier</span>
-            <div class="text-lg font-black text-slate-900">Luxury</div>
-            <div class="text-sm font-extrabold text-purple-600">₹2,999 <span class="text-[10px] font-normal text-slate-500">/ sqft</span></div>
+        <div class="pkg-tier-opt cursor-pointer p-5 rounded-2xl border-2 border-slate-200 bg-white text-center flex flex-col items-center justify-between gap-3 transition-all hover:border-orange-300" data-pkg="luxury">
+          <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <div class="text-base font-black text-slate-900">Luxury</div>
+            <div class="text-xs font-extrabold text-purple-600 mt-0.5">₹2,999 <span class="text-[10px] font-normal text-slate-400">/ sqft</span></div>
           </div>
         </div>
 
       </div>
 
-      <!-- Interactive Package Detail Card with Tabs (from Reference Screenshot) -->
+      <!-- Interactive Package Detail Card with Tabs (Matching PDF Pages 6-8) -->
       <div class="rounded-3xl border border-slate-200 overflow-hidden shadow-sm flex flex-col md:flex-row">
         
         <!-- Left Orange Brand Box -->
@@ -621,13 +654,13 @@ $currentPage = 'calculator';
           <div>
             <span class="inline-block bg-white/20 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full mb-2">Package Details</span>
             <h3 id="active-pkg-title" class="text-2xl font-black">Premium</h3>
-            <div id="active-pkg-price" class="text-3xl font-black mt-2">₹2,649</div>
-            <div class="text-xs text-orange-100 font-light mt-0.5">per sq.ft built-up area</div>
+            <div class="text-xs text-orange-100 font-medium mt-1">Best value for modern homes</div>
+            <div id="active-pkg-price" class="text-3xl font-black mt-3">₹2,649</div>
+            <div class="text-xs text-orange-200 font-light mt-0.5">per sq.ft built-up area</div>
           </div>
-          <div class="text-[11px] text-orange-200 pt-4 border-t border-white/20">
-            &bull; M20/M25 Concrete<br>
-            &bull; Structural Drawings<br>
-            &bull; Dedicated Site Engineer
+          <div class="text-[11px] text-orange-100 pt-4 border-t border-white/20 space-y-1">
+            <div>&bull; 10-14 months timeline</div>
+            <div>&bull; Turnkey Quality Execution</div>
           </div>
         </div>
 
@@ -645,8 +678,27 @@ $currentPage = 'calculator';
             </button>
           </div>
 
-          <div id="pkg-specs-content">
+          <div id="pkg-specs-content" class="min-h-[140px]">
             <!-- Rendered reactively via calculator.js -->
+          </div>
+
+          <!-- Feature Tags Bar (from PDF Pages 6-8) -->
+          <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-[10px] font-bold text-slate-600">
+            <span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg">
+              <span class="text-emerald-500">&#10003;</span> Structural Engineering
+            </span>
+            <span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg">
+              <span class="text-emerald-500">&#10003;</span> Soil Testing
+            </span>
+            <span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg">
+              <span class="text-emerald-500">&#10003;</span> 3D Elevation Design
+            </span>
+            <span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg">
+              <span class="text-emerald-500">&#10003;</span> 10-Year Structural Warranty
+            </span>
+            <span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg">
+              <span class="text-emerald-500">&#10003;</span> Turnkey Delivery
+            </span>
           </div>
         </div>
 
@@ -664,23 +716,23 @@ $currentPage = 'calculator';
       </div>
     </div>
 
-    <!-- ==================== STEP 4: ANY EXTRA REQUIREMENTS? ==================== -->
+    <!-- ==================== STEP 4: ANY EXTRA REQUIREMENTS? (Matching PDF Page 9) ==================== -->
     <div class="calc-wizard-step bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 space-y-8 hidden" data-step="4">
       <div class="border-b border-slate-100 pb-4">
         <span class="text-orange-600 font-bold text-xs uppercase tracking-wider">Step 4 of 4</span>
         <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">Any extra requirements?</h2>
-        <p class="text-xs text-slate-500 mt-0.5">Please add any optional add-ons to your baseline construction.</p>
+        <p class="text-xs text-slate-500 mt-0.5">Prices add-ons sync on top of the base construction estimate.</p>
       </div>
 
-      <!-- Checkbox Grid (11 options from Reference Screenshot) -->
+      <!-- Checkbox Grid (Exact 11 items from PDF Page 9) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         
         <!-- Headroom -->
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all">
           <input type="checkbox" value="headroom" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">Headroom (150 sq ft)</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹3,50,000</div>
+            <div class="text-sm font-bold text-slate-900">Headroom (250 sq.ft)</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹4,50,000</div>
           </div>
         </label>
 
@@ -689,16 +741,16 @@ $currentPage = 'calculator';
           <input type="checkbox" value="wastewater" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
             <div class="text-sm font-bold text-slate-900">Waste Water Recycling Tank</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹85,000</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹1,80,000</div>
           </div>
         </label>
 
-        <!-- Overhead Tank -->
+        <!-- Overhead Concrete Tank -->
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all">
           <input type="checkbox" value="oht" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">Overhead Concrete Tank (2,000 L)</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹36,000</div>
+            <div class="text-sm font-bold text-slate-900">Overhead Concrete Tank (per litre)</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹18/litre</div>
           </div>
         </label>
 
@@ -706,8 +758,8 @@ $currentPage = 'calculator';
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all">
           <input type="checkbox" value="compound" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">Compound Wall (120 rft)</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹2,16,000</div>
+            <div class="text-sm font-bold text-slate-900">Compound Wall (per rft)</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹1,800/rft</div>
           </div>
         </label>
 
@@ -715,8 +767,8 @@ $currentPage = 'calculator';
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all">
           <input type="checkbox" value="sump" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">Underground Sump (6,000 L)</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹1,32,000</div>
+            <div class="text-sm font-bold text-slate-900">Underground Sump (per litre)</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹22/litre</div>
           </div>
         </label>
 
@@ -724,8 +776,8 @@ $currentPage = 'calculator';
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all">
           <input type="checkbox" value="solar" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">Solar Panels (1 kW system)</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹75,000</div>
+            <div class="text-sm font-bold text-slate-900">Solar Panels (3kW)</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹2,20,000</div>
           </div>
         </label>
 
@@ -734,7 +786,7 @@ $currentPage = 'calculator';
           <input type="checkbox" value="gate" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
             <div class="text-sm font-bold text-slate-900">Main Gate (MS / Sliding)</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹65,000</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹1,20,000</div>
           </div>
         </label>
 
@@ -742,7 +794,7 @@ $currentPage = 'calculator';
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all">
           <input type="checkbox" value="cctv" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">CCTV &amp; Security System (4 Cams)</div>
+            <div class="text-sm font-bold text-slate-900">CCTV &amp; Security System</div>
             <div class="text-xs text-orange-600 font-bold">+ ₹45,000</div>
           </div>
         </label>
@@ -751,8 +803,8 @@ $currentPage = 'calculator';
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all">
           <input type="checkbox" value="automation" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">Smart Home Automation Package</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹1,20,000</div>
+            <div class="text-sm font-bold text-slate-900">Smart Home Automation</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹1,50,000</div>
           </div>
         </label>
 
@@ -760,8 +812,8 @@ $currentPage = 'calculator';
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all">
           <input type="checkbox" value="septic" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">Conventional Septic Tank (4,000 L)</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹64,000</div>
+            <div class="text-sm font-bold text-slate-900">Conventional Septic Tank (per litre)</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹16/litre</div>
           </div>
         </label>
 
@@ -769,8 +821,8 @@ $currentPage = 'calculator';
         <label class="p-4.5 rounded-2xl border border-slate-200 bg-white hover:border-orange-500 flex items-start gap-3 cursor-pointer transition-all sm:col-span-2">
           <input type="checkbox" value="lift" class="extra-cb-opt mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-500">
           <div>
-            <div class="text-sm font-bold text-slate-900">Passenger Lift (4 Passengers)</div>
-            <div class="text-xs text-orange-600 font-bold">+ ₹4,50,000 &middot; Includes structural shaft frame &amp; automatic landing doors</div>
+            <div class="text-sm font-bold text-slate-900">Lift (4 Passengers)</div>
+            <div class="text-xs text-orange-600 font-bold">+ ₹6,50,000 &middot; Includes structural shaft frame &amp; automatic landing doors</div>
           </div>
         </label>
 
@@ -795,7 +847,7 @@ $currentPage = 'calculator';
       <!-- Report Header -->
       <div class="border-b-2 border-orange-500 pb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div class="flex items-center gap-4">
-          <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-12 w-auto">
+          <img src="assets/images/logo.svg" alt="Replica Architects &amp; Builders Logo" class="h-12 w-auto">
           <div>
             <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Replica Architects &amp; Builders</h2>
             <p class="text-xs font-semibold text-slate-600">Pattukkottai, Tamil Nadu – 614601</p>
@@ -969,7 +1021,7 @@ $currentPage = 'calculator';
           DISCLAIMER
         </strong>
         <p class="leading-relaxed font-light">
-          All figures are approximate estimates for Chennai metro (2026). Actual costs depend on site conditions, soil type, material price fluctuations and contractor negotiations. Government approval charges, architect fees, EB/water connection charges and interior furnishing are excluded. (*) Sump and overhead tank rates vary by selected package.
+          All figures are approximate estimates for Pattukkottai & Tamil Nadu (2026). Actual costs depend on site conditions, soil type, material price fluctuations and contractor negotiations. Government approval charges, architect fees, EB/water connection charges and interior furnishing are excluded. (*) Sump and overhead tank rates vary by selected package.
         </p>
       </div>
 
@@ -995,9 +1047,54 @@ $currentPage = 'calculator';
         </div>
       </div>
 
-    </div>
-
   </main>
+
+  <!-- =========================================================================
+       WHY HOMEOWNERS TRUST THESE NUMBERS (From Reference PDF Page 9)
+       ========================================================================= -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 no-print border-t border-slate-100">
+    <div class="space-y-6">
+      <div>
+        <div class="text-[11px] font-extrabold uppercase tracking-widest text-orange-600">TAMIL NADU &bull; 2026 VERIFIED RATES</div>
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1">Why homeowners across Pattukkottai &amp; Tamil Nadu trust these numbers</h3>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
+          Our calculator reflects live procurement rates, standard structural specifications, and transparent milestone-based schedules verified by registered civil engineers and architects.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center font-black">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Real Procurement Rates</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Updated weekly based on prevailing factory and wholesale rates for cement, 550D TMT steel, and river/M-sand in Tamil Nadu.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-black">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">10 Milestone Payments</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Zero 100% upfront risk. You pay strictly phase by phase only after inspecting and approving each stage on site.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-black">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Zero Hidden Surcharges</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Every specification is bound in a clear Bill of Quantities (BOQ) with grade guarantees and 10-year structural warranty.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- =========================================================================
        FOOTER
@@ -1010,7 +1107,7 @@ $currentPage = 'calculator';
         <div class="lg:col-span-2 space-y-4">
           <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
-            Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
+            Turnkey house construction, architectural and structural design, and plan approvals across Pattukkottai, Thanjavur, Kumbakonam, and Delta Districts.
           </p>
           <div class="flex items-center gap-6 pt-2">
             <div>

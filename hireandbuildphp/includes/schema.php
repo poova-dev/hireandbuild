@@ -59,7 +59,7 @@ class SeoSchema {
                 ["@type" => "City", "name" => "Thanjavur"],
                 ["@type" => "City", "name" => "Kumbakonam"],
                 ["@type" => "City", "name" => "Tiruchirappalli"],
-                ["@type" => "City", "name" => "Chennai"],
+                ["@type" => "City", "name" => "Pattukkottai"],
                 ["@type" => "AdministrativeArea", "name" => "Tamil Nadu"]
             ]
         ];

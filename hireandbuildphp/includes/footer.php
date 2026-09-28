@@ -13,7 +13,7 @@
       
       <div class="space-y-2 text-center md:text-left">
         <h3 class="font-heading text-2xl sm:text-3xl font-bold text-white tracking-tight">
-          Planning to build your home in Chennai?
+          Planning to build your home in Pattukkottai?
         </h3>
         <p class="text-slate-400 text-sm sm:text-base max-w-xl">
           Get a transparent sq.ft estimate and BOQ breakdown before you commit to anything.

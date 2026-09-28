@@ -14,10 +14,14 @@ $currentPage = 'services';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turnkey House Construction Services in Chennai | Replica Architects & Builders</title>
-  <meta name="description" content="End-to-end turnkey residential and commercial construction services in Chennai. 12-stage construction process, architectural design, structural drawings, CMDA/DTCP approvals, and 15-year warranty.">
+  <title>Turnkey House Construction Services in Pattukkottai | Replica Architects & Builders</title>
+  <meta name="description" content="End-to-end turnkey residential and commercial construction services in Pattukkottai. 12-stage construction process, architectural design, structural drawings, CMDA/DTCP approvals, and 15-year warranty.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit for Architectural Elegance -->
+  <link rel=preconnect href="https://fonts.googleapis.com">
+  <link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Tailwind CSS CDN v3 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -39,7 +43,8 @@ $currentPage = 'services';
             }
           },
           fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
@@ -58,7 +63,7 @@ $currentPage = 'services';
       <!-- Set 1 -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -89,7 +94,7 @@ $currentPage = 'services';
       <!-- Duplicate Set for Seamless Loop -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -293,7 +298,7 @@ $currentPage = 'services';
           </div>
 
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
-            Turnkey House Construction Services in <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-400">Chennai</span>
+            Turnkey House Construction Services in <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-400">Pattukkottai</span>
           </h1>
 
           <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
@@ -352,7 +357,7 @@ $currentPage = 'services';
                   <input type="tel" name="phone" required placeholder="10-digit mobile" inputmode="numeric" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
                 </div>
                 <div>
-                  <label class="block text-xs font-bold text-slate-700 mb-1">Plot Location in Chennai</label>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Plot Location in Pattukkottai / Region</label>
                   <input type="text" name="location" placeholder="e.g. Porur / Tambaram" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
                 </div>
               </div>
@@ -488,7 +493,7 @@ $currentPage = 'services';
           </div>
           <h3 class="text-base font-bold text-slate-900">Soil Investigation & Site Survey</h3>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Geotechnical bore tests to determine Safe Bearing Capacity (SBC) and water table level across your Chennai plot, ensuring optimal foundation design.
+            Geotechnical bore tests to determine Safe Bearing Capacity (SBC) and water table level across your Pattukkottai plot, ensuring optimal foundation design.
           </p>
         </div>
 
@@ -675,7 +680,7 @@ $currentPage = 'services';
         </div>
         <div class="lg:col-span-6">
           <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Turnkey residential villa in Chennai" class="w-full h-80 sm:h-96 object-cover">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Turnkey residential villa in Pattukkottai" class="w-full h-80 sm:h-96 object-cover">
           </div>
         </div>
       </div>
@@ -690,7 +695,7 @@ $currentPage = 'services';
             Commercial & Mixed-Use Construction
           </h2>
           <p class="text-sm text-slate-600 leading-relaxed">
-            Maximize your land monetization with high-efficiency commercial buildings, retail shopping complexes, medical clinics, and corporate branch offices across Chennai's bustling commercial corridors.
+            Maximize your land monetization with high-efficiency commercial buildings, retail shopping complexes, medical clinics, and corporate branch offices across Pattukkottai and Thanjavur's commercial centers.
           </p>
           <ul class="space-y-2 text-xs text-slate-600">
             <li class="flex items-center gap-2">
@@ -714,7 +719,7 @@ $currentPage = 'services';
         </div>
         <div class="lg:col-span-6 lg:order-1">
           <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Commercial construction project in Chennai" class="w-full h-80 sm:h-96 object-cover">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Commercial construction project in Pattukkottai" class="w-full h-80 sm:h-96 object-cover">
           </div>
         </div>
       </div>
@@ -729,7 +734,7 @@ $currentPage = 'services';
             Architectural Designing & 3D Elevations
           </h2>
           <p class="text-sm text-slate-600 leading-relaxed">
-            Every great home begins with intelligent space planning. Our architects blend contemporary aesthetics with Chennai's coastal climate considerations and time-tested Vastu principles.
+            Every great home begins with intelligent space planning. Our architects blend contemporary aesthetics with Pattukkottai and Tamil Nadu's climate considerations and time-tested Vastu principles.
           </p>
           <div class="grid grid-cols-2 gap-3 text-xs">
             <div class="p-3 rounded-xl bg-white border border-slate-200">
@@ -752,7 +757,7 @@ $currentPage = 'services';
         </div>
         <div class="lg:col-span-6">
           <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Architectural 3D elevation design in Chennai" class="w-full h-80 sm:h-96 object-cover">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Architectural 3D elevation design in Pattukkottai" class="w-full h-80 sm:h-96 object-cover">
           </div>
         </div>
       </div>
@@ -801,7 +806,7 @@ $currentPage = 'services';
             CMDA / DTCP Building Plan Approvals
           </h2>
           <p class="text-sm text-slate-600 leading-relaxed">
-            Navigating Chennai's local body approvals can take months without expert liaison. Replica Architects & Builders handles the entire permitting lifecycle across Greater Chennai Corporation (GCC), CMDA, and DTCP jurisdictions.
+            Navigating Pattukkottai and local body approvals can take months without expert liaison. Replica Architects & Builders handles the entire permitting lifecycle across DTCP, CMDA, and Pattukkottai Town Planning Authorities jurisdictions.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
             <div class="p-3 rounded-xl bg-white border border-slate-200">
@@ -874,7 +879,7 @@ $currentPage = 'services';
           Frequently Asked Questions on Turnkey Services
         </h2>
         <p class="text-sm text-slate-600">
-          Everything you need to know about our turnkey house construction agreements in Chennai.
+          Everything you need to know about our turnkey house construction agreements in Pattukkottai.
         </p>
       </div>
 
@@ -916,7 +921,7 @@ $currentPage = 'services';
         <!-- FAQ 4 -->
         <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
           <button type="button" class="faq-trigger w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 text-sm sm:text-base hover:text-orange-600 transition-colors" aria-expanded="false">
-            <span>How do you handle soil conditions with high clay or water table in Chennai?</span>
+            <span>How do you handle soil conditions with high clay or water table in Pattukkottai?</span>
             <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
@@ -934,7 +939,7 @@ $currentPage = 'services';
   <div class="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-600 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
       <div>
-        <h3 class="text-2xl sm:text-3xl font-black tracking-tight">Ready to build your home in Chennai?</h3>
+        <h3 class="text-2xl sm:text-3xl font-black tracking-tight">Ready to build your home in Pattukkottai?</h3>
         <p class="text-orange-100 text-sm mt-1">Book a free site inspection with our senior site engineer today.</p>
       </div>
       <div class="flex flex-wrap items-center justify-center gap-3">
@@ -959,7 +964,7 @@ $currentPage = 'services';
         <div class="lg:col-span-2 space-y-4">
           <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
-            Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
+            Turnkey house construction, architectural and structural design, and plan approvals across Pattukkottai, Thanjavur, Kumbakonam, and Delta Districts.
           </p>
           <div class="flex items-center gap-6 pt-2">
             <div>

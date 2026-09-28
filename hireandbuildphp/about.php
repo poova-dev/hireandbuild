@@ -14,10 +14,14 @@ $currentPage = 'about';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Built to Keep Promises | Replica Architects & Builders Chennai</title>
-  <meta name="description" content="Discover Replica Architects & Builders's journey. 400+ homes delivered across Chennai, 15-year structural warranty, dedicated site engineers, and our founder's personal handover promise.">
+  <title>About Us - Built to Keep Promises | Replica Architects & Builders Pattukkottai</title>
+  <meta name="description" content="Discover Replica Architects & Builders's journey. 400+ homes delivered across Pattukkottai & Tamil Nadu, 15-year structural warranty, dedicated site engineers, and our founder's personal handover promise.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit for Architectural Elegance -->
+  <link rel=preconnect href="https://fonts.googleapis.com">
+  <link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Tailwind CSS CDN v3 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -39,7 +43,8 @@ $currentPage = 'about';
             }
           },
           fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
@@ -58,7 +63,7 @@ $currentPage = 'about';
       <!-- Set 1 -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -89,7 +94,7 @@ $currentPage = 'about';
       <!-- Duplicate Set for Seamless Loop -->
       <span class="inline-flex items-center gap-2">
         <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Pattukkottai
       </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
       <span class="inline-flex items-center gap-2">
@@ -630,7 +635,7 @@ $currentPage = 'about';
           The 6 Pillars That Power Every Replica Architects & Builders
         </h2>
         <p class="text-sm text-slate-600 leading-relaxed">
-          How we have maintained a 100% on-time completion record and zero legal disputes across 400+ homes in Chennai.
+          How we have maintained a 100% on-time completion record and zero legal disputes across 400+ homes in Pattukkottai.
         </p>
       </div>
 
@@ -725,7 +730,7 @@ $currentPage = 'about';
         <div class="lg:col-span-2 space-y-4">
           <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-10 w-auto brightness-0 invert">
           <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
-            Turnkey house construction, architectural and structural design, and plan approvals across Chennai, Kanchipuram, Chengalpattu, and Thiruvallur.
+            Turnkey house construction, architectural and structural design, and plan approvals across Pattukkottai, Thanjavur, Kumbakonam, and Delta Districts.
           </p>
           <div class="flex items-center gap-6 pt-2">
             <div>

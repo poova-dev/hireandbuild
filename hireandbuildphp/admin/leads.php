@@ -34,7 +34,7 @@ if (isset($_GET['export']) && $_GET['export'] === 'csv') {
         }
     } else {
         // Fallback demo rows
-        fputcsv($output, [101, 'Karthik Subramanian', '9840123456', 'karthik.s@gmail.com', 'Anna Nagar, Chennai', 1500, 'G+2 Duplex Villa', 'new', date('Y-m-d H:i:s')]);
+        fputcsv($output, [101, 'Karthik Subramanian', '9840123456', 'karthik.s@gmail.com', 'Anna Nagar, Pattukkottai', 1500, 'G+2 Duplex Villa', 'new', date('Y-m-d H:i:s')]);
         fputcsv($output, [100, 'Ananya Balaji', '9884298765', 'ananya.b@yahoo.com', 'Velachery', 1200, 'G+1 Turnkey House', 'contacted', date('Y-m-d H:i:s')]);
     }
     fclose($output);
@@ -73,7 +73,7 @@ if ($db) {
 // Dummy fallbacks if database table is empty
 if (empty($leads)) {
     $leads = [
-        ['id' => 101, 'full_name' => 'Karthik Subramanian', 'phone' => '98401 23456', 'email' => 'karthik.s@gmail.com', 'plot_location' => 'Anna Nagar, Chennai', 'plot_area_sqft' => 1500, 'requirement_type' => 'G+2 Duplex Villa', 'notes' => 'Looking for premium finishes, granite staircase, ready to start in 2 months.', 'status' => 'new', 'created_at' => date('Y-m-d H:i:s', strtotime('-1 hour'))],
+        ['id' => 101, 'full_name' => 'Karthik Subramanian', 'phone' => '98401 23456', 'email' => 'karthik.s@gmail.com', 'plot_location' => 'Anna Nagar, Pattukkottai', 'plot_area_sqft' => 1500, 'requirement_type' => 'G+2 Duplex Villa', 'notes' => 'Looking for premium finishes, granite staircase, ready to start in 2 months.', 'status' => 'new', 'created_at' => date('Y-m-d H:i:s', strtotime('-1 hour'))],
         ['id' => 100, 'full_name' => 'Ananya Balaji', 'phone' => '98842 98765', 'email' => 'ananya.b@yahoo.com', 'plot_location' => 'Velachery Main Rd', 'plot_area_sqft' => 1200, 'requirement_type' => 'G+1 Turnkey House', 'notes' => 'Needs structural plan approval and soil test quotation.', 'status' => 'contacted', 'created_at' => date('Y-m-d H:i:s', strtotime('-4 hours'))],
         ['id' => 99, 'full_name' => 'M. Venkatesh', 'phone' => '94440 55123', 'email' => 'venkatesh.m@outlook.com', 'plot_location' => 'Tambaram East', 'plot_area_sqft' => 2400, 'requirement_type' => 'G+3 Premium Residence', 'notes' => 'Site inspection requested for upcoming Saturday.', 'status' => 'site_visit_scheduled', 'created_at' => date('Y-m-d H:i:s', strtotime('-1 day'))],
         ['id' => 98, 'full_name' => 'Ramesh Chandran', 'phone' => '97909 88321', 'email' => 'ramesh.c@hotmail.com', 'plot_location' => 'Porur', 'plot_area_sqft' => 800, 'requirement_type' => 'Independent G+1 House', 'notes' => 'Standard package finalized, agreement drafted.', 'status' => 'converted', 'created_at' => date('Y-m-d H:i:s', strtotime('-2 days'))],
@@ -208,7 +208,7 @@ if (empty($leads)) {
                 <td class="py-3.5 px-4">
                   <div class="font-medium text-white"><?= htmlspecialchars($l['requirement_type'] ?? 'House Construction') ?></div>
                   <div class="text-[11px] text-slate-400">
-                    <?= htmlspecialchars($l['plot_location'] ?? 'Chennai') ?> 
+                    <?= htmlspecialchars($l['plot_location'] ?? 'Pattukkottai') ?> 
                     <?= !empty($l['plot_area_sqft']) ? '· ' . number_format($l['plot_area_sqft']) . ' sq.ft' : '' ?>
                   </div>
                 </td>
