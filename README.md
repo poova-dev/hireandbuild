@@ -1,6 +1,6 @@
 # Replica Architects & Builders - Turnkey House Construction Web Platform
 
-A production-grade web platform and interactive Construction Cost Calculator modeled after modern residential builders, branded for **Replica Architects & Builders** in Chennai.
+A production-grade web platform and interactive Construction Cost Calculator modeled after modern residential builders, branded for **Replica Architects & Builders** in Pattukkottai, Tamil Nadu.
 
 ---
 
@@ -8,61 +8,45 @@ A production-grade web platform and interactive Construction Cost Calculator mod
 
 | Component | Technology | Description |
 |---|---|---|
-| **Frontend** | HTML5 + Tailwind CSS + JavaScript | Modern responsive design with Tailwind CDN (no build tools) |
-| **Backend** | PHP | Modular architecture ready for Apache / XAMPP / Hostinger |
+| **Frontend Project (Root)** | HTML5 + Tailwind CSS + JavaScript | Modern responsive design with Tailwind CDN, video hero, and PDF-cloned interactive calculator |
+| **Backend Project (`hireandbuildphp/`)** | PHP + MySQL + Tailwind | Full standalone modular PHP web app ready for Apache / XAMPP / Hostinger |
 | **Database** | MySQL | Complete schema for leads, estimates, site visits, and admin panel |
 | **Server** | Apache / XAMPP → Hostinger | Standard LAMP/Hostinger stack with `.htaccess` and routing |
 | **Forms** | PHP + AJAX | Asynchronous submission with toast notifications and MySQL persistence |
 | **Admin Panel** | PHP + MySQL + Tailwind | Secure dashboard to track inquiries, estimates, and project requests |
 | **SEO** | Server-side rendered HTML + Schema | Complete OpenGraph, Twitter Cards, and JSON-LD structured data |
-| **Images** | Local storage / Cloudinary | Structured asset directories with Cloudinary-ready configuration |
+| **Images/Media** | Cloudinary + Local SVG/Media | Architectural video hero background + modern vector icons |
 
 ---
 
 ## 📂 Project Structure
 
+This repository contains **two complete projects**:
+
+### 1. Root Directory: Pure Static HTML5 / CSS / JS Frontend
 ```
-├── index.html / index.php          # Homepage with hero, packages, live stats, FAQs
-├── packages.html / packages.php    # Construction packages & 40+ item comparison matrix
-├── calculator.html / calculator.php # 5-Step Chennai cost calculator & 3-page PDF estimate
-├── services.html / services.php    # Turnkey services & 12-stage construction process
-├── projects.html / projects.php    # Portfolio with filterable project cards
-├── about.html / about.php          # Company story, 15-year warranty, milestones
-├── contact.html / contact.php      # Contact channels & free site visit booking
-│
-├── includes/                       # Modular PHP Components
-│   ├── config.php                  # Database & environment configuration
-│   ├── db.php                      # PDO MySQL database connection
-│   ├── header.php                  # Reusable SSR header & navigation
-│   ├── footer.php                  # Reusable SSR footer & CTAs
-│   └── schema.php                  # Dynamic JSON-LD structured schema generator
-│
-├── api/                            # AJAX Form Handlers
-│   ├── contact.php                 # Handle contact form submissions
-│   ├── estimate.php                # Save calculator estimates
-│   └── site-visit.php              # Handle free site inspection bookings
-│
-├── admin/                          # Administrative Dashboard
-│   ├── index.php                   # Secure login & dashboard overview
-│   ├── leads.php                   # Lead management & status updater
-│   ├── estimates.php               # Calculator estimates viewer
-│   ├── logout.php                  # Session logout
-│   └── auth.php                    # Authentication helpers
-│
-├── database/
-│   └── schema.sql                  # Complete MySQL schema & seed data
-│
-├── assets/
-│   ├── css/
-│   │   └── custom.css              # Custom styling, print styles, animations
-│   ├── js/
-│   │   ├── main.js                 # Drawer, accordions, AJAX form handler
-│   │   └── calculator.js           # 5-step Chennai cost calculation engine
-│   └── images/
-│       ├── logo.svg                # Replica Architects & Builders brand mark placeholder
-│       └── favicon.svg             # Replica Architects & Builders favicon
-│
-└── README.md
+├── index.html                      # Homepage with Cloudinary video hero, live stats, FAQs
+├── packages.html                   # Construction packages & 40+ item comparison matrix
+├── calculator.html                 # 4-Step interactive cost calculator (cloned from PDF) & printable report
+├── services.html                   # Turnkey services & 12-stage construction process
+├── projects.html                   # Portfolio with filterable Pattukkottai project cards
+├── about.html                      # Company story, 15-year warranty, Er. Vikash Quaid & Ar. Sanjana
+├── contact.html                    # Contact channels & free site visit booking
+└── assets/                         # Shared CSS, JS & vector images
+    ├── css/custom.css
+    ├── js/main.js & calculator.js
+    └── images/
+```
+
+### 2. `hireandbuildphp/`: Standalone PHP + MySQL Application
+```
+hireandbuildphp/
+├── index.php / packages.php / calculator.php / services.php / projects.php / about.php / contact.php
+├── includes/                       # Modular PHP Components (header, footer, config, db, schema)
+├── api/                            # AJAX Form Handlers (contact.php, estimate.php, site-visit.php)
+├── admin/                          # Administrative Dashboard (index.php, leads.php, estimates.php)
+├── database/schema.sql             # Complete MySQL schema & seed data (Pattukkottai localized)
+└── assets/                         # Local asset bundle
 ```
 
 ---

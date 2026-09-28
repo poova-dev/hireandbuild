@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `estimates` (
   `client_name` VARCHAR(120) NULL,
   `client_phone` VARCHAR(20) NULL,
   `client_email` VARCHAR(120) NULL,
-  `plot_location` VARCHAR(100) DEFAULT 'Chennai',
+  `plot_location` VARCHAR(100) DEFAULT 'Pattukkottai',
   `plot_area_sqft` DECIMAL(10,2) NOT NULL,
   `builtup_per_floor_sqft` DECIMAL(10,2) NOT NULL,
   `car_parking_sqft` DECIMAL(10,2) DEFAULT 0.00,
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
   `title` VARCHAR(150) NOT NULL,
   `client_display_name` VARCHAR(100) NOT NULL,
   `locality` VARCHAR(100) NOT NULL,
-  `city` VARCHAR(50) DEFAULT 'Chennai',
+  `city` VARCHAR(50) DEFAULT 'Pattukkottai',
   `plot_sqft` INT UNSIGNED NOT NULL,
   `builtup_sqft` INT UNSIGNED NOT NULL,
   `floors` VARCHAR(30) NOT NULL,
@@ -178,12 +178,12 @@ ON DUPLICATE KEY UPDATE `updated_at` = CURRENT_TIMESTAMP;
 
 -- Seed Featured Projects
 INSERT INTO `projects` (`title`, `client_display_name`, `locality`, `city`, `plot_sqft`, `builtup_sqft`, `floors`, `package_name`, `status`, `image_url`, `completion_year`, `is_featured`, `sort_order`) VALUES
-('Contemporary Duplex Residence', 'Yuvaraj', 'Villivakkam', 'Chennai', 1800, 2400, 'G+1', 'Premium', 'completed', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80', 2026, 1, 1),
-('Luxury Stilt + 3 Floor Villa', 'Boopesh', 'Thiruverkadu', 'Chennai', 2200, 3100, 'G+3', 'Luxury', 'completed', 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80', 2026, 1, 2),
-('Modern G+2 Architectural Villa', 'Rahul', 'Thiruverkadu', 'Chennai', 2000, 2750, 'G+2', 'Premium', 'completed', 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80', 2026, 1, 3),
-('Executive G+2 Family Home', 'Rajadurai', 'Urapakkam', 'Chennai', 2000, 2750, 'G+2', 'Premium', 'completed', 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80', 2026, 1, 4),
-('Elegant G+2 Independent House', 'Vignesh', 'Thalambur', 'Chennai', 2000, 2750, 'G+2', 'Standard', 'completed', 'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=800&q=80', 2026, 1, 5),
-('Spacious G+2 Residential Project', 'KVT Family', 'Vadaperumbakkam', 'Chennai', 2000, 2750, 'G+2', 'Premium', 'completed', 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80', 2026, 1, 6)
+('Contemporary Duplex Residence', 'Yuvaraj', 'Big Street', 'Pattukkottai', 1800, 2400, 'G+1', 'Premium', 'completed', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80', 2026, 1, 1),
+('Luxury Stilt + 3 Floor Villa', 'Boopesh', 'Anna Nagar', 'Pattukkottai', 2200, 3100, 'G+3', 'Luxury', 'completed', 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80', 2026, 1, 2),
+('Modern G+2 Architectural Villa', 'Rahul', 'Bus Stand Road', 'Pattukkottai', 2000, 2750, 'G+2', 'Premium', 'completed', 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80', 2026, 1, 3),
+('Executive G+2 Family Home', 'Rajadurai', 'Thanjavur Road', 'Pattukkottai', 2000, 2750, 'G+2', 'Premium', 'completed', 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80', 2026, 1, 4),
+('Elegant G+2 Independent House', 'Vignesh', 'Railway Station Road', 'Pattukkottai', 2000, 2750, 'G+2', 'Standard', 'completed', 'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=800&q=80', 2026, 1, 5),
+('Spacious G+2 Residential Project', 'KVT Family', 'Aranthangi Road', 'Pattukkottai', 2000, 2750, 'G+2', 'Premium', 'completed', 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80', 2026, 1, 6)
 ON DUPLICATE KEY UPDATE `title` = VALUES(`title`);
 
 SET FOREIGN_KEY_CHECKS = 1;
