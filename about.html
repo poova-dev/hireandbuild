@@ -39,93 +39,228 @@
 </head>
 <body class="bg-white text-slate-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
 
-  <!-- Top Announcement Ticker Strip -->
-  <div class="bg-slate-900 text-slate-200 text-xs py-2 border-b border-slate-800 overflow-hidden relative z-40">
+  <!-- =========================================================================
+       1. TOP ANNOUNCEMENT TICKER STRIP
+       ========================================================================= -->
+  <div class="bg-slate-900 text-slate-200 text-xs py-2 border-b border-slate-800 overflow-hidden relative z-40" role="region" aria-label="Announcements">
     <div class="ticker-track flex items-center space-x-8 whitespace-nowrap">
-      <span class="inline-flex items-center gap-2"><strong class="text-white font-semibold">400+</strong> homes delivered in Chennai</span>
+      <!-- Set 1 -->
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+      </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
-      <span class="inline-flex items-center gap-2"><strong class="text-white font-semibold">75+</strong> projects currently under construction</span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        <strong class="text-white font-semibold">75+</strong> projects currently under construction
+      </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
-      <span class="inline-flex items-center gap-2">Packages from <strong class="text-white font-semibold">₹1,999 / sq.ft</strong></span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+        Packages from <strong class="text-white font-semibold">₹1,999 / sq.ft</strong>
+      </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
-      <span class="inline-flex items-center gap-2">ISI-certified steel & cement &middot; M20/M25 RCC</span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        ISI-certified steel & cement &middot; M20 RCC
+      </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
-      <span class="inline-flex items-center gap-2">CMDA / DTCP plan approval handled for you</span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        CMDA / DTCP plan approval handled for you
+      </span>
       <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
-      <span class="inline-flex items-center gap-2"><strong class="text-white font-semibold">400+</strong> homes delivered in Chennai</span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
+        Turnkey &mdash; design to handover, one point of contact
+      </span>
+
+      <!-- Duplicate Set for Seamless Loop -->
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        <strong class="text-white font-semibold">400+</strong> homes delivered in Chennai
+      </span>
+      <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        <strong class="text-white font-semibold">75+</strong> projects currently under construction
+      </span>
+      <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+        Packages from <strong class="text-white font-semibold">₹1,999 / sq.ft</strong>
+      </span>
+      <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        ISI-certified steel & cement &middot; M20 RCC
+      </span>
+      <span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        CMDA / DTCP plan approval handled for you
+      </span>
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- =========================================================================
+       2. STICKY MAIN HEADER & NAVIGATION
+       ========================================================================= -->
   <header id="main-header" class="sticky top-0 bg-white border-b border-slate-100 z-30 transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3 group">
           <div class="w-44 sm:w-52 h-auto">
             <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="w-full h-auto">
           </div>
         </a>
 
+        <!-- Desktop Navigation Links -->
         <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-700">
           <a href="index.html" class="hover:text-orange-600 transition-colors">Home</a>
-          <a href="about.html" class="text-orange-600 font-bold hover:text-orange-600 transition-colors">About Us</a>
+          <a href="about.html" class="text-orange-600 font-semibold hover:text-orange-600 transition-colors">About Us</a>
+          
           <a href="calculator.html" class="inline-flex items-center gap-1.5 hover:text-orange-600 transition-colors font-semibold">
             Cost Calculator
-            <span class="bg-orange-100 text-orange-600 text-[10px] font-black px-1.5 py-0.5 rounded-full">FREE</span>
+            <span class="bg-orange-100 text-orange-600 text-[10px] font-black px-1.5 py-0.5 rounded-full uppercase tracking-wider">FREE</span>
           </a>
-          <a href="packages.html" class="hover:text-orange-600 transition-colors">Pricing & Packages</a>
-          <a href="services.html" class="hover:text-orange-600 transition-colors">Services</a>
+
+          <!-- Pricing Dropdown -->
+          <div class="relative group py-4">
+            <button type="button" class="inline-flex items-center gap-1 hover:text-orange-600 transition-colors group-hover:text-orange-600">
+              Pricing
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-orange-600 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-100 py-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+              <a href="packages.html" class="block px-4 py-2.5 hover:bg-orange-50/70 transition-colors">
+                <div class="font-semibold text-slate-900 text-sm">Residential Packages</div>
+                <div class="text-xs text-slate-500">Packages from ₹1,999/sq.ft</div>
+              </a>
+              <a href="packages.html#commercial" class="block px-4 py-2.5 hover:bg-orange-50/70 transition-colors">
+                <div class="font-semibold text-slate-900 text-sm">Commercial Construction</div>
+                <div class="text-xs text-slate-500">Offices, retail & showrooms</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Services Dropdown -->
+          <div class="relative group py-4">
+            <button type="button" class="inline-flex items-center gap-1 hover:text-orange-600 transition-colors group-hover:text-orange-600">
+              Services
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-orange-600 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 mt-1 w-72 bg-white rounded-xl shadow-xl border border-slate-100 py-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+              <a href="services.html" class="block px-4 py-2.5 hover:bg-orange-50/70 transition-colors">
+                <div class="font-semibold text-slate-900 text-sm">Turnkey House Construction</div>
+                <div class="text-xs text-slate-500">End-to-end design to handover</div>
+              </a>
+              <a href="services.html#commercial" class="block px-4 py-2.5 hover:bg-orange-50/70 transition-colors">
+                <div class="font-semibold text-slate-900 text-sm">Commercial Construction</div>
+                <div class="text-xs text-slate-500">Modern commercial execution</div>
+              </a>
+              <div class="my-1 border-t border-slate-100"></div>
+              <a href="services.html#architecture" class="block px-4 py-2.5 hover:bg-orange-50/70 transition-colors">
+                <div class="font-semibold text-slate-900 text-sm">Architectural Designing</div>
+                <div class="text-xs text-slate-500">Floor plans & 3D elevations</div>
+              </a>
+              <a href="services.html#structural" class="block px-4 py-2.5 hover:bg-orange-50/70 transition-colors">
+                <div class="font-semibold text-slate-900 text-sm">Structural Designing</div>
+                <div class="text-xs text-slate-500">RCC & foundation engineering</div>
+              </a>
+              <a href="services.html#approvals" class="block px-4 py-2.5 hover:bg-orange-50/70 transition-colors">
+                <div class="font-semibold text-slate-900 text-sm">Building Plan Approval</div>
+                <div class="text-xs text-slate-500">CMDA & DTCP sanction support</div>
+              </a>
+            </div>
+          </div>
+
           <a href="projects.html" class="hover:text-orange-600 transition-colors">Projects</a>
           <a href="contact.html" class="hover:text-orange-600 transition-colors">Contact</a>
         </nav>
 
+        <!-- Right Header CTAs -->
         <div class="hidden sm:flex items-center space-x-3">
           <a href="tel:+919994399933" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200 transition-all">
             <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span>Call Now</span>
           </a>
-          <a href="calculator.html" class="inline-flex items-center gap-2 text-sm font-bold text-white bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-600 px-5 py-2.5 rounded-xl shadow-md transition-all">
+          <a href="calculator.html" class="inline-flex items-center gap-2 text-sm font-bold text-white bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-600 px-5 py-2.5 rounded-xl shadow-md shadow-orange-500/25 transition-all transform hover:-translate-y-0.5">
             Get a Free Quote
           </a>
         </div>
 
-        <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100" aria-label="Open Menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" type="button" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Open Navigation Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
+
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- =========================================================================
+       MOBILE NAVIGATION DRAWER & BACKDROP
+       ========================================================================= -->
   <div id="mobile-backdrop" class="fixed inset-0 bg-slate-900/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-sm"></div>
   <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto">
     <div class="p-6">
-      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-        <img src="assets/images/logo.svg" alt="Replica Architects & Builders Logo" class="h-8 w-auto">
-        <button id="mobile-close-btn" class="p-2 text-slate-400 hover:text-slate-700" aria-label="Close Menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      <div class="flex items-center justify-between pb-5 border-b border-slate-100">
+        <img src="assets/images/logo.svg" alt="Replica Architects & Builders" class="h-8 w-auto">
+        <button id="mobile-close-btn" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg" aria-label="Close menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
       </div>
-      <nav class="mt-6 flex flex-col space-y-4 text-base font-semibold text-slate-800">
-        <a href="index.html" class="hover:text-orange-600 py-1 transition-colors">Home</a>
-        <a href="about.html" class="text-orange-600 font-bold py-1 transition-colors">About Us</a>
-        <a href="calculator.html" class="hover:text-orange-600 py-1 transition-colors text-orange-600 flex items-center justify-between">
+
+      <nav class="mt-6 flex flex-col space-y-3 font-medium text-slate-800 text-sm">
+        <a href="index.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Home</a>
+        <a href="about.html" class="px-3 py-2 rounded-lg bg-orange-50 text-orange-600 font-bold">About Us</a>
+        <a href="calculator.html" class="px-3 py-2 rounded-lg hover:bg-slate-50 flex items-center justify-between">
           <span>Cost Calculator</span>
-          <span class="bg-orange-100 text-orange-600 text-xs px-2 py-0.5 rounded-full font-bold">Free</span>
+          <span class="bg-orange-100 text-orange-600 text-[10px] font-bold px-2 py-0.5 rounded-full">FREE</span>
         </a>
-        <a href="packages.html" class="hover:text-orange-600 py-1 transition-colors">Pricing & Packages</a>
-        <a href="services.html" class="hover:text-orange-600 py-1 transition-colors">Services</a>
-        <a href="projects.html" class="hover:text-orange-600 py-1 transition-colors">Projects</a>
-        <a href="contact.html" class="hover:text-orange-600 py-1 transition-colors">Contact</a>
+
+        <!-- Mobile Pricing Submenu -->
+        <div>
+          <button type="button" class="mobile-dropdown-btn w-full px-3 py-2 rounded-lg hover:bg-slate-50 flex items-center justify-between text-left">
+            <span>Pricing & Packages</span>
+            <svg class="dropdown-icon w-4 h-4 text-slate-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="hidden pl-6 mt-1 space-y-1.5 text-xs text-slate-600">
+            <a href="packages.html" class="block py-1.5 hover:text-orange-600">Residential Construction</a>
+            <a href="packages.html#commercial" class="block py-1.5 hover:text-orange-600">Commercial Construction</a>
+          </div>
+        </div>
+
+        <!-- Mobile Services Submenu -->
+        <div>
+          <button type="button" class="mobile-dropdown-btn w-full px-3 py-2 rounded-lg hover:bg-slate-50 flex items-center justify-between text-left">
+            <span>Services</span>
+            <svg class="dropdown-icon w-4 h-4 text-slate-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="hidden pl-6 mt-1 space-y-1.5 text-xs text-slate-600">
+            <a href="services.html" class="block py-1.5 hover:text-orange-600">Turnkey House Construction</a>
+            <a href="services.html#commercial" class="block py-1.5 hover:text-orange-600">Commercial Construction</a>
+            <a href="services.html#architecture" class="block py-1.5 hover:text-orange-600">Architectural Designing</a>
+            <a href="services.html#structural" class="block py-1.5 hover:text-orange-600">Structural Designing</a>
+            <a href="services.html#approvals" class="block py-1.5 hover:text-orange-600">Building Plan Approval</a>
+          </div>
+        </div>
+
+        <a href="projects.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Projects</a>
+        <a href="contact.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Contact Us</a>
       </nav>
     </div>
-    <div class="p-6 bg-slate-50 border-t border-slate-100 space-y-3">
-      <a href="tel:+919994399933" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-800 shadow-sm">
-        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-        <span>+91 99943 99933</span>
+
+    <!-- Mobile Drawer Bottom Actions -->
+    <div class="p-6 border-t border-slate-100 bg-slate-50/50 space-y-2.5">
+      <a href="calculator.html" class="w-full inline-flex items-center justify-center font-bold text-sm text-white bg-orange-600 py-3 rounded-xl shadow-md shadow-orange-600/20">
+        Get a Free Quote
       </a>
-      <a href="calculator.html" class="flex items-center justify-center w-full py-3 rounded-xl bg-orange-600 text-white text-sm font-bold shadow-md hover:bg-orange-700 transition-colors">
-        Instant Cost Calculator
+      <a href="tel:+919994399933" class="w-full inline-flex items-center justify-center gap-2 font-semibold text-sm text-slate-700 bg-white border border-slate-200 py-3 rounded-xl">
+        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        Call +91 99943 99933
       </a>
     </div>
   </aside>
