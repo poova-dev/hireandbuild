@@ -1,6 +1,6 @@
 /**
  * Replica Architects & Builders - House Construction Cost Calculator Engine
- * Grounded in 2026 Pattukkottai procurement rates & exact formulas
+ * Grounded in 2026 Pattukkottai & Tamil Nadu procurement rates & exact formulas
  */
 
 const RATES = {
@@ -123,30 +123,30 @@ const RATES = {
 };
 
 const EXTRAS_CATALOG = {
-  headroom: { name: 'Headroom (250 sq.ft)', price: 450000, desc: '250 sqft terrace headroom access' },
-  wastewater: { name: 'Waste Water Recycling Tank', price: 180000, desc: 'Greywater separation & recycling unit' },
-  oht: { name: 'Overhead Concrete Tank (per litre)', price: 36000, desc: 'Reinforced concrete overhead storage (₹18/litre)' },
-  compound: { name: 'Compound Wall (per rft)', price: 216000, desc: '5ft height brick perimeter wall (₹1,800/rft)' },
-  sump: { name: 'Underground Sump (per litre)', price: 132000, desc: 'Waterproofed RCC underground water sump (₹22/litre)' },
-  solar: { name: 'Solar Panels (3kW)', price: 220000, desc: '3kW grid-connected rooftop solar installation' },
-  gate: { name: 'Main Gate (MS / Sliding)', price: 120000, desc: 'Heavy gauge steel entrance sliding gate' },
-  cctv: { name: 'CCTV & Security System', price: 45000, desc: 'HD cameras with remote mobile app viewing' },
-  automation: { name: 'Smart Home Automation', price: 150000, desc: 'Smart lighting, fan modules & digital door lock' },
-  septic: { name: 'Conventional Septic Tank (per litre)', price: 64000, desc: 'Underground sanitary tank with soak pit (₹16/litre)' },
-  lift: { name: 'Lift (4 Passengers)', price: 650000, desc: 'Automatic passenger elevator with shaft framework' }
+  headroom: { name: 'Headroom (200 sq ft)', isHeadroom: true, sqft: 200, desc: 'Adds 200 sq ft to total built-up area' },
+  wastewater: { name: 'Waste Water Recycling Tank', price: 180000, desc: 'Alternative to septic tank' },
+  oht: { name: 'Overhead Concrete Tank (per litre)', price: 36000, rateNote: '₹55/litre', desc: 'Overhead RCC tank (2,000L standard)' },
+  compound: { name: 'Compound Wall (per rft)', price: 216000, rateNote: '₹2,750/rft', desc: '5ft height solid brick perimeter wall' },
+  sump: { name: 'Underground Sump (per litre)', price: 132000, rateNote: '₹40/litre', desc: 'Waterproofed RCC underground water sump (6,000L standard)' },
+  solar: { name: 'Solar Panels (3kW)', price: 150000, desc: '3kW grid-connected rooftop solar installation' },
+  gate: { name: 'Main Gate (MS / Sliding)', price: 125000, desc: 'Heavy gauge steel entrance sliding gate' },
+  cctv: { name: 'CCTV & Security System', price: 30000, desc: '8-channel HD cameras with remote mobile app' },
+  automation: { name: 'Smart Home Automation', price: 20000, desc: 'Smart lighting, fan modules & digital door lock' },
+  septic: { name: 'Conventional Septic Tank (per litre)', price: 66500, rateNote: '₹35/litre', desc: 'Underground sanitary tank with soak pit' },
+  lift: { name: 'Lift (4 Passengers)', price: 300000, desc: 'Automatic passenger elevator with shaft framework' }
 };
 
 const PHASES = [
-  { name: 'Foundation & Excavation', pct: 0.20 },
-  { name: 'RCC Structure & Columns', pct: 0.13 },
-  { name: 'Masonry & Block Work', pct: 0.12 },
-  { name: 'Waterproofing & Terrace', pct: 0.06 },
-  { name: 'Flooring & Tiling', pct: 0.10 },
-  { name: 'Doors & Windows', pct: 0.08 },
-  { name: 'Plumbing & Sanitary', pct: 0.07 },
-  { name: 'Electrical & Wiring', pct: 0.07 },
-  { name: 'Painting & Finishing', pct: 0.08 },
-  { name: 'Miscellaneous & Overheads', pct: 0.09 }
+  { name: 'Foundation & Excavation', pct: 0.20, color: '#FF5E14' },
+  { name: 'RCC Structure & Columns', pct: 0.13, color: '#E85D04' },
+  { name: 'Masonry & Block Work', pct: 0.12, color: '#F59E0B' },
+  { name: 'Waterproofing & Terrace', pct: 0.06, color: '#10B981' },
+  { name: 'Flooring & Tiling', pct: 0.10, color: '#06B6D4' },
+  { name: 'Doors & Windows', pct: 0.08, color: '#3B82F6' },
+  { name: 'Plumbing & Sanitary', pct: 0.07, color: '#6366F1' },
+  { name: 'Electrical & Wiring', pct: 0.07, color: '#8B5CF6' },
+  { name: 'Painting & Finishing', pct: 0.08, color: '#EC4899' },
+  { name: 'Miscellaneous & Overheads', pct: 0.09, color: '#64748B' }
 ];
 
 let state = {
@@ -154,10 +154,10 @@ let state = {
   plotArea: 800,
   builtUpPerFloor: 800,
   parkingArea: 200,
-  floors: 4, // 1: Ground only, 2: G+1, 3: G+2, 4: G+3
+  floors: 2, // 1: Ground only, 2: G+1, 3: G+2, 4: G+3
   package: 'premium',
   pkgSpecTab: 'structure', // structure, finishes, fittings
-  selectedExtras: []
+  selectedExtras: ['septic'] // Default matching PDF sample
 };
 
 // Utilities
@@ -186,10 +186,10 @@ function calculateEMI(principal, annualRate = 7.1, tenureYears = 20) {
 function getDurationMonths(floors) {
   switch (floors) {
     case 1: return 8;
-    case 2: return 12;
-    case 3: return 15;
+    case 2: return 10;
+    case 3: return 14;
     case 4: return 18;
-    default: return 12;
+    default: return 10;
   }
 }
 
@@ -201,6 +201,15 @@ function getFloorConfigName(floors) {
     case 4: return 'G+3 (4 Floors)';
     default: return `G+${floors-1} (${floors} Floors)`;
   }
+}
+
+function getExtraPrice(key, currentPkgRate) {
+  const item = EXTRAS_CATALOG[key];
+  if (!item) return 0;
+  if (item.isHeadroom) {
+    return item.sqft * currentPkgRate;
+  }
+  return item.price || 0;
 }
 
 function renderFloorVisual(floors) {
@@ -229,7 +238,7 @@ function renderFloorVisual(floors) {
     2: {
       badge: 'G+1',
       title: 'G+1 (2 Floors)',
-      timeline: '~10-12 months total',
+      timeline: '~10 months total',
       svg: `<svg viewBox="0 0 160 140" class="w-36 h-32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M80 12L130 40H30L80 12Z" fill="#F97316"/>
         <rect x="44" y="40" width="72" height="34" rx="2" fill="#FFEDD5" stroke="#F97316" stroke-width="2.5"/>
@@ -265,7 +274,7 @@ function renderFloorVisual(floors) {
     4: {
       badge: 'G+3',
       title: 'G+3 (4 Floors)',
-      timeline: '~15-18 months total',
+      timeline: '~16-18 months total',
       svg: `<svg viewBox="0 0 160 140" class="w-36 h-32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M80 6L130 24H30L80 6Z" fill="#F97316"/>
         <rect x="46" y="24" width="68" height="22" rx="1" fill="#FDBA74" stroke="#F97316" stroke-width="1.8"/>
@@ -286,7 +295,7 @@ function renderFloorVisual(floors) {
     }
   };
 
-  const conf = configs[floors] || configs[4];
+  const conf = configs[floors] || configs[2];
   preview.innerHTML = conf.svg;
   if (badge) badge.textContent = conf.badge;
   if (title) title.textContent = conf.title;
@@ -354,7 +363,7 @@ function renderUI() {
   setText('.disp-coverage', `Coverage: ${coverage}%`);
 
   const parkingCars = state.parkingArea === 0 ? 0 : Math.max(1, Math.round(state.parkingArea / 175));
-  const parkingRate = 2350; // standard benchmark parking rate
+  const parkingRate = 2350; // benchmark parking rate
   const parkingCost = state.parkingArea * parkingRate;
   setText('.disp-parking-rate', `+ ₹1,500/sqft (Premium)`);
   setText('.disp-parking-sqft', `${state.parkingArea} sqft`);
@@ -420,13 +429,34 @@ function renderUI() {
   renderPackageSpecs(activePkgObj);
 
   // 5. Calculations
-  const totalBuiltUp = state.builtUpPerFloor * state.floors;
   const rate = activePkgObj.rate;
+  const totalBuiltUp = state.builtUpPerFloor * state.floors;
   const baseCost = totalBuiltUp * rate;
+
+  // Step 4: Dynamic Headroom calculation & Card active highlights
+  const elHeadroomDisp = document.getElementById('extra-disp-headroom');
+  if (elHeadroomDisp) {
+    const headroomCost = 200 * rate;
+    elHeadroomDisp.innerHTML = `200 sq ft &times; ₹${rate.toLocaleString('en-IN')}/sqft = ${formatINR(headroomCost)}`;
+  }
+
+  document.querySelectorAll('.extra-card-label').forEach(label => {
+    const key = label.getAttribute('data-extra-key');
+    const isSelected = state.selectedExtras.includes(key);
+    const cb = label.querySelector('.extra-cb-opt');
+    if (cb) cb.checked = isSelected;
+    if (isSelected) {
+      label.classList.add('border-orange-500', 'bg-orange-50/40', 'ring-2', 'ring-orange-500/20', 'shadow-sm');
+      label.classList.remove('border-slate-200', 'bg-white');
+    } else {
+      label.classList.remove('border-orange-500', 'bg-orange-50/40', 'ring-2', 'ring-orange-500/20', 'shadow-sm');
+      label.classList.add('border-slate-200', 'bg-white');
+    }
+  });
 
   let extrasTotal = 0;
   state.selectedExtras.forEach(key => {
-    if (EXTRAS_CATALOG[key]) extrasTotal += EXTRAS_CATALOG[key].price;
+    extrasTotal += getExtraPrice(key, rate);
   });
 
   const grandTotal = baseCost + extrasTotal;
@@ -453,7 +483,7 @@ function renderUI() {
   const perFloorSuperstructure = superstructureCost / state.floors;
   const groundFloorTotal = foundationCost + perFloorSuperstructure;
 
-  // 6. Report View Rendering
+  // 6. Report View Rendering - Page 1
   setText('#report-grand-total', formatINR(grandTotal));
   setText('#report-base-rate', `₹${rate.toLocaleString('en-IN')}/sqft`);
   setText('#report-builtup-area', `${totalBuiltUp.toLocaleString('en-IN')} sqft`);
@@ -462,10 +492,30 @@ function renderUI() {
   setText('#report-duration-text', `${durationMonths} months`);
   setText('#report-pkg-specs', activePkgObj.specsSummary);
 
+  // Timeline bar milestone pin
+  const pin = document.getElementById('report-duration-pin');
+  if (pin) {
+    const pct = Math.min(95, Math.max(5, (durationMonths / 24) * 100));
+    pin.style.left = `${pct}%`;
+  }
+
+  // Dynamic Date in Report Header
+  const dateEl = document.getElementById('report-date-edition');
+  if (dateEl) {
+    const now = new Date();
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const dateStr = `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
+    dateEl.textContent = `${dateStr} • 2026 Estimate Edition`;
+  }
+
   // Extras text
   const extrasListStr = state.selectedExtras.length > 0 
-    ? state.selectedExtras.map(k => EXTRAS_CATALOG[k].name).join(', ')
-    : 'None';
+    ? state.selectedExtras.map(k => {
+        const item = EXTRAS_CATALOG[k];
+        const p = getExtraPrice(k, rate);
+        return `${item.name} (${formatINR(p)})`;
+      }).join(' • ')
+    : 'None selected';
   setText('#report-extras-summary', extrasListStr);
 
   // Financial Cards
@@ -489,10 +539,14 @@ function renderUI() {
   setText('#report-material-text', materialHtml);
 
   // Render Cost Distribution Table & Bars
-  renderPhases(grandTotal);
+  renderPhases(baseCost, grandTotal, rate);
 
-  // Render All Packages Comparison Cards
+  // Render All Packages Comparison Cards & Pricing Table on Page 2
   renderAllPackagesSideBySide(totalBuiltUp, durationMonths);
+  renderPackagesPricingTable(totalBuiltUp, durationMonths);
+
+  // Render Page 3 Specification Matrix Table
+  renderSpecMatrixTable();
 }
 
 function renderPackageSpecs(pkg) {
@@ -533,31 +587,97 @@ function renderPackageSpecs(pkg) {
   }
 }
 
-function renderPhases(grandTotal) {
+function renderPhases(baseCost, grandTotal, currentRate) {
   const tableBody = document.getElementById('report-phases-table');
   const barContainer = document.getElementById('report-phases-bar');
+  const summaryGrid = document.getElementById('report-phases-summary-grid');
 
-  if (tableBody) {
-    tableBody.innerHTML = PHASES.map(p => {
-      const amt = Math.round(grandTotal * p.pct);
+  // Multi-color distribution bar on Page 1
+  if (barContainer) {
+    barContainer.innerHTML = PHASES.map(p => `
+      <div style="width: ${p.pct * 100}%; background-color: ${p.color};" title="${p.name}: ${(p.pct * 100).toFixed(0)}%" class="h-4 transition-all"></div>
+    `).join('');
+  }
+
+  // Summary preview pills under bar on Page 1
+  if (summaryGrid) {
+    summaryGrid.innerHTML = PHASES.map(p => {
+      const amt = Math.round(baseCost * p.pct);
       return `
-        <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-          <td class="py-2.5 px-4 font-semibold text-slate-800 text-xs sm:text-sm">${p.name}</td>
-          <td class="py-2.5 px-4 text-xs sm:text-sm text-slate-600 text-center">${(p.pct * 100).toFixed(0)}%</td>
-          <td class="py-2.5 px-4 font-bold text-slate-900 text-xs sm:text-sm text-right">${formatINR(amt)}</td>
-        </tr>
+        <div class="p-2 rounded-xl bg-slate-50 border border-slate-200/80">
+          <div class="flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full" style="background-color: ${p.color};"></span>
+            <span class="text-[10px] font-bold text-slate-500">${(p.pct * 100).toFixed(0)}%</span>
+          </div>
+          <div class="text-[11px] font-bold text-slate-800 truncate mt-0.5" title="${p.name}">${p.name}</div>
+          <div class="text-[10px] text-slate-500 font-semibold">${formatLakhs(amt)}</div>
+        </div>
       `;
     }).join('');
   }
 
-  if (barContainer) {
-    const colors = [
-      '#FF5E14', '#E85D04', '#F59E0B', '#10B981', '#06B6D4',
-      '#3B82F6', '#6366F1', '#8B5CF6', '#EC4899', '#64748B'
-    ];
-    barContainer.innerHTML = PHASES.map((p, i) => `
-      <div style="width: ${p.pct * 100}%; background-color: ${colors[i % colors.length]};" title="${p.name}: ${(p.pct * 100).toFixed(0)}%" class="h-4 transition-all"></div>
-    `).join('');
+  // Complete Itemized Table on Page 2 (Matching PDF Page 2)
+  if (tableBody) {
+    let rowsHtml = '';
+
+    // 10 Construction Phases
+    PHASES.forEach(p => {
+      const amt = Math.round(baseCost * p.pct);
+      rowsHtml += `
+        <tr class="border-b border-slate-100 hover:bg-slate-50/80 transition-colors">
+          <td class="py-2.5 px-4 font-semibold text-slate-800 text-xs sm:text-sm flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background-color: ${p.color};"></span>
+            <span>${p.name}</span>
+          </td>
+          <td class="py-2.5 px-4 text-xs sm:text-sm text-slate-600 text-center font-bold">${(p.pct * 100).toFixed(0)}%</td>
+          <td class="py-2.5 px-4 font-bold text-slate-900 text-xs sm:text-sm text-right">${formatINR(amt)}</td>
+        </tr>
+      `;
+    });
+
+    // Optional Car Parking Row (if set)
+    if (state.parkingArea > 0) {
+      const parkingCost = state.parkingArea * 2350;
+      rowsHtml += `
+        <tr class="border-b border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-colors">
+          <td class="py-2.5 px-4 font-semibold text-slate-800 text-xs sm:text-sm flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+            <span>Car Parking &mdash; Ground Floor (${state.parkingArea} sqft @ ₹2,350/sqft)</span>
+          </td>
+          <td class="py-2.5 px-4 text-xs sm:text-sm text-slate-500 text-center italic">incl.</td>
+          <td class="py-2.5 px-4 font-bold text-slate-900 text-xs sm:text-sm text-right">${formatINR(parkingCost)}</td>
+        </tr>
+      `;
+    }
+
+    // Selected Optional Extras Rows
+    state.selectedExtras.forEach(k => {
+      const item = EXTRAS_CATALOG[k];
+      if (item) {
+        const itemPrice = getExtraPrice(k, currentRate);
+        rowsHtml += `
+          <tr class="border-b border-slate-100 bg-orange-50/30 hover:bg-orange-50/50 transition-colors">
+            <td class="py-2.5 px-4 font-semibold text-slate-800 text-xs sm:text-sm flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-orange-500 shrink-0"></span>
+              <span>${item.name} <span class="text-[10px] text-slate-400 font-normal">(${item.desc})</span></span>
+            </td>
+            <td class="py-2.5 px-4 text-xs sm:text-sm text-orange-600 text-center font-bold">Extra</td>
+            <td class="py-2.5 px-4 font-bold text-orange-600 text-xs sm:text-sm text-right">${formatINR(itemPrice)}</td>
+          </tr>
+        `;
+      }
+    });
+
+    // Grand Total Row
+    rowsHtml += `
+      <tr class="bg-orange-50 border-t-2 border-orange-500 font-black text-slate-900 text-sm sm:text-base">
+        <td class="py-3 px-4 text-orange-700 font-black uppercase tracking-wider">Grand Total</td>
+        <td class="py-3 px-4 text-center text-orange-700 font-black">100%</td>
+        <td class="py-3 px-4 text-right text-orange-600 font-black text-base sm:text-lg">${formatINR(grandTotal)}</td>
+      </tr>
+    `;
+
+    tableBody.innerHTML = rowsHtml;
   }
 }
 
@@ -573,7 +693,7 @@ function renderAllPackagesSideBySide(totalBuiltUp, durationMonths) {
     const isPick = tKey === state.package;
 
     return `
-      <div class="rounded-2xl p-5 border-2 transition-all flex flex-col justify-between ${isPick ? 'border-orange-500 bg-orange-50/40 ring-2 ring-orange-500/20 shadow-md relative' : 'border-slate-200 bg-white'}">
+      <div class="rounded-2xl p-5 border-2 transition-all flex flex-col justify-between ${isPick ? 'border-orange-500 bg-orange-50/40 ring-2 ring-orange-500/20 shadow-md relative' : 'border-slate-200 bg-white hover:border-slate-300'}">
         ${isPick ? '<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow">YOUR PICK</div>' : ''}
         <div class="space-y-3">
           <div>
@@ -594,7 +714,7 @@ function renderAllPackagesSideBySide(totalBuiltUp, durationMonths) {
             <li>&bull; Timeline: ~${durationMonths} months</li>
           </ul>
         </div>
-        <button type="button" class="btn-switch-pkg mt-4 w-full py-2 rounded-xl text-xs font-bold transition-colors ${isPick ? 'bg-orange-600 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}" data-pkg="${tKey}">
+        <button type="button" class="btn-switch-pkg mt-4 w-full py-2 rounded-xl text-xs font-bold transition-colors ${isPick ? 'bg-orange-600 text-white shadow' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}" data-pkg="${tKey}">
           ${isPick ? 'Selected Package' : 'Select Package'}
         </button>
       </div>
@@ -603,17 +723,242 @@ function renderAllPackagesSideBySide(totalBuiltUp, durationMonths) {
 
   // Attach button events
   document.querySelectorAll('.btn-switch-pkg').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('click', () => {
       state.package = btn.getAttribute('data-pkg');
       renderUI();
     });
   });
 }
 
+function renderPackagesPricingTable(totalBuiltUp, durationMonths) {
+  const table = document.getElementById('report-packages-table');
+  if (!table) return;
+
+  const basicCost = totalBuiltUp * RATES.basic.rate;
+  const standardCost = totalBuiltUp * RATES.standard.rate;
+  const premiumCost = totalBuiltUp * RATES.premium.rate;
+  const luxuryCost = totalBuiltUp * RATES.luxury.rate;
+
+  table.innerHTML = `
+    <tr class="hover:bg-slate-50 transition-colors">
+      <td class="py-2.5 px-4 font-bold text-slate-900">Rate / sqft</td>
+      <td class="py-2.5 px-4 text-center">₹1,999</td>
+      <td class="py-2.5 px-4 text-center">₹2,299</td>
+      <td class="py-2.5 px-4 text-center bg-orange-50 font-black text-orange-600">₹2,649</td>
+      <td class="py-2.5 px-4 text-center">₹2,999</td>
+    </tr>
+    <tr class="hover:bg-slate-50 transition-colors">
+      <td class="py-2.5 px-4 font-bold text-slate-900">Est. Total Cost</td>
+      <td class="py-2.5 px-4 text-center">${formatLakhs(basicCost)}</td>
+      <td class="py-2.5 px-4 text-center">${formatLakhs(standardCost)}</td>
+      <td class="py-2.5 px-4 text-center bg-orange-50 font-black text-orange-600">${formatLakhs(premiumCost)}</td>
+      <td class="py-2.5 px-4 text-center">${formatLakhs(luxuryCost)}</td>
+    </tr>
+    <tr class="hover:bg-slate-50 transition-colors">
+      <td class="py-2.5 px-4 font-bold text-slate-900">Monthly EMI (20yr)</td>
+      <td class="py-2.5 px-4 text-center">₹${calculateEMI(basicCost, 7.1, 20).toLocaleString('en-IN')}</td>
+      <td class="py-2.5 px-4 text-center">₹${calculateEMI(standardCost, 7.1, 20).toLocaleString('en-IN')}</td>
+      <td class="py-2.5 px-4 text-center bg-orange-50 font-black text-orange-600">₹${calculateEMI(premiumCost, 7.1, 20).toLocaleString('en-IN')}</td>
+      <td class="py-2.5 px-4 text-center">₹${calculateEMI(luxuryCost, 7.1, 20).toLocaleString('en-IN')}</td>
+    </tr>
+    <tr class="hover:bg-slate-50 transition-colors">
+      <td class="py-2.5 px-4 font-bold text-slate-900">Duration</td>
+      <td class="py-2.5 px-4 text-center">~${durationMonths} months</td>
+      <td class="py-2.5 px-4 text-center">~${durationMonths} months</td>
+      <td class="py-2.5 px-4 text-center bg-orange-50 font-black text-orange-600">~${durationMonths} months</td>
+      <td class="py-2.5 px-4 text-center">~${durationMonths} months</td>
+    </tr>
+  `;
+}
+
+function renderSpecMatrixTable() {
+  const table = document.getElementById('report-spec-matrix-table');
+  if (!table) return;
+
+  const checkSvg = `<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 font-bold text-xs" title="Included">&#10003;</span>`;
+  const crossSvg = `<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-slate-100 text-slate-400 font-bold text-xs" title="Not Included">&#10005;</span>`;
+
+  const b = RATES.basic;
+  const s = RATES.standard;
+  const p = RATES.premium;
+  const l = RATES.luxury;
+
+  const matrixData = [
+    {
+      category: 'STRUCTURE',
+      rows: [
+        { label: 'Steel Brand', b: b.steel, s: s.steel, p: p.steel, l: l.steel },
+        { label: 'Cement Brand', b: b.cement, s: s.cement, p: p.cement, l: l.cement },
+        { label: 'RCC Mix Grade', b: b.mix, s: s.mix, p: p.mix, l: l.mix },
+        { label: 'Basement Depth', b: b.depth, s: s.depth, p: p.depth, l: l.depth },
+        { label: 'Ceiling Height', b: b.ceiling, s: s.ceiling, p: p.ceiling, l: l.ceiling },
+        { label: 'Structural Design', b: crossSvg, s: crossSvg, p: checkSvg, l: checkSvg },
+        { label: 'Soil Testing', b: crossSvg, s: crossSvg, p: checkSvg, l: checkSvg },
+        { label: 'Anti-Termite Treatment', b: crossSvg, s: crossSvg, p: crossSvg, l: checkSvg }
+      ]
+    },
+    {
+      category: 'FINISHES',
+      rows: [
+        { label: 'Living/Dining Tiles', b: b.tiles, s: s.tiles, p: p.tiles, l: l.tiles },
+        { label: 'Bedroom Tiles', b: b.bedroomTiles, s: s.bedroomTiles, p: p.bedroomTiles, l: l.bedroomTiles },
+        { label: 'Interior Paint', b: b.intPaint, s: s.intPaint, p: p.intPaint, l: l.intPaint },
+        { label: 'Exterior Paint', b: b.extPaint, s: s.extPaint, p: p.extPaint, l: l.extPaint },
+        { label: 'Waterproofing', b: crossSvg, s: checkSvg, p: checkSvg, l: checkSvg },
+        { label: '3D Design', b: crossSvg, s: crossSvg, p: '3D Elevation', l: 'Full Interior + 3D' }
+      ]
+    },
+    {
+      category: 'DOORS & WINDOWS',
+      rows: [
+        { label: 'Main Door', b: b.mainDoor, s: s.mainDoor, p: p.mainDoor, l: l.mainDoor },
+        { label: 'Windows', b: b.windows, s: s.windows, p: p.windows, l: l.windows },
+        { label: 'Staircase Railing', b: b.staircase, s: s.staircase, p: p.staircase, l: l.staircase }
+      ]
+    },
+    {
+      category: 'ELECTRICAL',
+      rows: [
+        { label: 'Wiring Brand', b: b.wiring, s: s.wiring, p: p.wiring, l: l.wiring },
+        { label: 'Switches Brand', b: b.switches, s: s.switches, p: p.switches, l: l.switches },
+        { label: 'Home Automation', b: crossSvg, s: crossSvg, p: crossSvg, l: 'Full Automation' }
+      ]
+    },
+    {
+      category: 'PLUMBING & SANITARY',
+      rows: [
+        { label: 'CP Fittings', b: b.cp, s: s.cp, p: p.cp, l: l.cp },
+        { label: 'Sanitary Ware', b: b.sanitary, s: s.sanitary, p: p.sanitary, l: l.sanitary },
+        { label: 'Rain Shower', b: crossSvg, s: crossSvg, p: checkSvg, l: checkSvg }
+      ]
+    }
+  ];
+
+  let html = '';
+  matrixData.forEach(cat => {
+    html += `
+      <tr class="bg-slate-100 font-extrabold text-slate-800 text-[11px] uppercase tracking-wider">
+        <td colspan="5" class="py-2.5 px-4">${cat.category}</td>
+      </tr>
+    `;
+    cat.rows.forEach(r => {
+      html += `
+        <tr class="hover:bg-slate-50/70 border-b border-slate-100 transition-colors">
+          <td class="py-2 px-4 font-semibold text-slate-800 text-xs">${r.label}</td>
+          <td class="py-2 px-4 text-center text-xs text-slate-600">${r.b}</td>
+          <td class="py-2 px-4 text-center text-xs text-slate-600">${r.s}</td>
+          <td class="py-2 px-4 text-center text-xs bg-orange-50/50 font-bold text-orange-700">${r.p}</td>
+          <td class="py-2 px-4 text-center text-xs text-slate-600">${r.l}</td>
+        </tr>
+      `;
+    });
+  });
+
+  table.innerHTML = html;
+}
+
 function setText(selector, val) {
   document.querySelectorAll(selector).forEach(el => {
     el.textContent = val;
   });
+}
+
+function showToast(msg, duration = 3000) {
+  let toast = document.getElementById('calc-toast-msg');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'calc-toast-msg';
+    toast.className = 'fixed bottom-24 left-1/2 -translate-x-1/2 bg-slate-900 text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-full shadow-2xl z-50 transition-all opacity-0 pointer-events-none transform translate-y-2 border border-slate-700';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+  toast.classList.add('opacity-100', 'translate-y-0');
+  setTimeout(() => {
+    toast.classList.remove('opacity-100', 'translate-y-0');
+    toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+  }, duration);
+}
+
+function downloadPDFReport() {
+  const reportEl = document.getElementById('printable-estimate-report');
+  if (!reportEl) return;
+
+  const btnTop = document.getElementById('btn-download-pdf-top');
+  const btnBottom = document.getElementById('btn-download-pdf-bottom');
+  const originalTopHtml = btnTop ? btnTop.innerHTML : '';
+  const originalBottomHtml = btnBottom ? btnBottom.innerHTML : '';
+
+  const loadingHtml = `
+    <svg class="animate-spin w-4 h-4 text-white" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    <span>Generating PDF...</span>
+  `;
+
+  if (btnTop) btnTop.innerHTML = loadingHtml;
+  if (btnBottom) btnBottom.innerHTML = loadingHtml;
+
+  showToast('Generating 4-page detailed estimate PDF...', 2500);
+
+  if (typeof html2pdf !== 'undefined') {
+    const opt = {
+      margin: [8, 8, 8, 8],
+      filename: `House-Construction-Cost-Estimate-${state.package.toUpperCase()}-2026.pdf`,
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2, useCORS: true, letterRendering: true, logging: false },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      pagebreak: { mode: ['css', 'legacy'] }
+    };
+
+    html2pdf().set(opt).from(reportEl).save().then(() => {
+      if (btnTop) btnTop.innerHTML = originalTopHtml;
+      if (btnBottom) btnBottom.innerHTML = originalBottomHtml;
+      showToast('Estimate PDF downloaded successfully!', 4000);
+    }).catch(err => {
+      console.warn('html2pdf generation error, falling back to print:', err);
+      if (btnTop) btnTop.innerHTML = originalTopHtml;
+      if (btnBottom) btnBottom.innerHTML = originalBottomHtml;
+      window.print();
+    });
+  } else {
+    if (btnTop) btnTop.innerHTML = originalTopHtml;
+    if (btnBottom) btnBottom.innerHTML = originalBottomHtml;
+    window.print();
+  }
+}
+
+function shareEstimate() {
+  const grandTotalText = document.getElementById('report-grand-total')?.textContent || '';
+  const shareTitle = 'House Construction Cost Estimate 2026 - Replica Architects & Builders';
+  const shareText = `Check out my house construction cost estimate: ${grandTotalText} for Pattukkottai / Tamil Nadu.`;
+  const shareUrl = window.location.href;
+
+  if (navigator.share) {
+    navigator.share({
+      title: shareTitle,
+      text: shareText,
+      url: shareUrl
+    }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      showToast('Estimate link copied to clipboard!');
+    }).catch(() => {
+      showToast('Estimate URL ready to copy: ' + shareUrl);
+    });
+  }
+}
+
+function resetToStep1() {
+  state.step = 1;
+  renderUI();
+  const topEl = document.getElementById('calc-container-top');
+  if (topEl) {
+    topEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  const elPlot = document.getElementById('input-plot-area');
+  if (elPlot) elPlot.focus();
 }
 
 function initCalculator() {
@@ -694,7 +1039,7 @@ function initCalculator() {
     });
   });
 
-  // Step 4 Extras checkboxes
+  // Step 4 Extras Checkbox and Card Toggles
   document.querySelectorAll('.extra-cb-opt').forEach(cb => {
     cb.addEventListener('change', () => {
       const key = cb.value;
@@ -726,6 +1071,27 @@ function initCalculator() {
       if (topEl) topEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  // Top Actions
+  const btnRecalcTop = document.getElementById('btn-recalculate-top');
+  if (btnRecalcTop) {
+    btnRecalcTop.addEventListener('click', resetToStep1);
+  }
+
+  const btnShareTop = document.getElementById('btn-share-top');
+  if (btnShareTop) {
+    btnShareTop.addEventListener('click', shareEstimate);
+  }
+
+  const btnDownloadPdfTop = document.getElementById('btn-download-pdf-top');
+  if (btnDownloadPdfTop) {
+    btnDownloadPdfTop.addEventListener('click', downloadPDFReport);
+  }
+
+  const btnDownloadPdfBottom = document.getElementById('btn-download-pdf-bottom');
+  if (btnDownloadPdfBottom) {
+    btnDownloadPdfBottom.addEventListener('click', downloadPDFReport);
+  }
 
   // Print button
   const printBtn = document.getElementById('btn-print-report');

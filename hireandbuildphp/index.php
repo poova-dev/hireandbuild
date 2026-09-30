@@ -294,15 +294,9 @@ $currentPage = 'index';
   <section class="relative bg-slate-950 text-white py-14 lg:py-22 overflow-hidden" id="hero">
     <!-- Cloudinary Hero Background Video -->
     <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-      <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-40 scale-105">
+      <video autoplay loop muted playsinline class="w-full h-full object-cover">
         <source src="https://res.cloudinary.com/dv1capz6x/video/upload/v1790442703/Untitled_design_hugpbi.mp4" type="video/mp4">
       </video>
-      <!-- Dark Cinematic Vignette & Gradient Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-900/70"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50"></div>
-      <!-- Background Architectural Texture -->
-      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ff5e14_1px,transparent_1px)] [background-size:24px_24px]"></div>
-      <div class="absolute -top-40 -left-40 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -975,16 +969,26 @@ $currentPage = 'index';
   <!-- =========================================================================
        9. COST CALCULATOR CALLOUT BANNER
        ========================================================================= -->
-  <section class="py-14 bg-gradient-to-r from-orange-600 to-orange-500 text-white relative overflow-hidden">
+  <section class="py-14 sm:py-16 text-white relative overflow-hidden bg-slate-950">
+    <!-- Manora Fort Pattukkottai Background Image & Subtle Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/manora-fort.png" alt="Manora Fort Pattukkottai" class="w-full h-full object-cover object-[center_35%]">
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/75 to-orange-950/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/40"></div>
+    </div>
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="space-y-2 text-center md:text-left">
-        <span class="inline-block px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider">Free Online Tool</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">House Construction Cost in Pattukkottai &ndash; Per Sq Ft Price & Instant Calculator</h2>
-        <p class="text-orange-100 text-sm max-w-2xl font-light">
-          Instantly estimate your home construction cost in Pattukkottai using Replica Architects & Builders's accurate 2026 cost engine with phase-by-phase breakdown.
+      <div class="space-y-3 text-center md:text-left">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-300 font-bold text-xs uppercase tracking-wider backdrop-blur-sm">
+          <span class="w-2 h-2 rounded-full bg-orange-400 animate-pulse"></span>
+          Free Online Tool
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white drop-shadow-md">House Construction Cost in Pattukkottai &ndash; Per Sq Ft Price &amp; Instant Calculator</h2>
+        <p class="text-slate-200 text-sm max-w-2xl font-light drop-shadow-sm">
+          Instantly estimate your home construction cost in Pattukkottai using Replica Architects &amp; Builders's accurate 2026 cost engine with phase-by-phase breakdown.
         </p>
       </div>
-      <a href="calculator.php" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-black text-white font-bold px-7 py-3.5 rounded-xl shadow-xl transition-all whitespace-nowrap">
+      <a href="calculator.php" class="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-500 text-white font-bold px-7 py-3.5 rounded-xl shadow-xl transition-all whitespace-nowrap hover:scale-105 border border-orange-400/30">
         Calculate House Construction Cost &rarr;
       </a>
     </div>

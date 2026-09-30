@@ -133,7 +133,9 @@ h1, h2, h3, h4, .font-heading {
   body {
     background: #FFFFFF !important;
     color: #000000 !important;
-    font-size: 12pt !important;
+    font-size: 11pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
   .print-only {
     display: block !important;
@@ -143,4 +145,57 @@ h1, h2, h3, h4, .font-heading {
     box-shadow: none !important;
     page-break-inside: avoid;
   }
+  .pdf-page-break {
+    page-break-after: always !important;
+    break-after: page !important;
+    margin-bottom: 2rem !important;
+  }
+  .pdf-avoid-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
 }
+
+/* Page Break Utility for html2pdf and print */
+.pdf-page-break {
+  page-break-after: always;
+  break-after: page;
+}
+.pdf-avoid-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Ensure background colors render properly in generated PDF */
+.html2pdf__page-break {
+  page-break-after: always;
+  break-after: page;
+}
+
+/* Responsive Table Touch-Scroll & Alignment */
+.table-scroll-wrapper {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.table-scroll-wrapper::-webkit-scrollbar {
+  height: 5px;
+}
+.table-scroll-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 9999px;
+}
+.table-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.table-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Ensure touch targets meet minimum 44px on mobile */
+@media (max-width: 640px) {
+  button, a.btn, input[type="button"], input[type="submit"] {
+    min-height: 42px;
+  }
+}
+
